@@ -22,10 +22,11 @@ use Drupal\user\Plugin\migrate\source\d6\User as D6User;
  */
 class ContributingUser extends D6User { 
 
-  // I think we just need to specify prepareRow as the filter. 
+  // I think we just need to specify query() for the filter.
+  // If you do prepareRow() then a bunch of entries are listed as 
+  // "not processed". 
   // There are other functions, though: 
-  // fields(), query(), getIDs()
-  // but I hope these are inherited
+  // fields(), getIDs() but I hope these are inherited
 
   /** 
    * {@inheritdoc}
@@ -35,39 +36,12 @@ class ContributingUser extends D6User {
     $node_authors = $this->select('node','n')
       ->fields('n', array('uid'));
 
-    return $this->select('users',u)
+    return $this->select('users','u')
       ->fields('u', array_keys($this->baseFields()))
       ->condition('u.uid', 0, '>')
       ->condition('u.uid', $node_authors, 'IN');
 
   } // end query
-
-
-  /**
-   * {@inheritdoc}
-   */
-/**********
-   public function prepareRow(Row $row) { 
-     $uid = $row->getSourceProperty("uid");
-
-     // range(0,1) is like LIMIT(1)
-     $authored_nid = $this->select('node', 'n')
-         ->condition('n.uid', $uid, '=')
-         ->range(0,1)
-         ->fields('n', ['nid'])
-         ->execute()
-         ->fetchField();
-
-     // How to tell if query is empty?
-     // Look at the result?
-     if (! $authored_nid) { 
-       return FALSE;
-     } 
-
-     return parent::prepareRow($row);
-   } // end prepareRow
-***********/
-
 
 
 } // end class
