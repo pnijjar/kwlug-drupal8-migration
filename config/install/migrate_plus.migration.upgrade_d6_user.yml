@@ -17,7 +17,9 @@ process:
   created: created
   access: access
   login: login
-  status: status
+  status: 
+    plugin: default_value
+    default_value: 0
   timezone:
     plugin: user_update_7002
     source: timezone
