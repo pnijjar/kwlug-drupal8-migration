@@ -1,0 +1,21 @@
+uuid: 24ad95cd-5adc-4585-99c9-d1e269d77fe0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_date
+    - node.type.agenda
+  module:
+    - datetime
+id: node.agenda.field_meeting_date
+field_name: field_meeting_date
+entity_type: node
+bundle: agenda
+label: 'Meeting Date'
+description: 'When is the meeting? Enter in YYYY-MM-DD format.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,6 @@
+name: kwlug_content_types
+type: module
+description: Set up content types pre-migration 
+core: 8.x
+package: Custom
+dependencies: { } 

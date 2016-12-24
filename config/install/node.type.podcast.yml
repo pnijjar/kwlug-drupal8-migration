@@ -1,0 +1,11 @@
+uuid: f328fe25-d85d-40f7-9c9c-3b6ceab03db1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Podcast Entry'
+type: podcast
+description: 'Includes fields appropriate for making a podcast feed. The podcast can be in FLAC, OGG and MP3 format, as hosted by archive.org . '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

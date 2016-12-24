@@ -1,0 +1,29 @@
+uuid: fe9b9322-9966-4bed-823f-cc2f58297a61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vidcast_link
+    - node.type.agenda
+    - node.type.page
+id: node.agenda.field_vidcast_link
+field_name: field_vidcast_link
+entity_type: node
+bundle: agenda
+label: 'Vidcast Link'
+description: 'Link to the vidcast for this meeting, if one exists.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

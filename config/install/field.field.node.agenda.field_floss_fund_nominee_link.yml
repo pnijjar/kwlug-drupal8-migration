@@ -1,0 +1,28 @@
+uuid: 96e89148-716c-4a60-8325-1364454274db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_floss_fund_nominee_link
+    - node.type.agenda
+    - node.type.nominee
+id: node.agenda.field_floss_fund_nominee_link
+field_name: field_floss_fund_nominee_link
+entity_type: node
+bundle: agenda
+label: 'FLOSS Fund Nominee Link'
+description: 'Link to the FLOSS Fund nominee for this meeting, if there was one.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      nominee: nominee
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

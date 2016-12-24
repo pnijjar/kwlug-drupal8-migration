@@ -1,0 +1,35 @@
+uuid: 40a27ada-d27c-48da-a45f-bd32f59415d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_podcast_link
+    - node.type.agenda
+  module:
+    - text
+    - user
+id: node.agenda.teaser
+targetEntityType: node
+bundle: agenda
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_date:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: fallback
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_podcast_link: true

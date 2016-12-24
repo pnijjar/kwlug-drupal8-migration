@@ -1,0 +1,51 @@
+uuid: fa3b49a1-7205-4c0b-bacf-8f3001e79aac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.podcast.body
+    - field.field.node.podcast.field_archive_org_id
+    - field.field.node.podcast.field_flac_length
+    - field.field.node.podcast.field_mp3_length
+    - field.field.node.podcast.field_ogg_length
+    - field.field.node.podcast.field_podcast_flac
+    - field.field.node.podcast.field_podcast_mp3
+    - field.field.node.podcast.field_podcast_ogg
+    - node.type.podcast
+  module:
+    - text
+    - user
+id: node.podcast.default
+targetEntityType: node
+bundle: podcast
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_archive_org_id:
+    type: string
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_podcast_mp3:
+    type: basic_string
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_flac_length: true
+  field_mp3_length: true
+  field_ogg_length: true
+  field_podcast_flac: true
+  field_podcast_ogg: true

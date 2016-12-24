@@ -1,0 +1,19 @@
+uuid: 984ae585-f2e9-4ce9-aebe-ee61485cbef2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_floss_fund_nominee_link
+field_name: field_floss_fund_nominee_link
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
