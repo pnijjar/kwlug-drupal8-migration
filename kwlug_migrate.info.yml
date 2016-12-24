@@ -6,3 +6,5 @@ package: Custom
 dependencies:
   - migrate_plus
   - migrate_drupal
+  - migrate_tools
+  - kwlug_content_types
