@@ -36,6 +36,12 @@ process:
   field_emcee: field_emcee
   field_date: field_date
   field_location: field_location
+
+  field_presentation_title: presentation_title
+  field_presentation_nid: presentation_nid
+  field_floss_fund_nominee: floss_fund_nominee
+  field_podcast_link: podcast
+  field_vidcast_link: vidcast
 destination:
   plugin: 'entity:node'
   default_bundle: agenda
