@@ -29,6 +29,10 @@ class AgendaNode extends D6Node {
    * If they exist then incorporate them.
    */
   public function prepareRow(Row $row) { 
+    $DEBUG_NID_START = 1053;
+    $DEBUG_NID_END = 1056;
+
+
     $nid = $row->getSourceProperty("nid");
 
     // Look for associated presentation topics in relativity table
@@ -40,18 +44,18 @@ class AgendaNode extends D6Node {
     $query->join('relativity', 'r', 'r.nid = p.nid');
     $query->condition('r.parent_nid', $nid, '=');
 
+    $query->join('node_revisions', 'nr', 'nr.nid = p.nid');
+    $query->addField('nr', 'body');
 
     $presentation_info = $query->execute()
       ->fetchAll();
 
     if ($presentation_info) { 
-      // What does the body look like?
 
       foreach ($presentation_info as $p) { 
 
         $title_so_far = $row->getSourceProperty('presentation_title');
         $ptitle = $p['title'];
-
         // Should I trust this? Maybe this is dangerous
         if ($title_so_far) { 
           $title_so_far = $title_so_far . ", " . $ptitle;
@@ -63,20 +67,34 @@ class AgendaNode extends D6Node {
         // How do I add multiple NIDs?
         $row->setSourceProperty('presentation_nid', $p['nid']);
 
-      } // end foreach
 
+        $body_so_far = $row->getSourceProperty('body');
+        $pbody = $p['body'];
+
+        if ($body_so_far) { 
+          $body_so_far = $body_so_far . "\n\n" . $pbody;
+        } else { 
+          $body_so_far = $pbody;
+        } // end if body
+
+        $row->setSourceProperty('body', $body_so_far);
+        $row->setDestinationProperty('body', $body_so_far);
+
+      } // end foreach
 
       // print_r($row);
 
     } else { 
-      $row->setSourceProperty('presentation_title', 'NO_TITLE');
-
+      $row->setSourceProperty('presentation_title', '');
     } // end if presentation_info exists
 
 
+    if ($nid >= $DEBUG_NID_START  && $nid <= $DEBUG_NID_END ) { 
+      print_r("\n\row is\n");
+      print_r($row);
+    } 
 
-    // Look for associated FLOSS Fund nominees 
-
+    // TODO: Look for associated FLOSS Fund nominees 
     return parent::prepareRow($row);
 
   } // end prepareRow
@@ -99,7 +117,7 @@ class AgendaNode extends D6Node {
     $new_fields = array(
       'presentation_title' => $this->t('Presentation Title'), 
       'presentation_nid' => $this->t('Presentation Node (ugh)'), 
-      'floss_fund_nominee' => $this->t('FLOSS Fund Nominee'),
+      'floss_fund_nominee_nid' => $this->t('FLOSS Fund Nominee NID'),
       'podcast' => $this->t('Podcast'),
       'vidcast' => $this->t('Vidcast'),
     );
