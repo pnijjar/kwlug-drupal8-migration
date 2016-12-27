@@ -10,6 +10,8 @@ namespace Drupal\kwlug_migrate\Plugin\migrate\source;
 
 use Drupal\migrate\Row;
 use Drupal\node\Plugin\migrate\source\d6\Node as D6Node;
+use \DateTime;
+use \DateTimeZone;
 
 
 // no need for query() and getIds()? 
@@ -29,8 +31,14 @@ class AgendaNode extends D6Node {
    * If they exist then incorporate them.
    */
   public function prepareRow(Row $row) { 
-    $DEBUG_NID_START = 1053;
-    $DEBUG_NID_END = 1056;
+    $DEBUG_NID_START = 510;
+    $DEBUG_NID_END = 512;
+
+    // This should not be hardcoded?
+    $LOCAL_TIMEZONE = 'America/Toronto';
+    $DEFAULT_MEETING_TIME = "19:00:00";
+    $EMPTY_MEETING_TIME = "00:00:00";
+
 
 
     $nid = $row->getSourceProperty("nid");
@@ -141,17 +149,70 @@ class AgendaNode extends D6Node {
         } // end if emcee exists
 
 
+        // Ugh. Times get stored at 00:00:00, then Drupal does 
+        // timezone magic to make the time incorrect. So munge the 
+        // dates. 
+        if ($a['field_date_value']) { 
+
+          list($date, $time) = explode('T', $a['field_date_value']);
+          // This should look like 2016-12-26T00:00:00
+          
+          if ((!$time) || ($time === $EMPTY_MEETING_TIME)) { 
+            $target_time = $DEFAULT_MEETING_TIME;
+          } else { 
+            $target_time = $time;
+          } // end set time
+
+          $localdate = new DateTime( $date . "T" . $target_time,
+              new DateTimeZone($LOCAL_TIMEZONE));
+
+          $localdate->setTimeZone(new DateTimeZone('UTC'));
+          
+          $munged_date = $localdate->format('Y-m-d\TH:i:s');
+          $row->setSourceProperty('meeting_date', $munged_date);
+
+        } // end if field_date_value exists
+
+
+
       } // end loop $a
     } // end if agenda_info
 
+    // Look for linked nominees now.
+    // Look for associated presentation topics in relativity table
+    // This SHOULD be a helper method. Suck. 
+    // Oops. The agendas are the CHILDREN nodes. Suck.
+    $query = $this->select('node', 'p')
+      ->fields('p', ['nid','title'])
+      ->condition('p.type', 'nominee');
+    $query->join('relativity', 'r', 'r.parent_nid = p.nid');
+    $query->condition('r.nid', $nid, '=');
+
+    $query->join('node_revisions', 'nr', 'nr.nid = p.nid');
+    $query->addField('nr', 'body');
+
+    $nominee_info = $query->execute()
+      ->fetchAll();
+
+    if ($nominee_info) { 
+
+      foreach ($nominee_info as $n) { 
+        $row->setSourceProperty('floss_fund_nominee', $n['nid']);
+
+      } // end each nominee_info
+    } // end if nominee info
+
     if ($nid >= $DEBUG_NID_START  && $nid <= $DEBUG_NID_END ) { 
-      print_r("\n\row is\n");
+      print_r("\n row is\n");
       print_r($row);
-      print_r("\n\agenda_info is\n");
+      print_r("\n agenda_info is\n");
       print_r($agenda_info);
 
-      print_r("\n\emcee_info is\n");
+      print_r("\n emcee_info is\n");
       print_r($emcee_info);
+
+      print_r("\n nominee_info is\n");
+      print_r($nominee_info);
     } // end if debug
 
     // TODO: Look for associated FLOSS Fund nominees 
