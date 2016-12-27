@@ -1,0 +1,40 @@
+uuid: d80b62d7-5401-4ed8-9aa9-ac49fbd9f63c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nominee.body
+    - field.field.node.nominee.field_contribution
+    - field.field.node.nominee.field_contribution_details
+    - field.field.node.nominee.field_image
+    - node.type.nominee
+  module:
+    - text
+    - user
+id: node.nominee.teaser
+targetEntityType: node
+bundle: nominee
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_contribution_date:
+    label: above
+    weight: 1
+    type: datetime_default
+    settings:
+      format_type: short
+      timezone_override: ''
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_contribution: true
+  field_contribution_details: true
+  field_image: true
