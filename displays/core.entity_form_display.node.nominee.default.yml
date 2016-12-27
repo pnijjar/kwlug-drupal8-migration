@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.nominee.body
     - field.field.node.nominee.field_contribution
     - field.field.node.nominee.field_contribution_date
-    - field.field.node.nominee.field_contribution_date_string
     - field.field.node.nominee.field_contribution_details
     - field.field.node.nominee.field_image
     - image.style.thumbnail
@@ -46,13 +45,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
-  field_contribution_date_string:
-    weight: 26
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_contribution_details:
     weight: 5
     type: string_textarea

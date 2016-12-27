@@ -25,7 +25,7 @@ content:
       trim_length: 600
     third_party_settings: {  }
   field_contribution_date:
-    label: above
+    label: inline
     weight: 1
     type: datetime_default
     settings:

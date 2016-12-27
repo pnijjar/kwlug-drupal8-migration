@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.nominee.body
     - field.field.node.nominee.field_contribution
     - field.field.node.nominee.field_contribution_date
-    - field.field.node.nominee.field_contribution_date_string
     - field.field.node.nominee.field_contribution_details
     - field.field.node.nominee.field_image
     - node.type.nominee
@@ -40,13 +39,6 @@ content:
       format_type: html_date
     third_party_settings: {  }
     type: datetime_default
-  field_contribution_date_string:
-    weight: 6
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
   field_contribution_details:
     type: basic_string
     weight: 5
