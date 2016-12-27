@@ -33,15 +33,21 @@ process:
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
-  field_emcee: field_emcee
-  field_date: field_date
-  field_location: field_location
+  field_emcee: emcee_uid
+  field_meeting_date: meeting_date
+  field_meeting_location: meeting_location_nid
 
   field_presentation_title: presentation_title
   field_presentation_nid: presentation_nid
-  field_floss_fund_nominee: floss_fund_nominee
+  'field_floss_fund_nominee/target_id': floss_fund_nominee
   field_podcast_link: podcast
   field_vidcast_link: vidcast
+  field_floss_fund_string: 
+    - 
+      plugin: debug_contents
+      source: floss_fund_nominee
+    - 
+      plugin: get
 destination:
   plugin: 'entity:node'
   default_bundle: agenda

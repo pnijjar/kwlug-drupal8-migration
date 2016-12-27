@@ -31,7 +31,7 @@ class AgendaNode extends D6Node {
    * If they exist then incorporate them.
    */
   public function prepareRow(Row $row) { 
-    $DEBUG_NID_START = 510;
+    $DEBUG_NID_START = 515;
     $DEBUG_NID_END = 512;
 
     // This should not be hardcoded?
