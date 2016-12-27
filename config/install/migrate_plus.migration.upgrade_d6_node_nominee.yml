@@ -79,24 +79,7 @@ process:
             - upgrade_d7_filter_format
           source: format
   field_contribution_date:
-    - 
-      plugin: extract_value
-      source: 'field_contribution_date'
-    - 
-      plugin: substr
-      start: 0
-      length: 10
     # Chop 2017-02-06T00:00:00 to 2017-02-06
-    # plugin: substr
-    # source: field_contribution_date
-    # start: 0
-    # length: 10
-  field_contribution_date_string: 
-    #- 
-    #  plugin: extract
-    #  source: field_contribution_date
-    #  index:
-    #    - value
     - 
       plugin: extract_value
       source: 'field_contribution_date'
@@ -104,7 +87,6 @@ process:
       plugin: substr
       start: 0
       length: 10
-                       
 destination:
   plugin: 'entity:node'
   default_bundle: nominee
