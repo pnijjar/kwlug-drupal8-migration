@@ -224,42 +224,6 @@ class AgendaNode extends D6Node {
 
   } // end prepareRow
 
-  /**
-   * {@inheritdoc}
-   *
-   * Create redirects from merged presentation nodes.
-   */
-  public function prepare($entity, $row) { 
-    $p_nids = $row->getSourceProperty('presentation_nid');
-
-
-    print_r("In  method\n");
-    if ($entity->nid >= $this->DEBUG_NID_START  
-        && $entity->nid <= $this->DEBUG_NID_END ) { 
-      print_r($row);
-      print_r("\n");
-      print_r($p_nids);
-      print_r("\n");
-    } // end debug
-
-    if ($p_nids) { 
-
-      $redirect = new stdClass(); // ?! Why not a redirect object?
-      // Is there some "internal:"  thing going on here?
-      $redirect->source = '/node/' . $p_nids;
-      $redirect->source_options = array();
-      $redirect->redirect = '/node/' . $entity->nid;
-      $redirect->redirect_options = array();
-      $redirect->status_code = 301; // permanent redirect
-      $redirect->type = 'redirect';
-      $redirect->language = LANGUAGE_NONE;
-
-      redirect_save($redirect);
-    
-    } // end if p_nids
-
-  } // end prepare
-
 
   /**
    * {@inheritdoc}
