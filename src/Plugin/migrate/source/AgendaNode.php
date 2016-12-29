@@ -25,14 +25,16 @@ use \DateTimeZone;
  */
 class AgendaNode extends D6Node { 
 
+  // Set start bigger than end to turn off debugging
+  private $DEBUG_NID_START = 550;
+  private $DEBUG_NID_END = 549;
+
   /**
    * {@inheritdoc}
    * Look for associated presentations via node relativity table.
    * If they exist then incorporate them.
    */
   public function prepareRow(Row $row) { 
-    $DEBUG_NID_START = 515;
-    $DEBUG_NID_END = 512;
 
     // This should not be hardcoded?
     $LOCAL_TIMEZONE = 'America/Toronto';
@@ -74,6 +76,7 @@ class AgendaNode extends D6Node {
         $row->setSourceProperty('presentation_title', $title_so_far);
 
         // How do I add multiple NIDs?
+        // An array, I guess.
         $row->setSourceProperty('presentation_nid', $p['nid']);
 
 
@@ -202,7 +205,8 @@ class AgendaNode extends D6Node {
       } // end each nominee_info
     } // end if nominee info
 
-    if ($nid >= $DEBUG_NID_START  && $nid <= $DEBUG_NID_END ) { 
+    if ($nid >= $this->DEBUG_NID_START  && $nid <= $this->DEBUG_NID_END ) { 
+  
       print_r("\n row is\n");
       print_r($row);
       print_r("\n agenda_info is\n");
@@ -219,6 +223,42 @@ class AgendaNode extends D6Node {
     return parent::prepareRow($row);
 
   } // end prepareRow
+
+  /**
+   * {@inheritdoc}
+   *
+   * Create redirects from merged presentation nodes.
+   */
+  public function prepare($entity, $row) { 
+    $p_nids = $row->getSourceProperty('presentation_nid');
+
+
+    print_r("In  method\n");
+    if ($entity->nid >= $this->DEBUG_NID_START  
+        && $entity->nid <= $this->DEBUG_NID_END ) { 
+      print_r($row);
+      print_r("\n");
+      print_r($p_nids);
+      print_r("\n");
+    } // end debug
+
+    if ($p_nids) { 
+
+      $redirect = new stdClass(); // ?! Why not a redirect object?
+      // Is there some "internal:"  thing going on here?
+      $redirect->source = '/node/' . $p_nids;
+      $redirect->source_options = array();
+      $redirect->redirect = '/node/' . $entity->nid;
+      $redirect->redirect_options = array();
+      $redirect->status_code = 301; // permanent redirect
+      $redirect->type = 'redirect';
+      $redirect->language = LANGUAGE_NONE;
+
+      redirect_save($redirect);
+    
+    } // end if p_nids
+
+  } // end prepare
 
 
   /**
