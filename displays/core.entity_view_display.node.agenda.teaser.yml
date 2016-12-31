@@ -32,4 +32,10 @@ content:
   links:
     weight: 100
 hidden:
+  field_floss_fund_nominee_link: true
+  field_meeting_date: true
+  field_meeting_location: true
   field_podcast_link: true
+  field_presentation_nid: true
+  field_presentation_title: true
+  field_vidcast_link: true

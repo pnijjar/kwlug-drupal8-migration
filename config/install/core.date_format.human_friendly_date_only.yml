@@ -1,0 +1,8 @@
+uuid: ac18a8c8-baa9-4598-bf80-aef5a1d75b28
+langcode: en
+status: true
+dependencies: {  }
+id: human_friendly_date_only
+label: 'Human Friendly Date Only'
+locked: false
+pattern: 'l, M j Y'

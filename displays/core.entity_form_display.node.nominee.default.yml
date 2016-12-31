@@ -91,4 +91,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_page_category:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_file_attachments:
+    weight: 33
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
 hidden: {  }

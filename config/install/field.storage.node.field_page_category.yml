@@ -1,0 +1,48 @@
+uuid: b4bb574f-5540-4641-b381-b442f4789b2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_page_category
+field_name: field_page_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Blog Post'
+      label: 'Blog Post'
+    -
+      value: Vidcast
+      label: Vidcast
+    -
+      value: 'Meeting Location'
+      label: 'Meeting Location'
+    -
+      value: 'Static Page'
+      label: 'Static Page'
+    -
+      value: Podcast
+      label: 'Auto-filled by podcast content-type'
+    -
+      value: 'Meeting Agenda'
+      label: 'Auto-filled by agenda content-type'
+    -
+      value: 'FLOSS Fund Nominee'
+      label: 'Auto-filled by nominee content-type'
+    -
+      value: 'Book Page'
+      label: 'Do not use: book pages from Drupal 6 site'
+    -
+      value: 'Orphaned Presentation'
+      label: 'Do not use: old presentations not associated with agendas'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

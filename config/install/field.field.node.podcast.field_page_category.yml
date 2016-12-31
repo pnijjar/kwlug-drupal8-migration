@@ -1,0 +1,21 @@
+uuid: 547e0920-cf1f-11e6-984f-03c859204718
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_category
+    - node.type.podcast
+  module:
+    - options
+id: node.podcast.field_page_category
+field_name: field_page_category
+entity_type: node
+bundle: podcast
+label: 'Page Category'
+description: ''
+required: true
+translatable: false
+default_value: 'Podcast'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

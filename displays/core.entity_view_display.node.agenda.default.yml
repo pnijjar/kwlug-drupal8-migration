@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.agenda.body
     - field.field.node.agenda.field_floss_fund_nominee_link
+    - field.field.node.agenda.field_floss_fund_string
     - field.field.node.agenda.field_meeting_date
     - field.field.node.agenda.field_meeting_location
     - field.field.node.agenda.field_podcast_link
@@ -41,12 +42,19 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  field_meeting_date:
-    weight: 2
+  field_floss_fund_string:
+    weight: 9
     label: above
     settings:
-      format_type: medium
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_meeting_date:
+    weight: 2
+    label: inline
+    settings:
       timezone_override: ''
+      format_type: html_date
     third_party_settings: {  }
     type: datetime_default
   field_meeting_location:
@@ -73,7 +81,7 @@ content:
     type: string
   field_presentation_title:
     weight: 1
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -89,4 +97,11 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+  field_file_attachments:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+hidden:
+  field_page_category: true

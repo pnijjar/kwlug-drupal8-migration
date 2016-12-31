@@ -57,4 +57,11 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+  field_file_attachments:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+hidden:
+  field_page_category: true

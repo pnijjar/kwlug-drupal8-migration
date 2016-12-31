@@ -1,17 +1,18 @@
-uuid: fb5d8fd0-73d0-421b-8904-4c0b16c202a4
+uuid: 5414e5e6-38bb-4ac7-a36d-410c1b4dffea
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_meeting_date
-field_name: field_meeting_date
+id: node.field_floss_fund_string
+field_name: field_floss_fund_string
 entity_type: node
-type: datetime
+type: string
 settings:
-  datetime_type: datetime
-module: datetime
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true
