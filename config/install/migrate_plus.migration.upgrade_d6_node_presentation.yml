@@ -10,6 +10,8 @@ label: 'Nodes (presentation)'
 source:
   plugin: d6_presentation_node
   node_type: presentation
+  constants:
+    category: 'Orphaned Presentation'
 process:
   nid: tnid
   vid: vid
@@ -33,6 +35,7 @@ process:
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
+  field_page_category: constants/category
   field_presentationheaderimage:
     plugin: d6_cck_file
     source: field_presentationheaderimage

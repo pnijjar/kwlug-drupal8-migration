@@ -1,0 +1,41 @@
+uuid: 0c125ff4-fe25-4fb3-8a8a-5b074539ade3
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_taxonomy_term
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Taxonomy terms'
+source:
+  plugin: taxonomy_term
+process:
+  tid: tid
+  vid:
+    plugin: migration
+    migration: upgrade_d6_taxonomy_vocabulary
+    source: vid
+  name: name
+  description: description
+  weight: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration
+      migration: upgrade_d6_taxonomy_term
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  changed: timestamp
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  required:
+    - upgrade_d6_taxonomy_vocabulary
+  optional:
+    - upgrade_d6_taxonomy_vocabulary
+    - upgrade_d6_taxonomy_term
