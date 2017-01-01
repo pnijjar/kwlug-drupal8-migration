@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\kwlug_migrate\Plugin\migrate\process\DebugContents.
+ * Contains \Drupal\kwlug_migrate\Plugin\migrate\process\ExtractValue.
  */
 
 // https://www.advomatic.com/blog/drupal-8-migrate-from-drupal-6-with-a-custom-process-plugin
