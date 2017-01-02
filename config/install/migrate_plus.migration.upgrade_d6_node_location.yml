@@ -1,15 +1,15 @@
-uuid: 23c9a226-ec4d-4528-a6e9-8cd5e6a1fe2a
+uuid: 4c66537c-142b-49db-8afb-21483e0e0237
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_d6_node_agenda
+id: upgrade_d6_node_location
 migration_tags:
   - 'Drupal 6'
-migration_group: kwlug_migrate
-label: 'Nodes (agenda)'
+migration_group: migrate_drupal_6
+label: 'Nodes (location)'
 source:
-  plugin: d6_agenda_node
-  node_type: agenda
+  plugin: d6_node
+  node_type: location
 process:
   nid: tnid
   vid: vid
@@ -32,26 +32,20 @@ process:
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
-  field_emcee: emcee_uid
-  field_meeting_date: meeting_date
-  field_meeting_location: meeting_location_nid
-
-  field_presentation_title: presentation_title
-  field_floss_fund_nominee_link/target_id: floss_fund_nominee
-  field_podcast_link: podcast
-  field_vidcast_link: vidcast
+  field_image:
+    plugin: d6_cck_file
+    source: field_image
 destination:
   plugin: 'entity:node'
-  default_bundle: agenda
+  default_bundle: location
 migration_dependencies:
   required:
     - upgrade_d6_user
     - upgrade_d6_node_type
     - upgrade_d6_node_settings
     # - upgrade_d6_filter_format
-    # - upgrade_d6_node_nominee
   optional:
     - upgrade_d6_field_instance_widget_settings
     - upgrade_d6_field_formatter_settings
     - upgrade_d6_upload_field_instance
-    - upgrade_d6_filter_format
+    # - upgrade_d6_filter_format

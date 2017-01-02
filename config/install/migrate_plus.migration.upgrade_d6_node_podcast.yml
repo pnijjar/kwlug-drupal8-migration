@@ -25,8 +25,7 @@ process:
   promote: promote
   sticky: sticky
   body/format:
-    plugin: migration
-    migration: upgrade_d6_filter_format
+    plugin: map_kwlug_format_filter
     source: format
   body/value: body
   body/summary: teaser
@@ -49,10 +48,7 @@ process:
           plugin: skip_on_empty
           method: process
         -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
+          plugin: map_kwlug_format_filter
           source: format
   field_podcast_ogg:
     plugin: iterator
@@ -70,10 +66,7 @@ process:
           plugin: skip_on_empty
           method: process
         -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
+          plugin: map_kwlug_format_filter
           source: format
   field_archive_org_id:
     plugin: iterator
@@ -91,10 +84,7 @@ process:
           plugin: skip_on_empty
           method: process
         -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
+          plugin: map_kwlug_format_filter
           source: format
   field_mp3_length:
     plugin: iterator
@@ -112,10 +102,7 @@ process:
           plugin: skip_on_empty
           method: process
         -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
+          plugin: map_kwlug_format_filter
           source: format
   field_ogg_length:
     plugin: iterator
@@ -133,10 +120,7 @@ process:
           plugin: skip_on_empty
           method: process
         -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
+          plugin: map_kwlug_format_filter
           source: format
   field_flac_length:
     plugin: iterator
@@ -154,10 +138,7 @@ process:
           plugin: skip_on_empty
           method: process
         -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
+          plugin: map_kwlug_format_filter
           source: format
   field_podcast_flac:
     plugin: iterator
@@ -175,10 +156,7 @@ process:
           plugin: skip_on_empty
           method: process
         -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
+          plugin: map_kwlug_format_filter
           source: format
 destination:
   plugin: 'entity:node'
@@ -188,10 +166,10 @@ migration_dependencies:
     - upgrade_d6_user
     - upgrade_d6_node_type
     - upgrade_d6_node_settings
-    - upgrade_d6_filter_format
+    # - upgrade_d6_filter_format
   optional:
     - upgrade_d6_field_instance_widget_settings
     - upgrade_d6_field_formatter_settings
     - upgrade_d6_upload_field_instance
-    - upgrade_d6_filter_format
+#   - upgrade_d6_filter_format
     - upgrade_d7_filter_format
