@@ -34,5 +34,5 @@ class ExtractValue extends ProcessPluginBase {
     $retval = $value['value'];
 
     return $retval;
-  }
-}
+  } // end transform
+} // end class
