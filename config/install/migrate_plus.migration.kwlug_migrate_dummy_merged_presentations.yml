@@ -1,0 +1,26 @@
+uuid: 7714a28c-d56e-11e6-b788-c783a60b2e3c
+langcode: en
+status: true
+dependencies: {  }
+id: kwlug_migrate_dummy_merged_presentations
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Path Redirect (Merged Presentations)'
+source:
+  plugin: d6_merged_presentation_node
+  node_type: presentation
+  constants:
+    nodelist: node/
+    internal: internal:/
+process:
+  # If you omit this will it auto-generate?
+  # rid: rid
+
+  value: agenda_nid
+  
+destination:
+  plugin: 'kwlug_dummy'
+migration_dependencies:
+  required: {  } 
+  optional: {  }

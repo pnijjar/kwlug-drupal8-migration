@@ -8,7 +8,7 @@ migration_tags:
 migration_group: kwlug_migrate
 label: 'Path Redirect (Merged Presentations)'
 source:
-  plugin: d6_agenda_node
+  plugin: d6_merged_presentation_node
   node_type: agenda
   constants:
     nodelist: node/
@@ -19,16 +19,12 @@ process:
   
   # Test whether there is a presentation NID. If not, don't create 
   # a redirect.
-  dummy_test:
-    plugin: skip_on_empty
-    source: presentation_nid
-    method: row
+  #dummy_test:
+  #  plugin: skip_on_empty
+  #  source: presentation_nid
+  #  method: row
 
-  redirect_source:
-    plugin: concat
-    source:
-      - constants/nodelist
-      - presentation_nid
+  redirect_source: nid
 
   # This is broken broken broken for multiple presentations.
   # There is no easy way to fix this without an iterator, though.
@@ -37,7 +33,7 @@ process:
     source:
       - constants/internal
       - constants/nodelist
-      - nid
+      - agenda_nid 
 
   status_code: 
     plugin: default_value
@@ -51,6 +47,5 @@ process:
 destination:
   plugin: 'entity:redirect'
 migration_dependencies:
-  required:
-    - upgrade_d6_node_agenda
+  required: {  } 
   optional: {  }
