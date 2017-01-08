@@ -1,0 +1,21 @@
+uuid: 3537d84b-879b-4008-a22c-813d5276e0b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_synopsis
+    - node.type.library_book
+  module:
+    - text
+id: node.library_book.field_synopsis
+field_name: field_synopsis
+entity_type: node
+bundle: library_book
+label: Synopsis
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

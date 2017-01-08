@@ -1,0 +1,21 @@
+uuid: b9aaf5be-ce2e-4cb3-9d0d-aadc124c7562
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contents
+    - node.type.library_book
+  module:
+    - text
+id: node.library_book.field_contents
+field_name: field_contents
+entity_type: node
+bundle: library_book
+label: Contents
+description: 'Table of contents'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 166393ed-540d-4031-8a96-27f82743ca31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright_date
+    - node.type.library_book
+id: node.library_book.field_copyright_date
+field_name: field_copyright_date
+entity_type: node
+bundle: library_book
+label: 'Copyright Date'
+description: ' '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
