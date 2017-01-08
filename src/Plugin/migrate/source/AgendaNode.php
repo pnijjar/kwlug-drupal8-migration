@@ -26,8 +26,8 @@ use \DateTimeZone;
 class AgendaNode extends D6Node { 
 
   // Set start bigger than end to turn off debugging
-  private $DEBUG_NID_START = 550;
-  private $DEBUG_NID_END = 549;
+  private $DEBUG_NID_START = 494; // was 484
+  private $DEBUG_NID_END = 490;
 
   /**
    * {@inheritdoc}
@@ -63,6 +63,8 @@ class AgendaNode extends D6Node {
 
     if ($presentation_info) { 
 
+      $p_nids = array();
+
       foreach ($presentation_info as $p) { 
 
         $title_so_far = $row->getSourceProperty('presentation_title');
@@ -77,8 +79,8 @@ class AgendaNode extends D6Node {
 
         // How do I add multiple NIDs?
         // An array, I guess.
-        $row->setSourceProperty('presentation_nid', $p['nid']);
 
+        array_push($p_nids, $p['nid']);
 
         $body_so_far = $row->getSourceProperty('body');
         $pbody = $p['body'];
@@ -94,7 +96,7 @@ class AgendaNode extends D6Node {
 
       } // end foreach
 
-      // print_r($row);
+      $row->setSourceProperty('presentation_nid', $p_nids);
 
     } else { 
       $row->setSourceProperty('presentation_title', '');
@@ -254,9 +256,6 @@ class AgendaNode extends D6Node {
     // in some cases and not in others. So use array_merge.
 
     $fields = array_merge($orig_fields, $new_fields);
-
-    print_r("fields are: ");
-    print_r($fields);
 
     return $fields;
 
