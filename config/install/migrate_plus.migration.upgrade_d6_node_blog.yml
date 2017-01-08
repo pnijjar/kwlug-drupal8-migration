@@ -8,8 +8,10 @@ migration_tags:
 migration_group: kwlug_migrate
 label: 'Nodes (blog)'
 source:
-  plugin: d6_node
+  plugin: d6_blog_node
   node_type: blog
+  constants:
+    bundle_type: 'page'
 process:
   nid: tnid
   vid: vid
@@ -32,14 +34,30 @@ process:
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
+  field_page_category: 
+    plugin: static_map
+    source: taxonomy_category
+    map:
+      'vidcast': 'Vidcast'
+    default_value: 'Blog Post'
+  
+  type: constants/bundle_type
+
+#  field_file_attachments:
+#    plugin: migration
+#    migration: upgrade_d6_upload
+#    source: target_id
+
+
 destination:
   plugin: 'entity:node'
-  default_bundle: blog
+  default_bundle: page
 migration_dependencies:
   required:
     - upgrade_d6_user
     - upgrade_d6_node_type
     - upgrade_d6_node_settings
+    - upgrade_d6_file
     # - upgrade_d6_filter_format
   optional:
     - upgrade_d6_field_instance_widget_settings

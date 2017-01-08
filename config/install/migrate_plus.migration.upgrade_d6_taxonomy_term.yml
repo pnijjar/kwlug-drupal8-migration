@@ -10,6 +10,15 @@ label: 'Taxonomy terms'
 source:
   plugin: taxonomy_term
 process:
+
+  # Only allow terms from taxonomies we care aboot
+  dummy_test:
+    - plugin: select_taxonomy
+      source: vid
+    - 
+      plugin: skip_on_empty
+      method: row
+
   tid: tid
   vid:
     plugin: migration

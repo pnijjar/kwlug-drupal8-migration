@@ -1,18 +1,18 @@
-uuid: 4c66537c-142b-49db-8afb-21483e0e0237
+uuid: 1d2106ba-d56b-11e6-b196-83b4a023cd2d
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_d6_node_location
+id: kwlug_migrate_forum 
 migration_tags:
   - 'Drupal 6'
 migration_group: kwlug_migrate
-label: 'Nodes (location)'
+label: 'Nodes (forums)'
 source:
   plugin: d6_node
-  node_type: location
+  node_type: forum
   constants:
-    category: 'Meeting Location'
-    bundle_type: page
+    category: 'Blog Post'
+    bundle_type: 'page'
 process:
   nid: tnid
   vid: vid
@@ -35,11 +35,15 @@ process:
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
-  field_image:
-    plugin: d6_cck_file
-    source: field_image
-  type: constants/bundle_type
   field_page_category: constants/category
+  
+  type: constants/bundle_type
+
+#  field_file_attachments:
+#    plugin: migration
+#    migration: upgrade_d6_upload
+#    source: target_id
+
 
 destination:
   plugin: 'entity:node'
@@ -49,6 +53,7 @@ migration_dependencies:
     - upgrade_d6_user
     - upgrade_d6_node_type
     - upgrade_d6_node_settings
+    - upgrade_d6_file
     # - upgrade_d6_filter_format
   optional:
     - upgrade_d6_field_instance_widget_settings

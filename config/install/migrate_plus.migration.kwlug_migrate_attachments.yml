@@ -1,19 +1,19 @@
-uuid: 56c9b3b7-85cf-4744-91e4-fc23ff8bc8b4
+uuid: 8875fdee-d39f-11e6-86ac-43c2ccc922b8
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_d6_upload
+id: kwlug_migrate_attachments
 migration_tags:
   - 'Drupal 6'
-migration_group: migrate_drupal_6
-label: 'File uploads'
+migration_group: NO_kwlug_migrate
+label: 'File uploads (attachments)'
 source:
   plugin: d6_upload
 process:
   nid: nid
   vid: vid
   type: type
-  upload:
+  field_file_attachments: 
     plugin: iterator
     source: upload
     process:

@@ -10,10 +10,21 @@ label: 'Taxonomy vocabularies'
 source:
   plugin: d6_taxonomy_vocabulary
 process:
+  
+  # Ignore some vocabulary elements
+  dummy_test:
+    - 
+      plugin: select_taxonomy
+      source: vid
+    - 
+      plugin: skip_on_empty
+      method: row
+
   vid:
     -
       plugin: machine_name
       source: name
+
     -
       plugin: dedupe_entity
       entity_type: taxonomy_vocabulary
