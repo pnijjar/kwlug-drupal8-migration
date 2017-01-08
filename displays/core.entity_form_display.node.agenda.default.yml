@@ -5,11 +5,10 @@ dependencies:
   config:
     - field.field.node.agenda.body
     - field.field.node.agenda.field_floss_fund_nominee_link
-    - field.field.node.agenda.field_floss_fund_string
     - field.field.node.agenda.field_meeting_date
     - field.field.node.agenda.field_meeting_location
     - field.field.node.agenda.field_podcast_link
-    - field.field.node.agenda.field_presentation_nid
+    - field.field.node.agenda.field_header_image
     - field.field.node.agenda.field_presentation_title
     - field.field.node.agenda.field_vidcast_link
     - node.type.agenda
@@ -30,6 +29,13 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  field_header_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   created:
     type: datetime_timestamp
     weight: 2
@@ -40,13 +46,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-  field_floss_fund_string:
-    weight: 26
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_meeting_date:
     weight: 8
     settings: {  }
@@ -62,13 +61,6 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
-  field_presentation_nid:
-    weight: 12
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_presentation_title:
     weight: 6
     settings:

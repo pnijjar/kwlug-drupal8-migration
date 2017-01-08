@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_page_category
     - field.field.node.page.field_file_attachments
+    - field.field.node.page.field_header_image
     - node.type.page
   module:
     - file
@@ -36,6 +37,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_header_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_file_attachments:
     weight: 33
     settings:

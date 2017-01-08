@@ -1,0 +1,87 @@
+uuid: 9fab676f-a182-4aa3-bc0c-9cb6101694c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.library_book.field_author
+    - field.field.node.library_book.field_contents
+    - field.field.node.library_book.field_copyright_date
+    - field.field.node.library_book.field_donator
+    - field.field.node.library_book.field_isbn
+    - field.field.node.library_book.field_pages
+    - field.field.node.library_book.field_publisher
+    - field.field.node.library_book.field_synopsis
+    - field.field.node.library_book.field_page_category
+    - node.type.library_book
+  module:
+    - text
+    - user
+id: node.library_book.default
+targetEntityType: node
+bundle: library_book
+mode: default
+content:
+  field_author:
+    weight: 102
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_contents:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_copyright_date:
+    weight: 103
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_donator:
+    weight: 106
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_isbn:
+    weight: 104
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_pages:
+    weight: 105
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_publisher:
+    weight: 101
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_synopsis:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+  field_page_category:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+hidden: {  }

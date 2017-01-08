@@ -16,6 +16,14 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
+  field_header_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
   body:
     label: hidden
     type: text_summary_or_trimmed

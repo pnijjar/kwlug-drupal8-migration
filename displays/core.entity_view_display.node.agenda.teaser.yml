@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.agenda.body
     - field.field.node.agenda.field_podcast_link
+    - field.field.node.agenda.field_header_image
     - node.type.agenda
   module:
     - text
@@ -15,6 +16,14 @@ targetEntityType: node
 bundle: agenda
 mode: teaser
 content:
+  field_header_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
   body:
     label: hidden
     type: text_summary_or_trimmed
@@ -36,6 +45,5 @@ hidden:
   field_meeting_date: true
   field_meeting_location: true
   field_podcast_link: true
-  field_presentation_nid: true
   field_presentation_title: true
   field_vidcast_link: true
