@@ -38,6 +38,9 @@ settings:
     -
       value: 'Orphaned Presentation'
       label: 'Do not use: old presentations not associated with agendas'
+    -
+      value: 'Library Book'
+      label: 'Do not use: old library book listings'
   allowed_values_function: ''
 module: options
 locked: false
