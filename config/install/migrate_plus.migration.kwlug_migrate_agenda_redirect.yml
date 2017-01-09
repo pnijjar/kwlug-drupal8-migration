@@ -9,7 +9,7 @@ migration_group: kwlug_migrate
 label: 'Path Redirect (Merged Presentations)'
 source:
   plugin: d6_merged_presentation_node
-  node_type: agenda
+  node_type: presentation
   constants:
     nodelist: node/
     internal: internal:/
