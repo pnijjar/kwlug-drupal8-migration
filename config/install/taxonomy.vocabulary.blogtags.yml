@@ -1,0 +1,9 @@
+uuid: 2b794cec-7652-4b98-b404-9a6b4f201dd6
+langcode: en
+status: true
+dependencies: {  }
+name: blogtags
+vid: blogtags
+description: 'Add tags to your blog posts.  You can use free form tags with spaces, separated by commas: Linux in the community, xyzzy, Favourite ...'
+hierarchy: 0
+weight: 0

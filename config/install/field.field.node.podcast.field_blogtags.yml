@@ -1,0 +1,28 @@
+uuid: fc404caa-d5ea-11e6-91e8-bb2d7463de21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blogtags
+    - node.type.podcast
+    - taxonomy.vocabulary.blogtags
+id: node.podcast.field_blogtags
+field_name: field_blogtags
+entity_type: node
+bundle: podcast
+label: Tags
+description: 'Optional. Tags will autocomplete. Separate multiple tags by commas.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      blogtags: blogtags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
