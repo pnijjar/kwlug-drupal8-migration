@@ -12,7 +12,7 @@ field_name: field_meeting_date
 entity_type: node
 bundle: agenda
 label: 'Meeting Date'
-description: 'When is the meeting? Enter in YYYY-MM-DD format.'
+description: 'When is the meeting? Enter the date in YYYY-MM-DD format and the time in HH:mm 24 hour format. Eg 2017-01-09 19:00'
 required: false
 translatable: false
 default_value: {  }
