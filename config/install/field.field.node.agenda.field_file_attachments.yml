@@ -20,7 +20,7 @@ default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'jpg jpeg gif png txt html doc xls pdf ppt pps odt ods odp zip tgz gz xcf tpp pptx'
-  max_filesize: 10MB
+  max_filesize: 10 MB
   description_field: true
   handler: 'default:file'
   handler_settings: {  }
