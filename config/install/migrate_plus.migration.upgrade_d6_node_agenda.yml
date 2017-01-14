@@ -40,6 +40,20 @@ process:
   field_floss_fund_nominee_link/target_id: floss_fund_nominee
   field_podcast_link: podcast
   field_vidcast_link: vidcast
+
+  field_file_attachments: 
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration
+        migration: upgrade_d6_file
+        source: fid
+      display: 
+        plugin: default_value
+        default_value: 1
+      description: description
+
 destination:
   plugin: 'entity:node'
   default_bundle: agenda
@@ -48,6 +62,7 @@ migration_dependencies:
     - upgrade_d6_user
     - upgrade_d6_node_type
     - upgrade_d6_node_settings
+    - upgrade_d6_file
     # - upgrade_d6_filter_format
     # - upgrade_d6_node_nominee
   optional:

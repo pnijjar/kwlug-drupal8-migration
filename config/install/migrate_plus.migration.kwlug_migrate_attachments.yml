@@ -8,11 +8,43 @@ migration_tags:
 migration_group: NO_kwlug_migrate
 label: 'File uploads (attachments)'
 source:
-  plugin: d6_upload
+  plugin: d6_debug_upload
 process:
-  nid: nid
-  vid: vid
-  type: type
+  nid:
+    plugin: migration
+    migration: kwlug_migrate_dummy_merged_presentations
+    source: value
+    #  - upgrade_d6_node_agenda
+    #  - upgrade_d6_node_blog
+    #  - upgrade_d6_node_book
+    #  - upgrade_d6_node_page
+    #  - upgrade_d6_node_presentation
+    #source_ids:
+    #  kwlug_migrate_dummy_merged_presentations:
+    #    - agenda_nid
+    #  upgrade_d6_node_agenda:
+    #    - nid
+    #  upgrade_d6_node_blog:
+    #    - nid
+    #  upgrade_d6_node_book:
+    #    - nid
+    #  upgrade_d6_node_page:
+    #    - nid
+    #  upgrade_d6_node_presentation:
+    #    - nid
+  # vid: vid
+  type: 
+    plugin: static_map 
+    source: type
+    map: 
+      page: page
+      podcast: podcast
+      nominee: nominee
+      blog: page
+      book: page
+      agenda: agenda
+      # This is wrong if any orphaned presentations have agendas
+      presentation: agenda
   field_file_attachments: 
     plugin: iterator
     source: upload
@@ -28,17 +60,19 @@ destination:
 migration_dependencies:
   required:
     0: upgrade_d6_file
+    10: upgrade_d6_node_type
     73: upgrade_d6_node_agenda
     74: upgrade_d6_node_blog
-    #75: upgrade_d6_node_book
-    #76: upgrade_d6_node_image
-    #77: upgrade_d6_node_location
+    75: upgrade_d6_node_book
+    77: upgrade_d6_node_location
     78: upgrade_d6_node_nominee
     79: upgrade_d6_node_page
-    #80: upgrade_d6_node_podcast
     81: upgrade_d6_node_presentation
+    #76: upgrade_d6_node_image
+    #80: upgrade_d6_node_podcast
     #82: upgrade_d6_node_profile
     #83: upgrade_d6_node_story
-    84: upgrade_d6_upload_field_instance
+    #84: upgrade_d6_upload_field_instance
+    
   optional:
     - upgrade_d6_file

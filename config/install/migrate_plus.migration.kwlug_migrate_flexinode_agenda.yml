@@ -1,19 +1,19 @@
-uuid: 23ab3f0d-356d-48b6-8c5e-493e2f9d5b3e
+uuid: 49f82b0c-d64a-11e6-ab01-dfc5417e567c
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_d6_node_page
+id: kwlug_migrate_flexinode_agenda
 migration_tags:
   - 'Drupal 6'
 migration_group: kwlug_migrate
-label: 'Nodes (page)'
+label: 'Nodes (agenda)'
 source:
-  plugin: d6_upload_node
-  node_type: page
+  plugin: d6_flexinode_agenda_node
+  node_type: flexinode-2
   constants:
-    category: 'Static Page'
+    page_category: 'Old Agenda'
 process:
-  nid: tnid
+  nid: nid
   vid: vid
   langcode:
     plugin: default_value
@@ -34,34 +34,29 @@ process:
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
+  field_emcee: emcee_uid
+  field_meeting_date: meeting_date
+  field_meeting_location: meeting_location_nid
 
-  field_page_category: constants/category
+  field_presentation_title: presentation_title
+  field_floss_fund_nominee_link/target_id: floss_fund_nominee
+  field_podcast_link: podcast
+  field_vidcast_link: vidcast
 
-  field_file_attachments: 
-    plugin: iterator
-    source: upload
-    process:
-      target_id:
-        plugin: migration
-        migration: upgrade_d6_file
-        source: fid
-      display:
-        plugin: default_value
-        default_value: 1
-      description: description
+  field_page_category: constants/page_category
 
 destination:
   plugin: 'entity:node'
-  default_bundle: page
+  default_bundle: agenda
 migration_dependencies:
   required:
     - upgrade_d6_user
     - upgrade_d6_node_type
     - upgrade_d6_node_settings
-    - upgrade_d6_file
-#     - upgrade_d6_filter_format
+    # - upgrade_d6_filter_format
+    # - upgrade_d6_node_nominee
   optional:
     - upgrade_d6_field_instance_widget_settings
     - upgrade_d6_field_formatter_settings
     - upgrade_d6_upload_field_instance
-    # - upgrade_d6_filter_format
+    - upgrade_d6_filter_format

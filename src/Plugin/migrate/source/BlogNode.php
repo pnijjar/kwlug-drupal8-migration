@@ -16,15 +16,12 @@ use Drupal\node\Plugin\migrate\source\d6\Node as D6Node;
  * @MigrateSource(
  *   id = "d6_blog_node"
  * )
- * Remove type information from node. Then the default value will take
- * over?
+ * Associate blogtags with blogs.
  */
-class BlogNode extends D6Node { 
+class BlogNode extends UploadNode { 
 
   /**
    * {@inheritdoc}
-   * Look for associated presentations via node relativity table.
-   * If they exist then incorporate them.
    */
   public function prepareRow(Row $row) {
 

@@ -26,8 +26,8 @@ use \DateTimeZone;
 class AgendaNode extends D6Node { 
 
   // Set start bigger than end to turn off debugging
-  private $DEBUG_NID_START = 494; // was 484
-  private $DEBUG_NID_END = 490;
+  private $DEBUG_NID_START = 1001; // was 484
+  private $DEBUG_NID_END = 1000;
 
   /**
    * {@inheritdoc}
@@ -71,7 +71,7 @@ class AgendaNode extends D6Node {
         $ptitle = $p['title'];
         // Should I trust this? Maybe this is dangerous
         if ($title_so_far) { 
-          $title_so_far = $title_so_far . ", " . $ptitle;
+          $title_so_far = $title_so_far . "; " . $ptitle;
         } else { 
           $title_so_far = $ptitle;
         } // end if 
@@ -207,18 +207,34 @@ class AgendaNode extends D6Node {
       } // end each nominee_info
     } // end if nominee info
 
+
+
+    // Look for attachments. This is tricky because we need to look
+    // for attachments in ALL of the nids.
+    $associated_nids = $row->getSourceProperty('presentation_nid');
+    // Oh boy maybe I am screwing up $p_nids. But it should be
+    // committed already.
+    if (!$associated_nids) { 
+      $associated_nids = array();
+    } 
+    array_push($associated_nids, $nid); 
+
+    // This is copied from Upload.php
+    $query = $this->select('upload', 'u')
+      ->distinct()
+      ->fields('u', array('fid', 'description', 'list'))
+      ->condition('u.nid', $associated_nids, 'IN');
+    $row->setSourceProperty('upload', $query->execute()->fetchAll());
+
     if ($nid >= $this->DEBUG_NID_START  && $nid <= $this->DEBUG_NID_END ) { 
   
       print_r("\n row is\n");
       print_r($row);
-      print_r("\n agenda_info is\n");
-      print_r($agenda_info);
 
-      print_r("\n emcee_info is\n");
-      print_r($emcee_info);
+      print_r("associated_nids: ");
+      print_r($associated_nids);
+      print_r("\n");
 
-      print_r("\n nominee_info is\n");
-      print_r($nominee_info);
     } // end if debug
 
     // TODO: Look for associated FLOSS Fund nominees 
@@ -250,6 +266,7 @@ class AgendaNode extends D6Node {
       'emcee_uid' => $this->t('Meeting MC UID'),
       'podcast' => $this->t('Podcast'),
       'vidcast' => $this->t('Vidcast'),
+      'upload' => $this->t('Array of attachments'),
     );
 
     // What was that about a fractal of bad design? Addition works 

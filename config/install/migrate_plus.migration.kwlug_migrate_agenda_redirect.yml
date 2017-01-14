@@ -24,7 +24,11 @@ process:
   #  source: presentation_nid
   #  method: row
 
-  redirect_source: nid
+  redirect_source: 
+    plugin: concat
+    source:
+      - constants/nodelist
+      - nid
 
   # This is broken broken broken for multiple presentations.
   # There is no easy way to fix this without an iterator, though.

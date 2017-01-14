@@ -40,6 +40,20 @@ process:
     map:
       'vidcast': 'Vidcast'
     default_value: 'Blog Post'
+
+
+  field_file_attachments: 
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration
+        migration: upgrade_d6_file
+        source: fid
+      display:
+        plugin: default_value
+        default_value: 1
+      description: description
   
   type: constants/bundle_type
 

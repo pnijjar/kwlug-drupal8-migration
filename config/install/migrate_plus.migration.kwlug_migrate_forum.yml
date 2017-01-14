@@ -8,7 +8,7 @@ migration_tags:
 migration_group: kwlug_migrate
 label: 'Nodes (forums)'
 source:
-  plugin: d6_node
+  plugin: d6_upload_node
   node_type: forum
   constants:
     category: 'Blog Post'
@@ -38,6 +38,19 @@ process:
   field_page_category: constants/category
   
   type: constants/bundle_type
+
+  field_file_attachments: 
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration
+        migration: upgrade_d6_file
+        source: fid
+      display:
+        plugin: default_value
+        default_value: 1
+      description: description
 
 #  field_file_attachments:
 #    plugin: migration
