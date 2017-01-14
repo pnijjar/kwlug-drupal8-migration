@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.podcast.field_podcast_flac
     - field.field.node.podcast.field_podcast_mp3
     - field.field.node.podcast.field_podcast_ogg
+    - field.field.node.podcast.field_blogtags
     - node.type.podcast
   module:
     - text
@@ -43,6 +44,13 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+  field_blogtags:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
 hidden:
   field_page_category: true
   field_flac_length: true

@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.podcast.field_podcast_flac
     - field.field.node.podcast.field_podcast_mp3
     - field.field.node.podcast.field_podcast_ogg
+    - field.field.node.podcast.field_blogtags
     - node.type.podcast
   module:
     - path
@@ -119,4 +120,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_blogtags:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
 hidden: {  }

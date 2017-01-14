@@ -47,3 +47,4 @@ hidden:
   field_podcast_link: true
   field_presentation_title: true
   field_vidcast_link: true
+  field_blogtags: true

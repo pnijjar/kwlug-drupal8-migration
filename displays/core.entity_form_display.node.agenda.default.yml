@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.agenda.field_header_image
     - field.field.node.agenda.field_presentation_title
     - field.field.node.agenda.field_vidcast_link
+    - field.field.node.agenda.field_blogtags
     - node.type.agenda
   module:
     - datetime
@@ -111,9 +112,17 @@ content:
     third_party_settings: {  }
     type: options_select
   field_file_attachments:
-    weight: 33
+    weight: 35
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+  field_blogtags:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
 hidden: {  }

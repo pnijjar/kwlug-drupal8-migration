@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.podcast.field_podcast_flac
     - field.field.node.podcast.field_podcast_mp3
     - field.field.node.podcast.field_podcast_ogg
+    - field.field.node.podcast.field_blogtags
     - node.type.podcast
   module:
     - text
@@ -51,3 +52,4 @@ hidden:
   field_ogg_length: true
   field_podcast_flac: true
   field_podcast_ogg: true
+  field_blogtags: true

@@ -62,6 +62,6 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: file_table
 hidden:
   field_page_category: true

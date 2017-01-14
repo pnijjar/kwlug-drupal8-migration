@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.page.field_page_category
     - field.field.node.page.field_file_attachments
     - field.field.node.page.field_header_image
+    - field.field.node.page.field_blogtags
     - node.type.page
   module:
     - file
@@ -33,14 +34,21 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-  field_file_attachments:
+  field_blogtags:
     weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_file_attachments:
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: file_table
   links:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
 hidden:

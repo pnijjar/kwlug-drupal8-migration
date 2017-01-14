@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.agenda.field_podcast_link
     - field.field.node.agenda.field_presentation_title
     - field.field.node.agenda.field_vidcast_link
+    - field.field.node.agenda.field_blogtags
     - node.type.agenda
   module:
     - datetime
@@ -98,10 +99,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_file_attachments:
-    weight: 1
+    weight: 11
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: file_table
+  field_blogtags:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
 hidden:
   field_page_category: true
