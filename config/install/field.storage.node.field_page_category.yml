@@ -25,13 +25,13 @@ settings:
       label: 'Static Page'
     -
       value: Podcast
-      label: 'Auto-filled by podcast content-type'
+      label: 'Auto-filled: podcast content-type'
     -
       value: 'Meeting Agenda'
-      label: 'Auto-filled by agenda content-type'
+      label: 'Auto-filled: agenda content-type'
     -
       value: 'FLOSS Fund Nominee'
-      label: 'Auto-filled by nominee content-type'
+      label: 'Auto-filled: nominee content-type'
     -
       value: 'Book Page'
       label: 'Do not use: book pages from Drupal 6 site'
@@ -41,6 +41,10 @@ settings:
     -
       value: 'Library Book'
       label: 'Do not use: old library book listings'
+    
+    - 
+      value: 'Old Agenda'
+      label: 'Do not use: old agenda to be proofread'
   allowed_values_function: ''
 module: options
 locked: false
