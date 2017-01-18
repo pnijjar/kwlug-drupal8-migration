@@ -103,11 +103,6 @@ class RssEnclosureFields extends RssFields {
       $row_index = 0;
     }
 
-    if ($row_index == -1) { 
-      dsm("Before setting row\n");
-      dpm($build['#row']->title);
-    } 
-
 
     $item = $build['#row'];
 
@@ -125,8 +120,6 @@ class RssEnclosureFields extends RssFields {
         'type' => $enc_type,
       ); 
 
-      $item->enclosure_url = $enc_url;
-     
     } // end if url exists
 
 
@@ -157,7 +150,7 @@ class RssEnclosureFields extends RssFields {
 
     $build['#row'] = $item;
 
-    if ($row_index == 1) { 
+    if ($row_index == -1) { 
       dsm("After setting row 16 \n");
       foreach ($build['#row'] as $i) { 
         dpm($i); 
