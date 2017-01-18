@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Define hooks for the enclosure theme. 
+ */
+
+# This is necessary to call the views preprocess function.
+# Thanks to lukedekker on the #drupal IRC channel
+\Drupal::moduleHandler()->loadInclude('inc', 'views', 'views.theme');
+
+
+/**
+ * Prepares variables for views RSS item templates.
+ *
+ * Default template: views-view-row-enclosure-rss.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - row: The raw results rows.
+ */
+function template_preprocess_views_view_row_enclosure_rss(&$variables) {
+
+  template_preprocess_views_view_row_rss($variables);
+  $item = $variables['row'];
+  $variables['enclosure'] = $item->enclosure;
+
+} // end template_preprocess_views_view_row_enclosure_rss
+ 
