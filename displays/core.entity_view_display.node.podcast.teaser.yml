@@ -47,9 +47,10 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_blogtags: true
   field_flac_length: true
   field_mp3_length: true
   field_ogg_length: true
+  field_page_category: true
   field_podcast_flac: true
   field_podcast_ogg: true
-  field_blogtags: true

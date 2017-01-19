@@ -37,7 +37,7 @@ hidden:
   field_copyright_date: true
   field_donator: true
   field_isbn: true
+  field_page_category: true
   field_pages: true
   field_publisher: true
   field_synopsis: true
-  field_page_category: true

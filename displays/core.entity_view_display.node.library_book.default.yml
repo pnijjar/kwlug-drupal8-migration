@@ -1,4 +1,4 @@
-uuid: 9fab676f-a182-4aa3-bc0c-9cb6101694c5
+uuid: 8d43c214-7069-46b7-ab64-8e5263e56dc3
 langcode: en
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - field.field.node.library_book.field_copyright_date
     - field.field.node.library_book.field_donator
     - field.field.node.library_book.field_isbn
+    - field.field.node.library_book.field_page_category
     - field.field.node.library_book.field_pages
     - field.field.node.library_book.field_publisher
     - field.field.node.library_book.field_synopsis
-    - field.field.node.library_book.field_page_category
     - node.type.library_book
   module:
     - text
@@ -22,66 +22,62 @@ bundle: library_book
 mode: default
 content:
   field_author:
-    weight: 102
+    type: string
+    weight: 0
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
   field_contents:
-    weight: 108
+    type: text_default
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
   field_copyright_date:
-    weight: 103
+    type: string
+    weight: 3
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
   field_donator:
-    weight: 106
+    type: string
+    weight: 5
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
   field_isbn:
-    weight: 104
+    type: string
+    weight: 2
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
   field_pages:
-    weight: 105
+    type: string
+    weight: 4
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
   field_publisher:
-    weight: 101
+    type: string
+    weight: 1
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
   field_synopsis:
-    weight: 107
+    type: text_default
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
   links:
-    weight: 100
+    weight: 8
     settings: {  }
     third_party_settings: {  }
-  field_page_category:
-    weight: 32
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-hidden: {  }
+hidden:
+  field_page_category: true

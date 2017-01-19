@@ -34,6 +34,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_blogtags:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_podcast_mp3:
     type: basic_string
     weight: 3
@@ -44,17 +51,10 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_blogtags:
-    weight: 4
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
 hidden:
-  field_page_category: true
   field_flac_length: true
   field_mp3_length: true
   field_ogg_length: true
+  field_page_category: true
   field_podcast_flac: true
   field_podcast_ogg: true
