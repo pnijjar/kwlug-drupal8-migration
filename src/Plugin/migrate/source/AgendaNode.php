@@ -26,8 +26,9 @@ use \DateTimeZone;
 class AgendaNode extends D6Node { 
 
   // Set start bigger than end to turn off debugging
-  private $DEBUG_NID_START = 1001; // was 484
-  private $DEBUG_NID_END = 1000;
+  private $DEBUG_NID_START = 1010; // was 484
+  private $DEBUG_NID_END = 1025;
+  private $TARGET_TERM = 'vidcast';
 
   /**
    * {@inheritdoc}
@@ -226,6 +227,46 @@ class AgendaNode extends D6Node {
       ->condition('u.nid', $associated_nids, 'IN');
     $row->setSourceProperty('upload', $query->execute()->fetchAll());
 
+
+    $meeting_date_raw = $row->getSourceProperty('meeting_date');
+    // Looks like: 2016-03-07T00:00:00 
+    
+    $is_match = preg_match('/^\d\d\d\d-\d\d/', $meeting_date_raw,
+      $substr_array);
+
+    // There is NO WAY that there should not be a match, because
+    // all (post-flexinode) agendas have a date.
+    // HOWEVER, some podcasts should not be associated with some
+    // agendas (laptop rescue missions). Unfortunately this ruins
+    // SFD podcasts, which need to be added manually.
+    if ($is_match && $row->getSourceProperty('presentation_nid')) { 
+
+      $meeting_YYmm = $substr_array[0] . ":%";
+
+
+
+      // Look for vidcasts 
+      $query = $this->select('node', 'n')
+        ->fields('n', array('nid'));
+      $query->condition('n.title', $meeting_YYmm, 'LIKE');
+      $query->join('term_node', 'tn', 'tn.nid = n.nid');
+      $query->join('term_data', 'td', 'tn.tid = td.tid');
+      $query->condition('td.name', 'vidcast', '=');
+
+      $row->setSourceProperty('vidcast_nid', $query->execute()->fetchAll());
+
+      // Look for podcasts
+      $query = $this->select('node', 'n')
+        ->fields('n', array('nid'));
+      $query->condition('n.title', $meeting_YYmm, 'LIKE');
+      $query->condition('n.type', 'podcast');
+      $row->setSourceProperty('podcast_nid', $query->execute()->fetchAll());
+      
+
+    } // end if is_match
+
+
+
     if ($nid >= $this->DEBUG_NID_START  && $nid <= $this->DEBUG_NID_END ) { 
   
       print_r("\n row is\n");
@@ -237,7 +278,6 @@ class AgendaNode extends D6Node {
 
     } // end if debug
 
-    // TODO: Look for associated FLOSS Fund nominees 
     return parent::prepareRow($row);
 
   } // end prepareRow
@@ -261,6 +301,8 @@ class AgendaNode extends D6Node {
       'presentation_title' => $this->t('Presentation Title'), 
       'presentation_nid' => $this->t('Presentation Node (ugh)'), 
       'floss_fund_nominee_nid' => $this->t('FLOSS Fund Nominee NID'),
+      'podcast_nid' => $this->t('Podcast NIDs'), 
+      'vidcast_nid' => $this->t('Vidcast NIDs'), 
       'meeting_date' => $this->t('Meeting Date'),
       'meeting_location_nid' => $this->t('Meeting Location NID'),
       'emcee_uid' => $this->t('Meeting MC UID'),
