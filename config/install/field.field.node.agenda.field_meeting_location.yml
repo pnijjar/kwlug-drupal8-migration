@@ -5,7 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_meeting_location
     - node.type.agenda
-    - node.type.page
+_core:
+  default_config_hash: qn-cmjdiJLlcf8hIrVYf5N8SifFQ50A_2VEzRYl3_kQ
 id: node.agenda.field_meeting_location
 field_name: field_meeting_location
 entity_type: node
@@ -17,12 +18,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: views
   handler_settings:
-    target_bundles:
-      page: page
-    sort:
-      field: _none
-    auto_create: false
-    auto_create_bundle: ''
+    view:
+      view_name: content_by_page_category
+      display_name: entity_reference_1
+      arguments: {  }
 field_type: entity_reference
