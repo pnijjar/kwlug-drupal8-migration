@@ -8,7 +8,7 @@ migration_tags:
 migration_group: kwlug_migrate
 label: 'Nodes (book)'
 source:
-  plugin: d6_upload_node
+  plugin: d6_book_node
   node_type: book
   constants:
     category: 'Book Page'
