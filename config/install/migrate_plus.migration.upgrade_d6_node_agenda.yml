@@ -38,8 +38,18 @@ process:
 
   field_presentation_title: presentation_title
   field_floss_fund_nominee_link/target_id: floss_fund_nominee
-  field_podcast_link: podcast
-  field_vidcast_link: vidcast
+
+  field_podcast_link:
+    plugin: iterator
+    source: podcast_nid
+    process: 
+      target_id: nid
+
+  field_vidcast_link:
+    plugin: iterator
+    source: vidcast_nid
+    process: 
+      target_id: nid
 
   field_file_attachments: 
     plugin: iterator
