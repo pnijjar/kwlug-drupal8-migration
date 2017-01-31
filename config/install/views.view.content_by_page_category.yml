@@ -857,8 +857,14 @@ display:
         sorts: false
         fields: false
       style:
-        type: default
-        options: {  }
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: library-book-list
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
         options:
@@ -1650,8 +1656,14 @@ display:
         pager: false
         sorts: false
       style:
-        type: default
-        options: {  }
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
         options:
