@@ -5,13 +5,14 @@ dependencies:
   config:
     - field.field.node.podcast.body
     - field.field.node.podcast.field_archive_org_id
+    - field.field.node.podcast.field_blogtags
     - field.field.node.podcast.field_flac_length
     - field.field.node.podcast.field_mp3_length
     - field.field.node.podcast.field_ogg_length
+    - field.field.node.podcast.field_page_category
     - field.field.node.podcast.field_podcast_flac
     - field.field.node.podcast.field_podcast_mp3
     - field.field.node.podcast.field_podcast_ogg
-    - field.field.node.podcast.field_blogtags
     - node.type.podcast
   module:
     - path
@@ -41,6 +42,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_blogtags:
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
   field_flac_length:
     weight: 10
     type: string_textarea
@@ -62,6 +71,11 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
+  field_page_category:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   field_podcast_flac:
     weight: 4
     type: string_textarea
@@ -115,17 +129,4 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_page_category:
-    weight: 32
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-  field_blogtags:
-    weight: 10
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
 hidden: {  }

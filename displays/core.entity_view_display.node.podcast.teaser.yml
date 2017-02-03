@@ -6,13 +6,14 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.podcast.body
     - field.field.node.podcast.field_archive_org_id
+    - field.field.node.podcast.field_blogtags
     - field.field.node.podcast.field_flac_length
     - field.field.node.podcast.field_mp3_length
     - field.field.node.podcast.field_ogg_length
+    - field.field.node.podcast.field_page_category
     - field.field.node.podcast.field_podcast_flac
     - field.field.node.podcast.field_podcast_mp3
     - field.field.node.podcast.field_podcast_ogg
-    - field.field.node.podcast.field_blogtags
     - node.type.podcast
   module:
     - text

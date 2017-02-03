@@ -5,13 +5,14 @@ dependencies:
   config:
     - field.field.node.podcast.body
     - field.field.node.podcast.field_archive_org_id
+    - field.field.node.podcast.field_blogtags
     - field.field.node.podcast.field_flac_length
     - field.field.node.podcast.field_mp3_length
     - field.field.node.podcast.field_ogg_length
+    - field.field.node.podcast.field_page_category
     - field.field.node.podcast.field_podcast_flac
     - field.field.node.podcast.field_podcast_mp3
     - field.field.node.podcast.field_podcast_ogg
-    - field.field.node.podcast.field_blogtags
     - node.type.podcast
   module:
     - text
@@ -24,31 +25,43 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 0
     settings: {  }
     third_party_settings: {  }
   field_archive_org_id:
     type: string
-    weight: 2
+    weight: 1
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
   field_blogtags:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_podcast_flac:
+    type: basic_string
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_podcast_mp3:
+    type: basic_string
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_podcast_ogg:
     type: basic_string
     weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 0
+    weight: 6
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -56,5 +69,3 @@ hidden:
   field_mp3_length: true
   field_ogg_length: true
   field_page_category: true
-  field_podcast_flac: true
-  field_podcast_ogg: true
