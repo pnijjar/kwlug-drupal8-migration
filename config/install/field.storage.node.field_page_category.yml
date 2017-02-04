@@ -44,7 +44,7 @@ settings:
     
     - 
       value: 'Old Agenda'
-      label: 'Do not use: old agenda to be proofread'
+      label: 'Do not use: old agendas to be proofread'
   allowed_values_function: ''
 module: options
 locked: false
