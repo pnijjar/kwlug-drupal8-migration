@@ -9,6 +9,8 @@ dependencies:
     - datetime
     - node
     - user
+_core:
+  default_config_hash: V5gXYrAsxvG5ZIwrTkGg-nZHgE08ALzswvyhkMfe5bQ
 id: meetings
 label: Meetings
 module: views
@@ -197,7 +199,12 @@ display:
           granularity: second
           plugin_id: datetime
       title: 'Upcoming Meetings'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -246,6 +253,22 @@ display:
       display_extenders: {  }
       path: upcoming-meetings
       display_description: 'Upcoming meetings'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<p>KWLUG - The Kitchener-Waterloo Linux User Group is a monthly meeting of GNU/Linux, Free Software, Open Source and technology enthusiasts. \n</p><p>\n<strong>Where? When?</strong> We meet in Kitchener, Ontario, usually on the first (non-holiday) Monday of the month, beginning at 7pm. (<a href=\"/sjk\">Directions</a>) \n</p><p>\n<strong>How much?</strong> Our meetings are free of charge and open to anybody with an interest in Linux and/or free software. \n</p><p>\n<strong>What next?</strong>\n<ul>\n  <li>Find out more about our <a href=\"/node/55\">meetings</a> and join us.</li>\n  <li> Join our <a href=\"/mailing-lists\">mailing lists</a> and participate in our community.</li>\n  <li><a href=\"/contact\">Offer</a> to present a topic.</li>\n  <li>Subscribe to our <a href=\"/podcasts\">podcast.</a></li>\n</ul>\n</p>"
+            format: basic_html
+          plugin_id: text
+      defaults:
+        header: false
     cache_metadata:
       max-age: -1
       contexts:
