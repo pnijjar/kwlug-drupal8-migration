@@ -1,0 +1,22 @@
+uuid: d357cdba-c8f2-4a8f-82fd-57a4f311f9ac
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - kwlug_theme
+_core:
+  default_config_hash: ZBkT9o21rz1vE8aXcmSbymSNvcjXPCB0-FYXyLPlUM0
+id: kwlug_theme_login
+theme: kwlug_theme
+region: '-1'
+weight: -6
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,41 @@
+/**
+ * Block User Login
+ * Style the theme settings for login block (horizontal, placeholders etc).
+ ============================================================================ */
+
+.is-horizontal-login-block {
+  @include output-rhythm(margin, $x-small 0 $medium);
+
+  .block__inner {
+    @include clearfix-micro;
+  }
+
+  .block__title {
+    font-family: inherit;
+    text-align: $flow-from;
+    @include font-size($medium);
+    @include line-height($form_input_button_select_height);
+  }
+
+  .block__title,
+  .block__content,
+  .user-login-form,
+  .user-login-form > div,
+  .form-item,
+  .form-actions{
+    float: $flow-from;
+    @include output-rhythm(margin, 0 $xxxx-small 0 0);
+  }
+
+  form,
+  .form-item,
+  .form-actions {
+    margin: 0;
+  }
+
+  label {
+    @include adjust-font-size-to($medium * 0.75);
+    font-weight: $font-weight-normal;
+  }
+}
+

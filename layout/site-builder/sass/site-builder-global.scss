@@ -1,0 +1,16 @@
+//
+// Global layout declarations.
+//
+// ---------------------------------------------------------------------------
+
+// Import base.
+@import "site-builder-base";
+
+
+// Set the Susy container on .l-rw, this controls the max-width. The
+// .l-rw class is set on each rows inner wrapper to constrain the
+// the max-width of a group of regions, while the main row wrapper is always
+// full width.
+.l-rw {
+  @include container($container-12);
+}

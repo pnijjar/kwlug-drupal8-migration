@@ -1,0 +1,80 @@
+/**
+ * Forums
+ *  - see table.scss for generic table styles.
+ ============================================================================ */
+.forum {
+  width: 100%;
+}
+.forum .indent {
+  overflow: hidden;
+  margin-left: 33px;
+  margin-left: 2.0625rem;
+}
+.forum .title {
+  overflow: hidden;
+}
+.forum .icon {
+  margin: 1px 10px 0 0;
+  margin: 0.0625rem 0.625rem 0 0;
+  float: left;
+}
+.forum .icon svg {
+  height: 20px;
+  height: 1.25rem;
+  width: 20px;
+  width: 1.25rem;
+}
+.forum td,
+.forum th {
+  vertical-align: top;
+}
+
+.forum-header th {
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+@media all and (max-width: 45em) {
+  .forum [class*="__last-reply"],
+  .forum [class*="__Last-reply"] {
+    display: none;
+  }
+}
+
+.forum [class*="__topics"],
+.forum [class*="__posts"],
+.forum [class*="__replies"] {
+  text-align: center;
+}
+
+.forum-list__description {
+  overflow: hidden;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+  margin: 7px 7px 7px 33px;
+  margin: 0.4375rem 0.4375rem 0.4375rem 2.0625rem;
+}
+[dir="rtl"] .forum-list__description {
+  margin: 7px 33px 7px 7px;
+  margin: 0.4375rem 2.0625rem 0.4375rem 0.4375rem;
+}
+.forum-list__description:empty {
+  display: none;
+}
+
+.forum__title {
+  overflow: hidden;
+}
+.forum__title .submitted {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+}
+
+.forum-list__replies-link {
+  display: block;
+}
+/*# sourceMappingURL=maps/forum.css.map */

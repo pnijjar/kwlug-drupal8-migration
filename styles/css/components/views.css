@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/**
+ * Views
+ ============================================================================ */
+.views-view-grid .views-col {
+  padding-right: 18px;
+  padding-right: 1.125rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+  box-sizing: border-box;
+}
+.views-view-grid .views-col:last-child {
+  padding-right: 0;
+}
+
+.view-empty:not(:empty) {
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+}
+.view-empty:not(:empty) .links {
+  list-style: none;
+  margin: 16px 0;
+  margin: 1rem 0;
+  padding: 0;
+}
+.view-empty:not(:empty) .links a[href="/node/add"] {
+  max-width: 100%;
+  width: auto;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  transition: background-color, .15s, ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  white-space: nowrap;
+  height: 32px;
+  height: 2rem;
+  padding: 0 10px;
+  padding: 0 0.625rem;
+  display: inline-block;
+}
+.view-empty:not(:empty) .links a[href="/node/add"]:hover, .view-empty:not(:empty) .links a[href="/node/add"]:focus {
+  text-decoration: none;
+}
+.view-empty:not(:empty) .links a[href="/node/add"]:before {
+  font-family: FontAwesome, sans-serif;
+  content: "";
+  vertical-align: middle;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  padding-right: 4px;
+  padding-right: 0.25rem;
+  line-height: 32px;
+  line-height: 2rem;
+  display: none;
+}
+.fa-loaded .view-empty:not(:empty) .links a[href="/node/add"]:before {
+  display: inline-block;
+}
+/*# sourceMappingURL=maps/views.css.map */

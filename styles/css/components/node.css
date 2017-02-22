@@ -1,0 +1,110 @@
+/**
+ * Content Types (nodes)
+ *  - in Drupal a content type is a bunch of fields we use to enter and display
+ *    content, such as pages, blog posts, forum posts and so on. Each of those
+ *    is usually a content type you create in the Drupal admin.
+ *  - an instance of a content type (e.g. a single blog post) is called a node,
+ *    the root template is node.html.twig and the base selector is .node {}
+ ============================================================================ */
+.node {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  padding: 16px;
+  padding: 1rem;
+  border-radius: 2px;
+}
+.node:before, .node:after {
+  content: " ";
+  display: table;
+}
+.node:after {
+  clear: both;
+}
+.node p:last-child {
+  margin-bottom: 0;
+}
+.node__status {
+  float: right;
+}
+.node--view-mode-full__title {
+  margin: 0 0 16px;
+  margin: 0 0 1rem;
+}
+.node__meta {
+  margin: 16px 0;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.node__meta .field-type-image {
+  float: left;
+  margin: 0 11px 0 0;
+  margin: 0 0.6875rem 0 0;
+}
+.node__meta .field-type-image__figure {
+  margin: 0;
+  padding: 0;
+}
+.node__meta .field-type-image img {
+  width: auto;
+  height: 48px;
+  height: 3rem;
+}
+.node__meta article:empty {
+  display: none;
+}
+.node .node__author:after {
+  content: "-";
+  display: inline-block;
+}
+.node__meta--has-author-picture .node__author:after {
+  display: none;
+}
+.node__meta--has-author-picture .node__author,
+.node__meta--has-author-picture .node__pubdate {
+  margin: 0;
+  display: block;
+}
+@media all and (max-width: 60em) {
+  .node .node__author:after {
+    display: none;
+  }
+  .node .node__author,
+  .node .node__pubdate {
+    margin: 0;
+    display: block;
+  }
+}
+.node__links {
+  clear: both;
+}
+.node__links:before, .node__links:after {
+  content: " ";
+  display: table;
+}
+.node__links:after {
+  clear: both;
+}
+@media all and (max-width: 60em) {
+  .node__links .inline {
+    float: none;
+    display: block;
+  }
+  .node__links .inline li {
+    display: list-item;
+  }
+}
+@media all and (min-width: 60.063em) {
+  .node__links .inline {
+    float: right;
+  }
+  .node__links .inline li {
+    margin: 0 0 0 16px;
+  }
+  [dir="rtl"] .node__links .inline li {
+    margin: 0 16px 0 0;
+  }
+}
+.node--sticky {
+  padding: 0;
+}
+/*# sourceMappingURL=maps/node.css.map */

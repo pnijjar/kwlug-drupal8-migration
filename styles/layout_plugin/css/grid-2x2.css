@@ -1,0 +1,5 @@
+.atl--grid-2x2 > .atl__lc { margin-bottom: 1.69492%; }
+
+.bp--tablet .atl--grid-2x2 > .atl__lc, .bp--wide .atl--grid-2x2 > .atl__lc { width: 49.15254%; float: left; }
+.bp--tablet .atl--grid-2x2 > .atl__lc:nth-child(2n + 1), .bp--wide .atl--grid-2x2 > .atl__lc:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+.bp--tablet .atl--grid-2x2 > .atl__lc:nth-child(2n + 2), .bp--wide .atl--grid-2x2 > .atl__lc:nth-child(2n + 2) { margin-left: 50.84746%; margin-right: -100%; clear: none; }

@@ -1,0 +1,7 @@
+.fivecol-2-3-2-3-2 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--4 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--4 .l-r:first-child, .fivecol-2-3-2-3-2 .arc--4 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--5 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--5 .l-r:nth-child(2n) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }

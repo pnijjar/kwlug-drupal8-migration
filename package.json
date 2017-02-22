@@ -1,0 +1,17 @@
+{
+  "name": "uikit",
+  "version": "8.0.0",
+  "private": true,
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-contrib-compass": "1.1.1",
+    "autoprefixer": "6.3.6",
+    "grunt-postcss": "0.8.0",
+    "grunt-contrib-csslint": "1.0.0"
+  },
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.5.3"
+  }
+}

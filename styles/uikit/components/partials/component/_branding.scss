@@ -1,0 +1,51 @@
+/**
+ * Branding styles
+ *  - Drupal core branding block.
+ ============================================================================ */
+
+.block--system-branding-block {}
+
+
+.site-branding {
+
+  @include clearfix-micro;
+
+  &__text,
+  &__name,
+  &__slogan {
+    display: block;
+  }
+
+  // link around the logo image
+  &__logo-link {
+    display: inline-block;
+    @include output-rhythm(padding, $xxx-small 0);
+  }
+
+  // logo image
+  &__logo-img {}
+
+  // wrapper around site name and slogan (byline)
+  &__text {
+    margin: 0;
+  }
+
+  // site name
+  &__name {
+    @include adjust-font-size-to($x-large);
+    font-weight: $font-weight-normal;
+  }
+
+  // site name link
+  &__name-link {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  // site slogan
+  &__slogan {
+    font-style: normal;
+  }
+}

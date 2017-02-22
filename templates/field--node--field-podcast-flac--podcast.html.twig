@@ -1,0 +1,15 @@
+{# 
+/** Make podcast urls into links
+ * Source template: core/themes/stable/templates/field/field.html.twig
+ */
+#}
+
+<div{{ attributes }} class="field">
+  {% for item in items %}
+    <div{{ title_attributes }}> <strong>FLAC URL:</strong></div>
+    <div{{ item.attributes }}>
+    <a href="{{ item.content }}">{{ item.content }}</a>
+    </div>
+  {% endfor %} 
+</div>
+

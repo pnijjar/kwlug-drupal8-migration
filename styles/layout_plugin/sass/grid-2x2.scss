@@ -1,0 +1,19 @@
+@import "at-layout-plugin-base";
+//
+// Grid 2x2
+// -----------------------------------------------------------------------------
+
+.atl--grid-2x2 {
+  > .atl__lc {
+    margin-bottom: gutter(12);
+  }
+}
+
+.bp--tablet,
+.bp--wide {
+  .atl--grid-2x2 {
+    > .atl__lc {
+      @include gallery(6 of 12);
+    }
+  }
+}

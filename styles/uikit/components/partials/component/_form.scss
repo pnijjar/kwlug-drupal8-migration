@@ -1,0 +1,410 @@
+/**
+ * Form Component
+ *  - common styles for form elements and classes.
+ ============================================================================ */
+
+.form-text {
+  appearance: none;
+
+  // Give contact and comment subject forms some symmetry.
+  &[name="subject[0][value]"] {
+    width: 50%;
+  }
+}
+
+// Punch these to full width on smaller devices.
+@media #{$mobile-isolate} {
+  .form-text[name="subject[0][value]"] {
+    width: 100%;
+  }
+}
+
+
+// Align selects with others if they are short.
+.form-select {
+  min-width: 50%;
+}
+
+
+// Checkboxes, Radios, Items.
+.form-item,
+.form-radios,
+.form-checkboxes {
+  @include output-rhythm(margin, 0 0 $medium);
+}
+
+
+// Radio and checkbox items are radically restyled to stretch the label
+// underneath the input using padding and margin, this gives a bigger target
+// for touch/clicks. This is usually known as a "button zone", see:
+// http://uxmovement.com/forms/ways-to-make-checkboxes-radio-buttons-easier-to-click/
+.form-type-radio,
+.form-type-checkbox {
+  @include output-rhythm(margin-#{$flow-from}, $xxx-small);
+
+  .option {
+    @include output-rhythm(padding, $xxxx-small $xx-small $xxxx-small $xx-large);
+    @include output-rhythm(margin-#{$flow-from}, -30px);
+    @include output-rhythm(min-height, $xx-large);
+
+    min-width: 50%;
+    border: $form-border-width $form-border-style;
+    border-radius: $form-border-radius;
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .description {}
+}
+
+
+// UI Dialog are buggered by the above radical styles... fix it.
+.ui-dialog {
+  @include output-rhythm(margin, $xxx-small);
+
+  .form-type-radio,
+  .form-type-checkbox {
+    display: block;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .option {
+      @include output-rhythm(padding, $xxxx-small);
+      min-width: 0;
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  .form-type-radio.js-form-item-attributes-data-align {
+    float: $flow-from;
+    @include output-rhythm(margin-#{$flow-to}, 12px);
+  }
+
+  .container-inline label:after {
+    content: '';
+  }
+
+  .form-file {
+    @include output-rhythm(padding, $xx-small 0);
+  }
+}
+
+
+// Actions.
+.form-actions {
+  @include output-rhythm(margin, $medium 0);
+}
+
+
+// Long text textarea (with tips).
+.field-type-text-long {
+  textarea {
+    border-radius: $form-border-radius $form-border-radius 0 0;
+  }
+}
+
+
+// Textarea wrapper.
+.form-textarea-wrapper {
+  textarea {
+    display: block;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+// Text field with formatting.
+.text-format-wrapper {
+  .text-full {
+    width: 100%;
+  }
+}
+
+
+// Filters and tips.
+.filter-wrapper {
+  border: $form-border-width $form-border-style;
+  border-top: 0;
+}
+
+
+// Tips (filter tips help page)
+.tips {
+  padding-#{$flow-from}: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+
+// Descriptions.
+.description {
+  @include adjust-font-size-to($small);
+}
+
+
+// Labels
+h4.label,
+.form-composite > legend {
+  font-size: inherit;
+  font-weight: $font-weight-semibold;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Form required.
+.form-required:after {
+  content: " \204E "; // Use a Unicode symbol to prevent screen readers from announcing the text.
+  line-height: 1;
+  vertical-align: super;
+}
+
+
+// abbr usesage in drupal forms.
+abbr {
+  &.form-required,
+  &.tabledrag-changed,
+  &.ajax-changed {
+    border-bottom: none;
+  }
+}
+
+
+// Errors.
+.form-item {
+  input.error,
+  textarea.error,
+  select.error {
+    border: $form-border-width $form-border-style;
+  }
+}
+
+
+// Container inline.
+.container-inline {
+  display: inline-block;
+
+  label:after {
+    content: ':';
+  }
+
+  .form-actions,
+  &.form-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+.form-type-radios {
+  .container-inline {
+    label:after {
+      content: none;
+    }
+
+    .form-type-radio {
+      @include output-rhythm(margin, 0 $medium);
+    }
+  }
+}
+
+
+// Form Composite inline, e.g. dialog.
+// TODO check https://www.drupal.org/node/2236789 when it lands.
+.form-composite--inline {
+
+  legend {
+    float: $flow-from;
+    margin-#{$flow-to}: 0.5em;
+    margin-top: 1px;
+
+    @media screen and (min-width: 321px) {
+      margin-#{$flow-to}: 1em;
+    }
+  }
+
+  .fieldset-legend:after {
+    content: ':';
+  }
+
+  input[type="radio"],
+  label {
+    vertical-align: middle;
+  }
+
+  label:after {
+    content: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    .form-item {
+      margin-#{$flow-to}: 1.25em;
+    }
+  }
+}
+
+
+// Fields in forms.
+form {
+  // Form field image
+  .field-type-image {
+    .image-preview {
+      padding: 0;
+      background: transparent;
+      @include output-rhythm(margin, 0 $medium $medium 0);
+
+      // RTL
+      [dir="rtl"] & {
+        @include output-rhythm(margin, 0 0 $medium $medium);
+      }
+    }
+
+    .image-widget-data {
+      > div:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  // Table drag styles.
+  .field-edit-link {
+    margin: 0 0.3em;
+  }
+
+  .field-multiple-table {
+    margin: 0;
+
+    .field-multiple-drag {
+      width: 30px;
+      padding-right: 0;
+
+      .tabledrag-handle {
+        padding-right: .5em;
+      }
+
+      // RTL for table drag.
+      [dir="rtl"] & {
+        padding-left: 0;
+
+        .tabledrag-handle {
+          padding-left: .5em;
+        }
+      }
+    }
+  }
+
+  .field-add-more-submit {
+    margin: .5em 0 0;
+  }
+}
+
+
+// Autocomplete.
+.ui-autocomplete li.ui-menu-item a.ui-state-focus,
+.autocomplete li.ui-menu-item a.ui-state-hover {
+  background-color: #0072b9; // TODO check background color.
+  color: #fff;
+  margin: 0;
+}
+
+
+// Collapsible details.
+details {
+  > .details-wrapper {
+    @include output-rhythm(margin, $medium);
+  }
+}
+
+.collapse-processed {
+  > summary {
+    @include output-rhythm(padding, $x-small);
+
+    &:before {
+      font-family: $icon-font;
+      content: $form-details-summary-open; // LTR
+      float: left;
+      margin: -1px 0 0;
+      @include output-rhythm(height, $medium);
+      @include output-rhythm(width, $medium);
+
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: block;
+      }
+
+      // RTL
+      [dir="rtl"] & {
+        float: right;
+      }
+    }
+  }
+}
+
+.collapse-processed:not([open]) > summary:before {
+  content: $form-details-summary-closed; // LTR
+
+  // RTL
+  [dir="rtl"] & {
+    @include fa-icon-flip(-1, 1, 0);
+  }
+}
+
+
+// Vertical tabs
+.vertical-tabs {
+  background-color: #ffffff;  // Color module?
+}
+
+
+// Special case for blocks config page to be nice.
+.block-list-secondary {
+  border-bottom-width: 1px;
+  box-sizing: border-box;
+  @include output-rhythm(padding, 0 $small);
+}
+
+
+// Extend reset-appearance class.
+.reset-appearance {
+  transition: none;
+  box-shadow: none;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background: none;
+    color: inherit;
+  }
+}
+
+
+// CK Editor.
+.cke_editable {
+  padding: 5px 10px;
+}
+
+
+// Pet peeves with core forms.
+.field-storage-config-edit-form {
+  .container-inline {
+    display: block;
+  }
+  .form-select {
+    min-width: unset;
+  }
+}
+
+
+

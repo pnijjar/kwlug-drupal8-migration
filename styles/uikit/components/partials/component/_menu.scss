@@ -1,0 +1,87 @@
+/**
+ * Menus
+ *  - style Drupal core block menus.
+ *  - for the drop menu and other responsive menus see the mixins and the
+ *    respective responsive menu partials.
+ ============================================================================ */
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  a {
+    display: block;
+    @include output-rhythm(padding, $xxxx-small 0);
+    //border-bottom: $border-width $border-style;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    // Wait for FontAwesome to load.
+    &:before,
+    &:after {
+      display: none;
+      .fa-loaded & {
+        display: inline-block;
+      }
+    }
+
+    &.active {}
+
+    &.button {
+      @include output-rhythm(padding-left, $medium);
+      @include output-rhythm(padding-right, $medium);
+
+      &:after {
+        content: '';
+        display: none;
+      }
+    }
+  }
+
+  // Nested menus.
+  .menu {
+    @include output-rhythm(padding-#{$flow-from}, $medium);
+  }
+}
+
+
+.menu__item {
+  text-align: $menu-text-align;
+
+  &--active-trail > a {}
+
+  // If menu arrows are true, add font-awesome and icons for
+  // expanded and collapsed selectors.
+  @if $menu-arrows == true {
+    &--collapsed > a,
+    &--expanded > a {}
+
+    > a:after {
+      font-family: $icon-font;
+      content: $menu-arrow-right;
+      float: $flow-to;
+      padding: 0 1px;
+      text-align: $flow-to;
+      @include output-rhythm(width, $medium);
+    }
+
+    &--expanded > a:after {
+      content: $menu-arrow-down ;
+    }
+
+    // RTL
+    [dir="rtl"] & {
+      content: $menu-arrow-left;
+    }
+  }
+
+  // Add the border top to the first item only.
+  &:first-child a {
+    //border-top: $border-width $border-style;
+  }
+}
+

@@ -1,0 +1,24 @@
+@import "at-layout-plugin-base";
+//
+// Four region 3-3-3-3
+// -----------------------------------------------------------------------------
+
+.bp--tablet {
+  .atl--fourcol-3-3-3-3 {
+    > .atl__lr > .atl__lc {
+      @include gallery(6 of 12);
+    }
+  }
+}
+
+.bp--wide {
+  .atl--fourcol-3-3-3-3 {
+    > .atl__lr > .atl__lc {
+      @include span(3 of 12);
+
+      &:last-child {
+        @include last;
+      }
+    }
+  }
+}

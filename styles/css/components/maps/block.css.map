@@ -1,0 +1,1 @@
+{"version":3,"sources":["../block.css"],"names":[],"mappings":"AAAA;;;gFAGgF;AAChF;EACE,eAAe;EACf,mBAAmB;CACpB","file":"../block.css","sourcesContent":["/**\n * Blocks\n *  - base styles for block templates.\n ============================================================================ */\n.block {\n  margin: 26px 0;\n  margin: 1.625rem 0;\n}\n"]}

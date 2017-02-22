@@ -1,0 +1,85 @@
+/**
+ * Views
+ ============================================================================ */
+
+// View wrapper.
+.views-element-container {}
+
+.view {}
+.view-title {}
+.view-content {}
+.views-row {}
+
+
+// Grid view overrides.
+.views-view-grid  {
+  .views-col {
+    @include output-rhythm(padding-#{$flow-to}, $large);
+    @include output-rhythm(margin-bottom, $large);
+
+    box-sizing: border-box;
+
+    &:last-child {
+      padding-#{$flow-to}: 0;
+    }
+  }
+}
+
+
+// Some core views, not exhaustive.
+.view-frontpage {}
+.view-taxonomy-term {}
+
+
+// View is empty, but has message etc.
+.view-empty:not(:empty) {
+  @include output-rhythm(margin-bottom, $large);
+
+  // Front page no content, add content links
+  .links {
+    list-style: none;
+    @include output-rhythm(margin, $medium 0);
+    padding: 0;
+
+    a[href="/node/add"] {
+      max-width: 100%;
+      width: auto;
+      position: relative;
+      box-sizing: border-box;
+      border-radius: $button-border-radius;
+      border-width: $button-border-width;
+      border-style: $button-border-style;
+      transition: background-color, .15s, ease-in-out;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: $button-text-align;
+      font-weight: $font-weight-normal;
+      white-space: nowrap;
+      @include output-rhythm(height, $form_input_button_select_height);
+      @include output-rhythm(padding, 0 $x-small);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+
+      display: inline-block;
+
+      &:before {
+        font-family: $icon-font;
+        content: $button-action-icon;
+        vertical-align: middle;
+        @include font-size($small);
+        @include output-rhythm(padding-#{$flow-to}, 4px);
+        @include output-rhythm(line-height, $form_input_button_select_height);
+
+        // Wait for FontAwesome to load.
+        display: none;
+        .fa-loaded & {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+

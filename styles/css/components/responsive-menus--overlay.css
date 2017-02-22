@@ -1,0 +1,123 @@
+/**
+ * Overlay
+ * Overlay menu positions the toggle in a corner (any), with the menu
+ * hidden. When toggled the menu opens in an overlay above the content
+ * and fills the whole screen.
+ ============================================================================ */
+.ms-overlay .rm-toggle {
+  display: block;
+  position: fixed;
+  padding: 0;
+  z-index: 1000;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.875);
+  border-radius: 2px;
+  bottom: 16px;
+  bottom: 1rem;
+  right: 26px;
+  right: 1.625rem;
+}
+.ms-overlay .rm-toggle:hover, .ms-overlay .rm-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.ms-overlay .rm-toggle span {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  word-wrap: normal;
+  font: 0/0 a;
+}
+.ms-overlay .rm-toggle__link {
+  border: 0;
+  box-sizing: content-box;
+  padding: 7px 16px;
+  padding: 0.4375rem 1rem;
+}
+.ms-overlay .rm-toggle__link:hover, .ms-overlay .rm-toggle__link:focus {
+  outline: none;
+  padding: 7px 16px;
+  padding: 0.4375rem 1rem;
+}
+.ms-overlay .rm-toggle__icon {
+  margin-top: 3px;
+  margin-top: 0.1875rem;
+}
+.ms-overlay .rm-toggle__link, .ms-overlay .rm-toggle__icon {
+  background-color: transparent;
+}
+.ms-overlay .rm-toggle__link:hover, .ms-overlay .rm-toggle__link:focus, .ms-overlay .rm-toggle__icon:hover, .ms-overlay .rm-toggle__icon:focus {
+  background-color: transparent;
+}
+.ms-overlay .rm-block__content {
+  display: none;
+  opacity: .001;
+}
+.ms-overlay .rm-block__content .is-child {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all, 225ms, ease-in-out;
+}
+.ms-overlay .rm-block__content .is-child.is-open--child {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+.ms-overlay.rm-is-open .rm-toggle {
+  opacity: 1;
+  background-color: white;
+}
+.ms-overlay.rm-is-open .rm-toggle__icon {
+  fill: black;
+}
+.ms-overlay.rm-is-open .rm-block__content {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 990;
+  top: 11px;
+  top: 0.6875rem;
+  bottom: 11px;
+  bottom: 0.6875rem;
+  right: 11px;
+  right: 0.6875rem;
+  left: 11px;
+  left: 0.6875rem;
+  padding: 4px;
+  padding: 0.25rem;
+}
+.ms-overlay.rm-is-open .rm-block__content .menu {
+  background-color: transparent;
+}
+.ms-overlay.rm-is-open .rm-block__content .menu a {
+  padding: 7px 18px;
+  padding: 0.4375rem 1.125rem;
+  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: block;
+}
+.ms-overlay.rm-is-open .rm-block__content .menu a:hover, .ms-overlay.rm-is-open .rm-block__content .menu a:focus, .ms-overlay.rm-is-open .rm-block__content .menu a.active {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.ms-overlay.rm-is-open .rm-block__content .menu a.active[href="/"] {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.ms-overlay.rm-is-open .rm-block__content .menu a.active[href="/"]:hover, .ms-overlay.rm-is-open .rm-block__content .menu a.active[href="/"]:focus {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.ms-overlay.rm-is-open .rm-block__content .menu a:after {
+  content: none;
+  display: none;
+}
+.ms-overlay.rm-is-open .rm-block__content .menu .rm-accordion-trigger {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.ms-overlay.rm-is-open .rm-block__content .menu .rm-accordion-trigger:hover, .ms-overlay.rm-is-open .rm-block__content .menu .rm-accordion-trigger:focus {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+/*# sourceMappingURL=maps/responsive-menus--overlay.css.map */

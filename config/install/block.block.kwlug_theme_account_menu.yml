@@ -1,0 +1,26 @@
+uuid: bb22fffe-6d58-42f8-b9ab-d1df80a257e0
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - kwlug_theme
+_core:
+  default_config_hash: XEC5WZxryMyvwJ8RwEm1h57krfx76yAKtRjSleubsf4
+id: kwlug_theme_account_menu
+theme: kwlug_theme
+region: '-1'
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

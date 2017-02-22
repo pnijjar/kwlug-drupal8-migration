@@ -1,0 +1,140 @@
+/**
+ * Field Taxonomy Reference (Entity Reference as tags).
+ ============================================================================ */
+
+// Adaptivetheme sets entity reference type classes, e.g. taxonomy-term, node or
+// user depending on the reference entity type.
+.field-entity-reference-type-taxonomy-term {
+
+  @if $field-taxonomy-label-as-icon == true {
+    .field__label {
+      &:before {
+        font-family: $icon-font;
+        content: $field-taxonomy-label-icon;
+        @include output-rhythm(margin, 0 $xx-small 0 0);
+
+        // Wait for FontAwesome to load.
+        display: none;
+        .fa-loaded & {
+          display: inline-block;
+        }
+
+        // In left-to-right flip the icon.
+        [dir="ltr"] & {
+          @include fa-icon-flip(-1, 1, 0);
+        }
+      }
+    }
+  }
+
+  @if ($field-taxonomy-item-as-labels == true) {
+    .field__item-wrapper {
+      display: inline-block;
+      margin: 0 $xxxx-small $xxxx-small 0; // LTR
+      border: $border-width $border-style;
+      border-radius: $border-radius;
+      @include output-rhythm(padding, 0 $xx-small);
+
+      &:hover,
+      &:focus {}
+
+      a {
+        display: inline-block;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      // RTL
+      [dir="rtl"] & {
+        margin: 0 0 $xxxx-small $xxxx-small;
+      }
+    }
+  }
+
+  @if ($field-taxonomy-item-icons == true) {
+    .field__item-wrapper {
+      display: inline-block;
+
+      &:before {
+        font-family: $icon-font;
+        content: $field-taxonomy-item-icon;
+        @include adjust-font-size-to($small);
+        @include output-rhythm(margin, 0 $xx-small 0 0); // LTR
+        vertical-align: text-bottom;
+
+        // Wait for FontAwesome to load.
+        display: none;
+        .fa-loaded & {
+          display: inline-block;
+        }
+
+        // In left-to-right flip the icon.
+        [dir="ltr"] & {
+          @include fa-icon-flip(-1, 1, 0);
+        }
+
+        // RTL
+        [dir="rtl"] & {
+          @include output-rhythm(margin, 0 0 0 $xx-small);
+        }
+      }
+    }
+  }
+
+  @if ($field-taxonomy-item-as-labels == false and $field-taxonomy-item-icons == false) {
+    .field__item {
+      @include output-rhythm(margin, 0 $small 0 0); // LTR
+    }
+
+    // RTL
+    [dir="rtl"] & li {
+      @include output-rhythm(margin, 0 0 0 $small);
+    }
+  }
+
+  .field__items {
+    padding: 0;
+  }
+
+  .field__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.field-label-above {
+    .field__label {}
+    .field__item {}
+  }
+
+  &.field-label-inline {
+    .field__label,
+    .field__item {}
+  }
+
+  &.field-label-hidden,
+  &.field-label-visually_hidden {
+    .field__label {}
+    .field__item {}
+  }
+
+  // Adaptivetheme sets entity reference classes for the formatter.
+  &.field-formatter-entity-reference-entity-id,
+  &.field-formatter-entity-reference-label {
+
+    &.field-label-inline,
+    &.field-label-hidden,
+    &.field-label-visually_hidden {
+
+      .field__label {}
+
+      .field__item {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+

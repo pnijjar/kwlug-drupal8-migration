@@ -1,0 +1,54 @@
+/**
+ * Page
+ *  - for page.html.twig and region markup.
+ ============================================================================ */
+.page {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+}
+.page-top, .page-bottom {
+  padding: 0;
+  margin: 0;
+}
+
+.pr-leaderboard .block:not(.has-title) {
+  margin: 0;
+}
+.pr-leaderboard .block:not(.has-title) p {
+  margin: 16px 0 0;
+  margin: 1rem 0 0;
+}
+.pr-leaderboard .block ul,
+.pr-leaderboard .block ol {
+  margin: 0;
+}
+
+.pr-navbar .block {
+  margin: 0;
+}
+.pr-navbar .block ul {
+  margin: 0;
+}
+@media all and (min-width: 60.063em) {
+  .pr-navbar__rw {
+    padding: 0;
+  }
+}
+
+.l-rw {
+  padding: 0 16px;
+  padding: 0 1rem;
+}
+
+.l-r {
+  transition: all, 225ms, ease-in-out;
+}
+.l-r:before, .l-r:after {
+  content: " ";
+  display: table;
+}
+.l-r:after {
+  clear: both;
+}
+/*# sourceMappingURL=maps/page.css.map */

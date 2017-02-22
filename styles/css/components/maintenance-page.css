@@ -1,0 +1,14 @@
+/**
+ * Maintenance Page
+ * Provide styles to the site when in maintenance mode.
+ ============================================================================ */
+body {
+  text-align: center;
+}
+
+.site-branding,
+.pr-main {
+  padding: 16px 0;
+  padding: 1rem 0;
+}
+/*# sourceMappingURL=maps/maintenance-page.css.map */

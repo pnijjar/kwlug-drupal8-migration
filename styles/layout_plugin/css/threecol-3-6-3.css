@@ -1,0 +1,13 @@
+.bp--tablet .atl--threecol-3-6-3.l-ac--1-2 > .atl__lr > .atl__lc:first-child, .bp--wide .atl--threecol-3-6-3.l-ac--1-2 > .atl__lr > .atl__lc:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.bp--tablet .atl--threecol-3-6-3.l-ac--1-2 > .atl__lr > .atl__lc:last-child, .bp--wide .atl--threecol-3-6-3.l-ac--1-2 > .atl__lr > .atl__lc:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.bp--tablet .atl--threecol-3-6-3.l-ac--1-3 > .atl__lr > .atl__lc:first-child, .bp--wide .atl--threecol-3-6-3.l-ac--1-3 > .atl__lr > .atl__lc:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.bp--tablet .atl--threecol-3-6-3.l-ac--1-3 > .atl__lr > .atl__lc:last-child, .bp--wide .atl--threecol-3-6-3.l-ac--1-3 > .atl__lr > .atl__lc:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.bp--tablet .atl--threecol-3-6-3.l-ac--2-3 > .atl__lr > .atl__lc, .bp--wide .atl--threecol-3-6-3.l-ac--2-3 > .atl__lr > .atl__lc { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.bp--tablet .atl--threecol-3-6-3.l-ac--2-3 > .atl__lr > .atl__lc:last-child, .bp--wide .atl--threecol-3-6-3.l-ac--2-3 > .atl__lr > .atl__lc:last-child { float: right; margin-right: 0; }
+
+.bp--tablet .atl--threecol-3-6-3.l-arc--3 > .atl__lr > .atl__lc:nth-child(2), .bp--tablet .atl--threecol-3-6-3.l-arc--3 > .atl__lr > .atl__lc:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.bp--tablet .atl--threecol-3-6-3.l-arc--3 > .atl__lr > .atl__lc:first-child, .bp--tablet .atl--threecol-3-6-3.l-arc--3 > .atl__lr > .atl__lc:last-child { float: right; margin-right: 0; }
+
+.bp--wide .atl--threecol-3-6-3.l-arc--3 > .atl__lr > .atl__lc:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; margin-left: 25.42373%; }
+.bp--wide .atl--threecol-3-6-3.l-arc--3 > .atl__lr > .atl__lc:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; margin-left: -76.27119%; }
+.bp--wide .atl--threecol-3-6-3.l-arc--3 > .atl__lr > .atl__lc:last-child { width: 23.72881%; float: right; margin-right: 0; }

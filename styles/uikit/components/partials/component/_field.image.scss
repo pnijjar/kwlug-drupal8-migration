@@ -1,0 +1,83 @@
+/**
+ * Field Image
+ ============================================================================ */
+
+// AT uses <figure> as the image field wrapper and <figcaption> for image captions.
+.field-type-image {
+
+  margin: 0;
+  padding: 0;
+
+  &.has-single {}
+  &.has-multiple {}
+
+  figure {
+    @include output-rhythm(margin-bottom, $medium);
+  }
+
+  // Wraps the img and figcaption tags for each item.
+  &__item {}
+
+  // Image Alignment Theme Settings
+  // - settings are applied using the Image extension in theme settings, where you can
+  //   set image alignment and captions per node type and view mode.
+
+  // Align left or none.
+  //.align-none,
+  .align-left {
+    @include output-rhythm(margin, 0 $medium $medium 0); // LTR
+  }
+  .align-none figcaption,
+  .align-left figcaption {
+    text-align: $flow-from; // LTR
+  }
+
+  // Align center.
+  .align-center {
+    text-align: center; // cascades to figcaption
+    margin-left: auto;
+    margin-right: auto;
+    @include output-rhythm(margin-bottom, $medium);
+  }
+  figure.align-center {
+    display: block;
+  }
+
+  // Align right.
+  .align-right {
+    @include output-rhythm(margin, 0 0 $medium $medium); // LTR
+  }
+  .align-right figcaption {
+    text-align: $flow-from; // LTR
+  }
+
+  // If there is no image style set Firefox and other browsers will not respect max-width 100% inside a float.
+  // This can happen if the user does not set a style, so we are protecting the site from breaking.
+  .float-none {
+    float: none !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  // Be sure clearing is OK.
+  + .field-type-image {
+    .field__label {clear: both}
+  }
+}
+
+
+// Remove any floats and reset whitespace in mobile.
+@media #{$mobile-isolate} {
+  .field-type-image [class*="align-"] {
+    text-align: center; // cascades to figcaption
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    @include output-rhythm(margin-bottom, $medium);
+  }
+  .field-type-image figure[class*="align-"] {
+    display: block;
+  }
+}
+
+

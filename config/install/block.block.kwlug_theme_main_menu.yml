@@ -1,0 +1,26 @@
+uuid: d0c72281-46af-431e-bdaf-b4ea3ce51d45
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - kwlug_theme
+_core:
+  default_config_hash: x-wbAcjumyvcozrLzUwEpXr9iqYovMZlxSX4fSI9M9Y
+id: kwlug_theme_main_menu
+theme: kwlug_theme
+region: navbar
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  provider: system
+  label_display: '1'
+  level: 1
+  depth: 0
+visibility: {  }

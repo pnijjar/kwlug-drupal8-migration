@@ -1,0 +1,902 @@
+.onecol-pad-1 .l-r { padding-left: 8.47458%; padding-right: 8.47458%; }
+
+.onecol-pad-2 .l-r { padding-left: 16.94915%; padding-right: 16.94915%; }
+
+.onecol-pad-3 .l-r { padding-left: 25.42373%; padding-right: 25.42373%; }
+
+.onecol-pad-4 .l-r { padding-left: 33.89831%; padding-right: 33.89831%; }
+
+.onecol-pad-5 .l-r { padding-left: 42.37288%; padding-right: 42.37288%; }
+
+.onecol-prefix-1 .l-r { padding-left: 8.47458%; }
+
+.onecol-prefix-2 .l-r { padding-left: 16.94915%; }
+
+.onecol-prefix-3 .l-r { padding-left: 25.42373%; }
+
+.onecol-prefix-4 .l-r { padding-left: 33.89831%; }
+
+.onecol-prefix-1 .l-r { padding-left: 42.37288%; }
+
+.onecol-prefix-6 .l-r { padding-left: 50.84746%; }
+
+.onecol-suffix-1 .l-r { padding-right: 8.47458%; }
+
+.onecol-suffix-2 .l-r { padding-right: 16.94915%; }
+
+.onecol-suffix-3 .l-r { padding-right: 25.42373%; }
+
+.onecol-suffix-4 .l-r { padding-right: 33.89831%; }
+
+.onecol-suffix-5 .l-r { padding-right: 42.37288%; }
+
+.onecol-suffix-6 .l-r { padding-right: 50.84746%; }
+
+.twocol-10-2 .arc--2 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.twocol-10-2 .arc--2 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+
+.twocol-2-10 .arc--2 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.twocol-2-10 .arc--2 .l-r:last-child { width: 83.05085%; float: right; margin-right: 0; }
+
+.twocol-3-9 .arc--2 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.twocol-3-9 .arc--2 .l-r:last-child { width: 74.57627%; float: right; margin-right: 0; }
+
+.twocol-4-8 .arc--2 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.twocol-4-8 .arc--2 .l-r:last-child { width: 66.10169%; float: right; margin-right: 0; }
+
+.twocol-5-7 .arc--2 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.twocol-5-7 .arc--2 .l-r:last-child { width: 57.62712%; float: right; margin-right: 0; }
+
+.twocol-6-6 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.twocol-6-6 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+
+.twocol-7-5 .arc--2 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.twocol-7-5 .arc--2 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+
+.twocol-8-4 .arc--2 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.twocol-8-4 .arc--2 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+
+.twocol-9-3 .arc--2 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.twocol-9-3 .arc--2 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.threecol-2-2-8 .hr--1-2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-2-2-8 .hr--1-3 .l-r, .threecol-2-2-8 .hr--2-3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-2-8 .hr--1-3 .l-r:last-child, .threecol-2-2-8 .hr--2-3 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-2-8 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-2-8 .arc--3 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-2-2-8 .arc--2 .l-r:last-child, .threecol-2-2-8 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-2-3-7 .hr--1-2 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .hr--1-2 .l-r:last-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .hr--1-3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .hr--1-3 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .hr--2-3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .hr--2-3 .l-r:last-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .arc--3 .l-r:last-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-2-3-7 .arc--2 .l-r:last-child, .threecol-2-3-7 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-2-4-6 .hr--1-2 .l-r, .threecol-2-4-6 .hr--2-3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-2-4-6 .hr--1-2 .l-r:last-child, .threecol-2-4-6 .hr--2-3 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-2-4-6 .hr--1-3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-4-6 .hr--1-3 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-4-6 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-4-6 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-2-4-6 .arc--3 .l-r:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-2-4-6 .arc--2 .l-r:last-child, .threecol-2-4-6 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-2-5-5 .arc--3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-2-5-5 .arc--3 .l-r:first-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-5-5 .hr--1-3 .l-r, .threecol-2-5-5 .hr--1-2 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-5-5 .hr--1-3 .l-r:last-child, .threecol-2-5-5 .hr--1-2 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-5-5 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-2-5-5 .arc--2 .l-r:last-child, .threecol-2-5-5 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-2-6-4 .hr--1-2 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .hr--1-2 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .hr--1-3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .hr--1-3 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .hr--2-3 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .arc--3 .l-r:last-child, .threecol-2-6-4 .hr--2-3 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-2-6-4 .arc--2 .l-r:last-child, .threecol-2-6-4 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-2-7-3 .hr--1-2 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .hr--1-2 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .hr--1-3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .hr--1-3 .l-r:last-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .hr--2-3 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .arc--3 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .arc--3 .l-r:last-child, .threecol-2-7-3 .hr--2-3 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-2-7-3 .arc--2 .l-r:last-child, .threecol-2-7-3 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-2-8-2 .hr--1-2 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-8-2 .hr--1-2 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-8-2 .hr--1-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-2-8-2 .hr--2-3 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-2-8-2 .hr--2-3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-8-2 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-2-8-2 .arc--3 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-2-8-2 .arc--2 .l-r:last-child, .threecol-2-8-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-3-2-7 .hr--1-2 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .hr--1-2 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .arc--3 .l-r, .threecol-3-2-7 .hr--1-3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .hr--1-3 .l-r:last-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .hr--2-3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .hr--2-3 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .arc--3 .l-r:last-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-3-2-7 .arc--2 .l-r:last-child, .threecol-3-2-7 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-3-3-6 .hr--1-2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-3-3-6 .hr--1-3 .l-r, .threecol-3-3-6 .hr--2-3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-3-6 .hr--1-3 .l-r:last-child, .threecol-3-3-6 .hr--2-3 .l-r:last-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-3-3-6 .arc--3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-3-6 .arc--3 .l-r:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-3-3-6 .arc--2 .l-r:last-child, .threecol-3-3-6 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-3-4-5 .hr--1-2 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .hr--1-2 .l-r:last-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .hr--1-3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .hr--1-3 .l-r:last-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .hr--2-3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .hr--2-3 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .arc--3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .arc--3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-3-4-5 .arc--2 .l-r:last-child, .threecol-3-4-5 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-3-6-3 .hr--1-2 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-6-3 .hr--1-2 .l-r:last-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-3-6-3 .hr--1-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-3-6-3 .hr--2-3 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-3-6-3 .hr--2-3 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-6-3 .arc--3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-6-3 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-3-6-3 .arc--2 .l-r:last-child, .threecol-3-6-3 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-3-7-2 .hr--1-2 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .hr--1-2 .l-r:last-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .hr--1-3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .hr--1-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .hr--2-3 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .arc--3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .arc--3 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .arc--3 .l-r:last-child, .threecol-3-7-2 .hr--2-3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-3-7-2 .arc--2 .l-r:last-child, .threecol-3-7-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-4-2-6 .hr--1-2 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .hr--1-2 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .arc--3 .l-r, .threecol-4-2-6 .hr--1-3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .hr--1-3 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .hr--2-3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .hr--2-3 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .arc--3 .l-r:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-4-2-6 .arc--2 .l-r:last-child, .threecol-4-2-6 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-4-3-5 .hr--1-2 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .hr--1-2 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .arc--3 .l-r, .threecol-4-3-5 .hr--1-3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .hr--1-3 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .hr--2-3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .hr--2-3 .l-r:last-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .arc--3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-4-3-5 .arc--2 .l-r:last-child, .threecol-4-3-5 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-4-4-4 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-4-4-4 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-4-4 .arc--2 .l-r:last-child, .threecol-4-4-4 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-4-5-3 .hr--1-2 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .hr--1-2 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .hr--1-3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .hr--1-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .hr--2-3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .arc--3 .l-r:nth-child(2) { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .arc--3 .l-r:last-child, .threecol-4-5-3 .hr--2-3 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-4-5-3 .arc--2 .l-r:last-child, .threecol-4-5-3 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-4-6-2 .hr--1-2 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .hr--1-2 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .hr--1-3 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .hr--1-3 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .hr--2-3 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .arc--3 .l-r:last-child, .threecol-4-6-2 .hr--2-3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-4-6-2 .arc--2 .l-r:last-child, .threecol-4-6-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-5-2-5 .hr--1-2 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-5-2-5 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-5-2-5 .hr--1-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-5-2-5 .hr--2-3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-5-2-5 .hr--2-3 .l-r:last-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-5-2-5 .arc--3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-5-2-5 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-5-2-5 .arc--2 .l-r:last-child, .threecol-5-2-5 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-5-3-4 .hr--1-2 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .hr--1-3 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .hr--2-3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .hr--2-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .arc--3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .arc--3 .l-r:last-child, .threecol-5-3-4 .hr--1-3 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-5-3-4 .arc--2 .l-r:last-child, .threecol-5-3-4 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-5-4-3 .hr--1-2 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .hr--1-2 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .hr--1-3 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .hr--2-3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .hr--2-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .arc--3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .arc--3 .l-r:last-child, .threecol-5-4-3 .hr--1-3 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-5-4-3 .arc--2 .l-r:last-child, .threecol-5-4-3 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-5-5-2 .hr--1-2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-5-5-2 .hr--1-3 .l-r, .threecol-5-5-2 .hr--2-3 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-5-5-2 .hr--1-3 .l-r:last-child, .threecol-5-5-2 .hr--2-3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-5-5-2 .arc--3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-5-5-2 .arc--3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-5-5-2 .arc--2 .l-r:last-child, .threecol-5-5-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-6-2-4 .hr--1-2 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .hr--1-3 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .hr--2-3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .hr--2-3 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .arc--3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .hr--1-3 .l-r:last-child, .threecol-6-2-4 .arc--3 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-6-2-4 .arc--2 .l-r:last-child, .threecol-6-2-4 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-6-3-3 .arc--3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-6-3-3 .arc--3 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-6-3-3 .hr--1-3 .l-r, .threecol-6-3-3 .hr--1-2 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-6-3-3 .hr--1-3 .l-r:last-child, .threecol-6-3-3 .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-6-3-3 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-6-3-3 .arc--2 .l-r:last-child, .threecol-6-3-3 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-6-4-2 .hr--1-2 .l-r, .threecol-6-4-2 .hr--2-3 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-6-4-2 .hr--1-2 .l-r:last-child, .threecol-6-4-2 .hr--2-3 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-6-4-2 .hr--1-3 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-6-4-2 .arc--3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-6-4-2 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-6-4-2 .hr--1-3 .l-r:last-child, .threecol-6-4-2 .arc--3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-6-4-2 .arc--2 .l-r:last-child, .threecol-6-4-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-7-2-3 .hr--1-2 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .hr--2-3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .hr--2-3 .l-r:last-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .hr--1-3 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .arc--3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .hr--1-3 .l-r:last-child, .threecol-7-2-3 .arc--3 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-7-2-3 .arc--2 .l-r:last-child, .threecol-7-2-3 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-7-3-2 .hr--1-2 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .hr--2-3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .hr--2-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .hr--1-3 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .arc--3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .hr--1-3 .l-r:last-child, .threecol-7-3-2 .arc--3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-7-3-2 .arc--2 .l-r:last-child, .threecol-7-3-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-8-2-2 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-8-2-2 .arc--3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-8-2-2 .hr--1-3 .l-r, .threecol-8-2-2 .hr--1-2 .l-r { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-8-2-2 .hr--1-3 .l-r:last-child, .threecol-8-2-2 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-8-2-2 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-8-2-2 .arc--2 .l-r:last-child, .threecol-8-2-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-reverse-float-2-2-8 .hr--1-2 .l-r:last-child, .threecol-reverse-float-2-2-8 .hr--1-3 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-2-8 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-2-8 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-reverse-float-2-2-8 .arc--3 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-2-8 .hr--1-2 .l-r:first-child, .threecol-reverse-float-2-2-8 .hr--1-3 .l-r:first-child, .threecol-reverse-float-2-2-8 .arc--3 .l-r:first-child { width: 66.10169%; float: right; margin-right: 0; }
+
+.threecol-reverse-float-2-3-7 .hr--1-2 .l-r:last-child, .threecol-reverse-float-2-3-7 .hr--1-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-3-7 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-3-7 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-reverse-float-2-3-7 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-3-7 .arc--3 .l-r:nth-child(3) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-3-7 .hr--1-2 .l-r:first-child, .threecol-reverse-float-2-3-7 .hr--1-3 .l-r:first-child, .threecol-reverse-float-2-3-7 .arc--3 .l-r:first-child { width: 57.62712%; float: right; margin-right: 0; }
+
+.threecol-reverse-float-2-4-6 .hr--1-2 .l-r, .threecol-reverse-float-2-4-6 .hr--1-3 .l-r, .threecol-reverse-float-2-4-6 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-4-6 .hr--1-2 .l-r:first-child, .threecol-reverse-float-2-4-6 .hr--1-3 .l-r:first-child { float: right; margin-right: 0; }
+.threecol-reverse-float-2-4-6 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-reverse-float-2-4-6 .arc--3 .l-r:first-child { width: 49.15254%; float: right; margin-right: 0; }
+.threecol-reverse-float-2-4-6 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-2-4-6 .arc--3 .l-r:nth-child(3) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+
+.threecol-reverse-float-3-3-6 .hr--1-2 .l-r, .threecol-reverse-float-3-3-6 .hr--1-3 .l-r, .threecol-reverse-float-3-3-6 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-3-3-6 .hr--1-2 .l-r:first-child, .threecol-reverse-float-3-3-6 .hr--1-3 .l-r:first-child { float: right; margin-right: 0; }
+.threecol-reverse-float-3-3-6 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-reverse-float-3-3-6 .arc--3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-3-3-6 .arc--3 .l-r:first-child { width: 49.15254%; float: right; margin-right: 0; }
+
+.threecol-reverse-float-3-4-5 .hr--1-2 .l-r:first-child, .threecol-reverse-float-3-4-5 .hr--1-3 .l-r:first-child { width: 57.62712%; float: right; margin-right: 0; }
+.threecol-reverse-float-3-4-5 .hr--1-2 .l-r:last-child, .threecol-reverse-float-3-4-5 .hr--1-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-3-4-5 .hr--2-3 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-3-4-5 .hr--2-3 .l-r:last-child { width: 57.62712%; float: right; margin-right: 0; }
+.threecol-reverse-float-3-4-5 .arc--3 .l-r:first-child { width: 40.67797%; float: right; margin-right: 0; }
+.threecol-reverse-float-3-4-5 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-3-4-5 .arc--3 .l-r:nth-child(3) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+
+.threecol-reverse-float-4-2-6 .hr--1-2 .l-r, .threecol-reverse-float-4-2-6 .hr--1-3 .l-r, .threecol-reverse-float-4-2-6 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-4-2-6 .hr--1-2 .l-r:first-child, .threecol-reverse-float-4-2-6 .hr--1-3 .l-r:first-child { float: right; margin-right: 0; }
+.threecol-reverse-float-4-2-6 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:first-child { width: 49.15254%; float: right; margin-right: 0; }
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:nth-child(3) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+
+.threecol-reverse-float-4-3-5 .hr--1-2 .l-r:first-child, .threecol-reverse-float-4-3-5 .hr--1-3 .l-r:first-child { width: 57.62712%; float: right; margin-right: 0; }
+.threecol-reverse-float-4-3-5 .hr--1-2 .l-r:last-child, .threecol-reverse-float-4-3-5 .hr--1-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-4-3-5 .hr--2-3 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-4-3-5 .hr--2-3 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.threecol-reverse-float-4-3-5 .arc--3 .l-r:first-child { width: 40.67797%; float: right; margin-right: 0; }
+.threecol-reverse-float-4-3-5 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-4-3-5 .arc--3 .l-r:nth-child(3) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+
+.threecol-source-ordered-2-10--12 .hr--1-2 .l-r:first-child { width: 83.05085%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-10--12 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-10--12 .arc--3 .l-r:first-child { width: 83.05085%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-10--12 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-10--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-source-ordered-2-5-5 .hr--1-2 .l-r:first-child { width: 83.05085%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-5-5 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-5-5 .hr--1-3 .l-r:first-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-5-5 .hr--1-3 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-5-5 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-5-5 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-2-5-5 .arc--3 .l-r:first-child { margin-left: 16.94915%; width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-5-5 .arc--3 .l-r:nth-child(2) { margin-left: -59.32203%; width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-5-5 .arc--3 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-2-6-4 .hr--1-2 .l-r:first-child { width: 83.05085%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-6-4 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-6-4 .hr--1-3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-6-4 .hr--1-3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-6-4 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-6-4 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-2-6-4 .arc--3 .l-r:first-child { margin-left: 16.94915%; width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-6-4 .arc--3 .l-r:nth-child(2) { margin-left: -67.79661%; width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-6-4 .arc--3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-2-7-3 .hr--1-2 .l-r:first-child { width: 83.05085%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-7-3 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-7-3 .hr--1-3 .l-r:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-7-3 .hr--1-3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-7-3 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-7-3 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-2-7-3 .arc--3 .l-r:first-child { margin-left: 16.94915%; width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-7-3 .arc--3 .l-r:nth-child(2) { margin-left: -76.27119%; width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-7-3 .arc--3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-2-8-2 .hr--1-2 .l-r:first-child { width: 83.05085%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-8-2 .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-8-2 .hr--1-3 .l-r:first-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-8-2 .hr--1-3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.threecol-source-ordered-2-8-2 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-2-8-2 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-2-8-2 .arc--3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; }
+.threecol-source-ordered-2-8-2 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; margin-left: -84.74576%; }
+.threecol-source-ordered-2-8-2 .arc--3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-3-5-4 .hr--1-2 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-5-4 .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-5-4 .hr--1-3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-5-4 .hr--1-3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-5-4 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-5-4 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-3-5-4 .arc--3 .l-r:first-child { width: 40.67797%; float: left; margin-right: 1.69492%; margin-left: 25.42373%; }
+.threecol-source-ordered-3-5-4 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; margin-left: -67.79661%; }
+.threecol-source-ordered-3-5-4 .arc--3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-3-6-3 .hr--1-2 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-6-3 .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-6-3 .hr--1-3 .l-r:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-6-3 .hr--1-3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-6-3 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-6-3 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-3-6-3 .arc--3 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; margin-left: 25.42373%; }
+.threecol-source-ordered-3-6-3 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; margin-left: -76.27119%; }
+.threecol-source-ordered-3-6-3 .arc--3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-3-7-2 .hr--1-2 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-7-2 .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-7-2 .hr--1-3 .l-r:first-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-7-2 .hr--1-3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-7-2 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-7-2 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-3-7-2 .arc--3 .l-r:first-child { width: 57.62712%; float: left; margin-right: 1.69492%; margin-left: 25.42373%; }
+.threecol-source-ordered-3-7-2 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; margin-left: -84.74576%; }
+.threecol-source-ordered-3-7-2 .arc--3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-3-9--12 .hr--1-2 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-9--12 .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-9--12 .arc--3 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.threecol-source-ordered-3-9--12 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-3-9--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-source-ordered-4-4-4 .hr--1-2 .l-r:first-child { width: 66.10169%; float: right; margin-right: 0; }
+.threecol-source-ordered-4-4-4 .hr--1-2 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-4-4 .hr--1-3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-4-4 .hr--1-3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.threecol-source-ordered-4-4-4 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-4-4 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-4-4-4 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-4-4 .arc--3 .l-r:first-child { margin-left: 33.89831%; }
+.threecol-source-ordered-4-4-4 .arc--3 .l-r:nth-child(2) { margin-left: -67.79661%; }
+.threecol-source-ordered-4-4-4 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+
+.threecol-source-ordered-4-5-3 .hr--1-2 .l-r:first-child { margin-left: 33.89831%; width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-5-3 .hr--1-2 .l-r:last-child { margin-left: -101.69492%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-5-3 .hr--1-3 .l-r:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-5-3 .hr--1-3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.threecol-source-ordered-4-5-3 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-5-3 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-4-5-3 .arc--3 .l-r:first-child { margin-left: 33.89831%; width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-5-3 .arc--3 .l-r:nth-child(2) { margin-left: -76.27119%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-5-3 .arc--3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-4-6-2 .hr--1-2 .l-r:first-child { margin-left: 33.89831%; width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-6-2 .hr--1-2 .l-r:last-child { margin-left: -101.69492%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-6-2 .hr--1-3 .l-r:first-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-6-2 .hr--1-3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.threecol-source-ordered-4-6-2 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-6-2 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-source-ordered-4-6-2 .arc--3 .l-r:first-child { margin-left: 33.89831%; width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-6-2 .arc--3 .l-r:nth-child(2) { margin-left: -84.74576%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-6-2 .arc--3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+
+.threecol-source-ordered-4-8--12 .hr--1-2 .l-r:first-child { width: 66.10169%; float: right; margin-right: 0; }
+.threecol-source-ordered-4-8--12 .hr--1-2 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-8--12 .arc--3 .l-r:first-child { width: 66.10169%; float: right; margin-right: 0; }
+.threecol-source-ordered-4-8--12 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-4-8--12 .arc--3 .l-r:last-child { clear: both; }
+
+.l-rw { max-width: 75em; margin-left: auto; margin-right: auto; }
+.l-rw:after { content: " "; display: block; clear: both; }
+
+.threecol-source-ordered-5-7--12 .hr--1-2 .l-r:first-child { width: 57.62712%; float: right; margin-right: 0; }
+.threecol-source-ordered-5-7--12 .hr--1-2 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-5-7--12 .arc--3 .l-r:first-child { width: 57.62712%; float: right; margin-right: 0; }
+.threecol-source-ordered-5-7--12 .arc--3 .l-r:nth-child(2) { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-source-ordered-5-7--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-10-2--12 .hr--1-2 .l-r:first-child, .threecol-split-row-10-2--12 .arc--3 .l-r:first-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-10-2--12 .hr--1-2 .l-r:last-child, .threecol-split-row-10-2--12 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: right; margin-right: 0; }
+.threecol-split-row-10-2--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-12--10-2 .hr--2-3 .l-r, .threecol-split-row-12--10-2 .arc--3 .l-r:nth-child(2) { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--10-2 .hr--2-3 .l-r:last-child, .threecol-split-row-12--10-2 .arc--3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--2-10 .hr--2-3 .l-r, .threecol-split-row-12--2-10 .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--2-10 .hr--2-3 .l-r:last-child, .threecol-split-row-12--2-10 .arc--3 .l-r:last-child { width: 83.05085%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--3-9 .hr--2-3 .l-r, .threecol-split-row-12--3-9 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--3-9 .hr--2-3 .l-r:last-child, .threecol-split-row-12--3-9 .arc--3 .l-r:last-child { width: 74.57627%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--4-8 .hr--2-3 .l-r, .threecol-split-row-12--4-8 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--4-8 .hr--2-3 .l-r:last-child, .threecol-split-row-12--4-8 .arc--3 .l-r:last-child { width: 66.10169%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--5-7 .hr--2-3 .l-r, .threecol-split-row-12--5-7 .arc--3 .l-r:nth-child(2) { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--5-7 .hr--2-3 .l-r:last-child, .threecol-split-row-12--5-7 .arc--3 .l-r:last-child { width: 57.62712%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--6-6 .hr--2-3 .l-r, .threecol-split-row-12--6-6 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--6-6 .hr--2-3 .l-r:last-child, .threecol-split-row-12--6-6 .arc--3 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--7-5 .hr--2-3 .l-r, .threecol-split-row-12--7-5 .arc--3 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--7-5 .hr--2-3 .l-r:last-child, .threecol-split-row-12--7-5 .arc--3 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--8-4 .hr--2-3 .l-r, .threecol-split-row-12--8-4 .arc--3 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--8-4 .hr--2-3 .l-r:last-child, .threecol-split-row-12--8-4 .arc--3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+
+.threecol-split-row-12--9-3 .hr--2-3 .l-r, .threecol-split-row-12--9-3 .arc--3 .l-r:nth-child(2) { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-12--9-3 .hr--2-3 .l-r:last-child, .threecol-split-row-12--9-3 .arc--3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.threecol-split-row-2-10--12 .hr--1-2 .l-r:first-child, .threecol-split-row-2-10--12 .arc--3 .l-r:first-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-2-10--12 .hr--1-2 .l-r:last-child, .threecol-split-row-2-10--12 .arc--3 .l-r:nth-child(2) { width: 83.05085%; float: right; margin-right: 0; }
+.threecol-split-row-2-10--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-3-9--12 .hr--1-2 .l-r:first-child, .threecol-split-row-3-9--12 .arc--3 .l-r:first-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-3-9--12 .hr--1-2 .l-r:last-child, .threecol-split-row-3-9--12 .arc--3 .l-r:nth-child(2) { width: 74.57627%; float: right; margin-right: 0; }
+.threecol-split-row-3-9--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-4-8--12 .hr--1-2 .l-r:first-child, .threecol-split-row-4-8--12 .arc--3 .l-r:first-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-4-8--12 .hr--1-2 .l-r:last-child, .threecol-split-row-4-8--12 .arc--3 .l-r:nth-child(2) { width: 66.10169%; float: right; margin-right: 0; }
+.threecol-split-row-4-8--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-5-7--12 .hr--1-2 .l-r:first-child, .threecol-split-row-5-7--12 .arc--3 .l-r:first-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-5-7--12 .hr--1-2 .l-r:last-child, .threecol-split-row-5-7--12 .arc--3 .l-r:nth-child(2) { width: 57.62712%; float: right; margin-right: 0; }
+.threecol-split-row-5-7--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-6-6--12 .hr--1-2 .l-r:first-child, .threecol-split-row-6-6--12 .arc--3 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-6-6--12 .hr--1-2 .l-r:last-child, .threecol-split-row-6-6--12 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: right; margin-right: 0; }
+.threecol-split-row-6-6--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-7-5--12 .hr--1-2 .l-r:first-child, .threecol-split-row-7-5--12 .arc--3 .l-r:first-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-7-5--12 .hr--1-2 .l-r:last-child, .threecol-split-row-7-5--12 .arc--3 .l-r:nth-child(2) { width: 40.67797%; float: right; margin-right: 0; }
+.threecol-split-row-7-5--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-8-4--12 .hr--1-2 .l-r:first-child, .threecol-split-row-8-4--12 .arc--3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-8-4--12 .hr--1-2 .l-r:last-child, .threecol-split-row-8-4--12 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: right; margin-right: 0; }
+.threecol-split-row-8-4--12 .arc--3 .l-r:last-child { clear: both; }
+
+.threecol-split-row-9-3--12 .hr--1-2 .l-r:first-child, .threecol-split-row-9-3--12 .arc--3 .l-r:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.threecol-split-row-9-3--12 .hr--1-2 .l-r:last-child, .threecol-split-row-9-3--12 .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: right; margin-right: 0; }
+.threecol-split-row-9-3--12 .arc--3 .l-r:last-child { clear: both; }
+
+.fourcol-2-2-2-6 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-2-6 .arc--4 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-2-6 .arc--2 .l-r, .fourcol-2-2-2-6 .arc--4 .l-r:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-2-6 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fourcol-2-2-3-5 .arc--2 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-3-5 .arc--2 .l-r:last-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-3-5 .arc--4 .l-r:nth-child(3) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-3-5 .arc--3 .l-r:first-child, .fourcol-2-2-3-5 .arc--4 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-3-5 .arc--3 .l-r, .fourcol-2-2-3-5 .arc--4 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-2-2-3-5 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fourcol-2-4-4-2 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-2-4-4-2 .arc--3 .l-r, .fourcol-2-4-4-2 .arc--4 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-2-4-4-2 .arc--4 .l-r:first-child, .fourcol-2-4-4-2 .arc--4 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-2-4-4-2 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fourcol-3-3-3-3 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-3-3-3-3 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-3-3-3-3 .arc--4 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-3-3-3-3 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fourcol-4-2-2-4 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-4-2-2-4 .arc--4 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-4-2-2-4 .arc--3 .l-r, .fourcol-4-2-2-4 .arc--4 .l-r:first-child, .fourcol-4-2-2-4 .arc--4 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-4-2-2-4 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fourcol-5-3-2-2 .arc--2 .l-r, .fourcol-5-3-2-2 .arc--3 .l-r, .fourcol-5-3-2-2 .arc--4 .l-r:first-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-5-3-2-2 .arc--2 .l-r:first-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-5-3-2-2 .arc--3 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-5-3-2-2 .arc--4 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-5-3-2-2 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fourcol-6-2-2-2 .arc--2 .l-r, .fourcol-6-2-2-2 .arc--4 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-6-2-2-2 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-6-2-2-2 .arc--4 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-6-2-2-2 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fourcol-source-ordered-12--2-7-3 .hr--3-4 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-7-3 .hr--3-4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-7-3 .hr--2-3 .l-r:first-child { width: 57.62712%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-7-3 .hr--2-3 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-7-3 .hr--2-4 .l-r:first-child { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-7-3 .hr--2-4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-7-3 .hr--1-2-3 .l-r:nth-child(2) { margin-left: 42.37288%; width: 57.62712%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-7-3 .hr--1-2-3 .l-r:last-child { margin-left: -101.69492%; width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-7-3 .hr--1-2-4 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-7-3 .hr--1-2-4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-7-3 .hr--1-3-4 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-7-3 .hr--1-3-4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-7-3 .hr--2-3-4 .l-r:first-child { width: 57.62712%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; }
+.fourcol-source-ordered-12--2-7-3 .hr--2-3-4 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; margin-left: -76.27119%; }
+.fourcol-source-ordered-12--2-7-3 .hr--2-3-4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-7-3 .arc--4 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; }
+.fourcol-source-ordered-12--2-7-3 .arc--4 .l-r:nth-child(3) { width: 15.25424%; float: left; margin-right: 1.69492%; margin-left: -76.27119%; }
+.fourcol-source-ordered-12--2-7-3 .arc--4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.fourcol-source-ordered-12--2-8-2 .hr--3-4 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-8-2 .hr--3-4 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-8-2 .hr--2-3 .l-r:first-child { width: 66.10169%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-8-2 .hr--2-3 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-8-2 .hr--2-4 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-8-2 .hr--2-4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-8-2 .hr--1-2-3 .l-r:nth-child(2) { margin-left: 33.89831%; width: 66.10169%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-8-2 .hr--1-2-3 .l-r:last-child { margin-left: -101.69492%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-8-2 .hr--1-2-4 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-8-2 .hr--1-2-4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-8-2 .hr--1-3-4 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--2-8-2 .hr--1-3-4 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-8-2 .hr--2-3-4 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; }
+.fourcol-source-ordered-12--2-8-2 .hr--2-3-4 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; margin-left: -84.74576%; }
+.fourcol-source-ordered-12--2-8-2 .hr--2-3-4 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--2-8-2 .arc--4 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; }
+.fourcol-source-ordered-12--2-8-2 .arc--4 .l-r:nth-child(3) { width: 15.25424%; float: left; margin-right: 1.69492%; margin-left: -84.74576%; }
+.fourcol-source-ordered-12--2-8-2 .arc--4 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+
+.fourcol-source-ordered-12--3-6-3 .hr--3-4 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-6-3 .hr--3-4 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-6-3 .hr--2-3 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-6-3 .hr--2-3 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-6-3 .hr--2-4 .l-r:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-6-3 .hr--2-4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-6-3 .hr--1-2-3 .l-r:nth-child(2) { margin-left: 25.42373%; width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-6-3 .hr--1-2-3 .l-r:last-child { margin-left: -101.69492%; width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-6-3 .hr--1-2-4 .l-r:nth-child(2) { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-6-3 .hr--1-2-4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-6-3 .hr--1-3-4 .l-r:nth-child(2) { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-6-3 .hr--1-3-4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-6-3 .hr--2-3-4 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; margin-left: 25.42373%; }
+.fourcol-source-ordered-12--3-6-3 .hr--2-3-4 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; margin-left: -76.27119%; }
+.fourcol-source-ordered-12--3-6-3 .hr--2-3-4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-6-3 .arc--4 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; margin-left: 25.42373%; }
+.fourcol-source-ordered-12--3-6-3 .arc--4 .l-r:nth-child(3) { width: 23.72881%; float: left; margin-right: 1.69492%; margin-left: -76.27119%; }
+.fourcol-source-ordered-12--3-6-3 .arc--4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.fourcol-source-ordered-12--3-9--12 .hr--2-3 .l-r:first-child { margin-left: 25.42373%; width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-9--12 .hr--2-3 .l-r:last-child { margin-left: -101.69492%; width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-9--12 .hr--1-2-3 .l-r:nth-child(2) { margin-left: 25.42373%; width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-9--12 .hr--1-2-3 .l-r:last-child { margin-left: -101.69492%; width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-9--12 .hr--2-3-4 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-source-ordered-12--3-9--12 .hr--2-3-4 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-9--12 .hr--2-3-4 .l-r:last-child { clear: both; }
+.fourcol-source-ordered-12--3-9--12 .arc--4 .l-r:nth-child(2) { margin-left: 25.42373%; width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-9--12 .arc--4 .l-r:nth-child(3) { margin-left: -101.69492%; width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-12--3-9--12 .arc--4 .l-r:last-child { clear: both; }
+
+.fourcol-source-ordered-inset-left .hr--1-2 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--1-3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-2 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--1-3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--1-4 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--2-4 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--3-4 .l-r:first-child { margin-left: 33.89831%; width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-4 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--2-4 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--3-4 .l-r:last-child { margin-left: -101.69492%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-2-3 .l-r:nth-child(2), .fourcol-source-ordered-inset-left .hr--1-2-3 .l-r:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-2-3 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--1-2-4 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--1-3-4 .l-r:first-child { width: 205.26316%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--1-2-4 .l-r:nth-child(2), .fourcol-source-ordered-inset-left .hr--1-3-4 .l-r:nth-child(2) { clear: right; width: 205.26316%; float: left; margin-left: 105.26316%; margin-right: -100%; }
+.fourcol-source-ordered-inset-left .hr--1-2-4 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--1-3-4 .l-r:last-child { width: 100%; }
+.fourcol-source-ordered-inset-left .hr--2-3-4 .l-r:first-child { margin-left: 25.42373%; width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--2-3-4 .l-r:nth-child(2) { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--2-3-4 .l-r:last-child { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:nth-child(2) { clear: right; width: 32.20339%; float: left; margin-left: 25.42373%; margin-right: -100%; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:nth-child(3) { width: 23.72881%; float: left; margin-left: 76.27119%; margin-right: -100%; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:last-child { width: 23.72881%; }
+
+.fourcol-source-ordered-inset-left .hr--1-2 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--1-3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-2 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--1-3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--1-4 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--2-4 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--3-4 .l-r:first-child { margin-left: 33.89831%; width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-4 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--2-4 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--3-4 .l-r:last-child { margin-left: -101.69492%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-2-3 .l-r:nth-child(2), .fourcol-source-ordered-inset-left .hr--1-2-3 .l-r:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--1-2-3 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--1-2-4 .l-r:first-child, .fourcol-source-ordered-inset-left .hr--1-3-4 .l-r:first-child { width: 205.26316%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--1-2-4 .l-r:nth-child(2), .fourcol-source-ordered-inset-left .hr--1-3-4 .l-r:nth-child(2) { clear: right; width: 205.26316%; float: left; margin-left: 105.26316%; margin-right: -100%; }
+.fourcol-source-ordered-inset-left .hr--1-2-4 .l-r:last-child, .fourcol-source-ordered-inset-left .hr--1-3-4 .l-r:last-child { width: 100%; }
+.fourcol-source-ordered-inset-left .hr--2-3-4 .l-r:first-child { margin-left: 33.89831%; width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .hr--2-3-4 .l-r:nth-child(2) { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .hr--2-3-4 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:first-child { width: 66.10169%; float: right; margin-right: 0; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:nth-child(2) { clear: right; width: 32.20339%; float: left; margin-left: 33.89831%; margin-right: -100%; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:nth-child(3) { width: 32.20339%; float: left; margin-left: 67.79661%; margin-right: -100%; }
+.fourcol-source-ordered-inset-left .arc--4 .l-r:last-child { width: 32.20339%; }
+
+.fourcol-split-row-12--12--4-8 .hr--3-4 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--4-8 .hr--3-4 .l-r:last-child { width: 66.10169%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--4-8 .hr--1-3-4 .l-r:nth-child(2), .fourcol-split-row-12--12--4-8 .hr--2-3-4 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--4-8 .hr--1-3-4 .l-r:last-child, .fourcol-split-row-12--12--4-8 .hr--2-3-4 .l-r:last-child { width: 66.10169%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--4-8 .arc--4 .l-r:nth-child(3) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--4-8 .arc--4 .l-r:last-child { width: 66.10169%; float: right; margin-right: 0; }
+
+.fourcol-split-row-12--12--5-7 .hr--3-4 .l-r { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--5-7 .hr--3-4 .l-r:last-child { width: 57.62712%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--5-7 .hr--1-3-4 .l-r:nth-child(2), .fourcol-split-row-12--12--5-7 .hr--2-3-4 .l-r:nth-child(2) { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--5-7 .hr--1-3-4 .l-r:last-child, .fourcol-split-row-12--12--5-7 .hr--2-3-4 .l-r:last-child { width: 57.62712%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--5-7 .arc--4 .l-r:nth-child(3) { width: 40.67797%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--5-7 .arc--4 .l-r:last-child { width: 57.62712%; float: right; margin-right: 0; }
+
+.fourcol-split-row-12--12--6-6 .hr--3-4 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--6-6 .hr--3-4 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-split-row-12--12--6-6 .hr--1-3-4 .l-r:nth-child(2), .fourcol-split-row-12--12--6-6 .hr--2-3-4 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--6-6 .hr--1-3-4 .l-r:last-child, .fourcol-split-row-12--12--6-6 .hr--2-3-4 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--6-6 .arc--4 .l-r:nth-child(3) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--6-6 .arc--4 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+
+.fourcol-split-row-12--12--7-5 .hr--3-4 .l-r { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--7-5 .hr--3-4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--7-5 .hr--1-3-4 .l-r:nth-child(2), .fourcol-split-row-12--12--7-5 .hr--2-3-4 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--7-5 .hr--1-3-4 .l-r:last-child, .fourcol-split-row-12--12--7-5 .hr--2-3-4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--7-5 .arc--4 .l-r:nth-child(3) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--7-5 .arc--4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+
+.fourcol-split-row-12--12--8-4 .hr--3-4 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--8-4 .hr--3-4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--8-4 .hr--1-3-4 .l-r:nth-child(2), .fourcol-split-row-12--12--8-4 .hr--2-3-4 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--8-4 .hr--1-3-4 .l-r:last-child, .fourcol-split-row-12--12--8-4 .hr--2-3-4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--12--8-4 .arc--4 .l-r:nth-child(3) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--12--8-4 .arc--4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+
+.fourcol-split-row-12--3-9--12 .hr--2-3 .l-r:first-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--3-9--12 .hr--2-3 .l-r:last-child { width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-split-row-12--3-9--12 .hr--1-2-3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--3-9--12 .hr--1-2-3 .l-r:last-child { width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-split-row-12--3-9--12 .hr--2-3-4 .l-r:first-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--3-9--12 .hr--2-3-4 .l-r:nth-child(2) { width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-split-row-12--3-9--12 .hr--2-3-4 .l-r:last-child { clear: both; }
+.fourcol-split-row-12--3-9--12 .arc--4 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--3-9--12 .arc--4 .l-r:nth-child(3) { width: 74.57627%; float: right; margin-right: 0; }
+.fourcol-split-row-12--3-9--12 .arc--4 .l-r:last-child { clear: both; }
+
+.fourcol-split-row-12--4-4-4 .hr--2-3 .l-r:last-child, .fourcol-split-row-12--4-4-4 .hr--2-4 .l-r:last-child, .fourcol-split-row-12--4-4-4 .hr--3-4 .l-r:last-child, .fourcol-split-row-12--4-4-4 .hr--2-3-4 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-split-row-12--4-4-4 .hr--2-3 .l-r, .fourcol-split-row-12--4-4-4 .hr--2-4 .l-r, .fourcol-split-row-12--4-4-4 .hr--3-4 .l-r, .fourcol-split-row-12--4-4-4 .hr--1-2-3 .l-r:nth-child(2), .fourcol-split-row-12--4-4-4 .hr--1-2-4 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--4-4-4 .hr--1-2-3 .l-r:last-child, .fourcol-split-row-12--4-4-4 .hr--1-2-4 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-12--4-4-4 .hr--2-3-4 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--4-4-4 .arc--4 .l-r:nth-child(2), .fourcol-split-row-12--4-4-4 .arc--4 .l-r:nth-child(3) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--4-4-4 .arc--4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+
+.fourcol-split-row-12--6-3-3 .hr--2-3 .l-r:last-child, .fourcol-split-row-12--6-3-3 .hr--2-4 .l-r:last-child, .fourcol-split-row-12--6-3-3 .hr--3-4 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-split-row-12--6-3-3 .hr--2-3 .l-r, .fourcol-split-row-12--6-3-3 .hr--2-4 .l-r, .fourcol-split-row-12--6-3-3 .hr--3-4 .l-r, .fourcol-split-row-12--6-3-3 .hr--1-2-3 .l-r:nth-child(2), .fourcol-split-row-12--6-3-3 .hr--1-2-4 .l-r:nth-child(2), .fourcol-split-row-12--6-3-3 .hr--2-3-4 .l-r:first-child, .fourcol-split-row-12--6-3-3 .arc--4 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--6-3-3 .hr--1-2-3 .l-r:last-child, .fourcol-split-row-12--6-3-3 .hr--1-2-4 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-12--6-3-3 .hr--2-3-4 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--6-3-3 .hr--2-3-4 .l-r:last-child, .fourcol-split-row-12--6-3-3 .arc--4 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-split-row-12--6-3-3 .arc--4 .l-r:nth-child(3) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+
+.fourcol-split-row-12--6-6--12 .hr--2-3 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--6-6--12 .hr--2-3 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-12--6-6--12 .hr--1-2-3 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--6-6--12 .hr--1-2-3 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-12--6-6--12 .hr--2-3-4 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--6-6--12 .hr--2-3-4 .l-r:nth-child(2) { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-12--6-6--12 .hr--2-3-4 .l-r:last-child { clear: both; }
+.fourcol-split-row-12--6-6--12 .arc--4 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--6-6--12 .arc--4 .l-r:nth-child(3) { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-12--6-6--12 .arc--4 .l-r:last-child { clear: both; }
+
+.fourcol-split-row-12--7-3-2 .hr--2-3 .l-r, .fourcol-split-row-12--7-3-2 .hr--2-4 .l-r, .fourcol-split-row-12--7-3-2 .hr--3-4 .l-r, .fourcol-split-row-12--7-3-2 .hr--1-2-3 .l-r:nth-child(2), .fourcol-split-row-12--7-3-2 .hr--1-2-4 .l-r:nth-child(2), .fourcol-split-row-12--7-3-2 .hr--2-3-4 .l-r:first-child, .fourcol-split-row-12--7-3-2 .arc--4 .l-r:nth-child(2) { width: 57.62712%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--7-3-2 .hr--2-3 .l-r:last-child, .fourcol-split-row-12--7-3-2 .hr--2-4 .l-r:last-child, .fourcol-split-row-12--7-3-2 .hr--3-4 .l-r:last-child, .fourcol-split-row-12--7-3-2 .hr--1-2-3 .l-r:last-child, .fourcol-split-row-12--7-3-2 .hr--1-2-4 .l-r:last-child { width: 40.67797%; float: right; margin-right: 0; }
+.fourcol-split-row-12--7-3-2 .hr--2-3-4 .l-r:last-child, .fourcol-split-row-12--7-3-2 .arc--4 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.fourcol-split-row-12--7-3-2 .hr--2-3-4 .l-r:nth-child(2), .fourcol-split-row-12--7-3-2 .arc--4 .l-r:nth-child(3) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+
+.fourcol-split-row-12--8-2-2 .hr--2-3 .l-r, .fourcol-split-row-12--8-2-2 .hr--2-4 .l-r, .fourcol-split-row-12--8-2-2 .hr--3-4 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-2-2 .hr--2-3 .l-r:last-child, .fourcol-split-row-12--8-2-2 .hr--2-4 .l-r:last-child, .fourcol-split-row-12--8-2-2 .hr--3-4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--8-2-2 .hr--1-2-3 .l-r:nth-child(2), .fourcol-split-row-12--8-2-2 .hr--1-2-4 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-2-2 .hr--1-2-3 .l-r:last-child, .fourcol-split-row-12--8-2-2 .hr--1-2-4 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--8-2-2 .hr--2-3-4 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-2-2 .hr--2-3-4 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-2-2 .hr--2-3-4 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.fourcol-split-row-12--8-2-2 .arc--4 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-2-2 .arc--4 .l-r:nth-child(3) { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-2-2 .arc--4 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+
+.fourcol-split-row-12--8-4--12 .hr--2-3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-4--12 .hr--2-3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--8-4--12 .hr--1-2-3 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-4--12 .hr--1-2-3 .l-r:last-child { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--8-4--12 .hr--2-3-4 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-4--12 .hr--2-3-4 .l-r:nth-child(2) { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--8-4--12 .hr--2-3-4 .l-r:last-child { clear: both; }
+.fourcol-split-row-12--8-4--12 .arc--4 .l-r:nth-child(2) { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--8-4--12 .arc--4 .l-r:nth-child(3) { width: 32.20339%; float: right; margin-right: 0; }
+.fourcol-split-row-12--8-4--12 .arc--4 .l-r:last-child { clear: both; }
+
+.fourcol-split-row-12--9-3--12 .hr--2-3 .l-r { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--9-3--12 .hr--2-3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-split-row-12--9-3--12 .hr--1-2-3 .l-r:nth-child(2) { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--9-3--12 .hr--1-2-3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-split-row-12--9-3--12 .hr--2-3-4 .l-r:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--9-3--12 .hr--2-3-4 .l-r:nth-child(2) { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-split-row-12--9-3--12 .hr--2-3-4 .l-r:last-child { clear: both; }
+.fourcol-split-row-12--9-3--12 .arc--4 .l-r:nth-child(2) { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-12--9-3--12 .arc--4 .l-r:nth-child(3) { width: 23.72881%; float: right; margin-right: 0; }
+.fourcol-split-row-12--9-3--12 .arc--4 .l-r:last-child { clear: both; }
+
+.fourcol-split-row-4-8--8-4 .arc--2 .l-r, .fourcol-split-row-4-8--8-4 .arc--3 .l-r:first-child, .fourcol-split-row-4-8--8-4 .arc--4 .l-r:first-child, .fourcol-split-row-4-8--8-4 .arc--4 .l-r:last-child { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-4-8--8-4 .arc--2 .l-r:last-child { width: 66.10169%; float: right; margin-right: 0; }
+.fourcol-split-row-4-8--8-4 .arc--3 .l-r:nth-child(2) { width: 66.10169%; float: right; margin-right: 0; }
+.fourcol-split-row-4-8--8-4 .arc--3 .l-r:last-child { clear: both; }
+.fourcol-split-row-4-8--8-4 .arc--4 .l-r { width: 66.10169%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-4-8--8-4 .arc--4 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+
+.fourcol-split-row-6-6--6-6 .arc--2 .l-r, .fourcol-split-row-6-6--6-6 .arc--3 .l-r:first-child, .fourcol-split-row-6-6--6-6 .arc--4 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fourcol-split-row-6-6--6-6 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.fourcol-split-row-6-6--6-6 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: right; margin-right: 0; }
+.fourcol-split-row-6-6--6-6 .arc--3 .l-r:last-child { clear: both; }
+.fourcol-split-row-6-6--6-6 .arc--4 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+
+.fivecol-12--6-6-6-6 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-12--6-6-6-6 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.fivecol-12--6-6-6-6 .arc--3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-12--6-6-6-6 .arc--3 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+.fivecol-12--6-6-6-6 .arc--3 .l-r:last-child { width: 100%; float: left; margin-left: 0; margin-right: 0; clear: both; }
+.fivecol-12--6-6-6-6 .arc--4 .l-r { width: 49.15254%; float: left; }
+.fivecol-12--6-6-6-6 .arc--4 .l-r:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+.fivecol-12--6-6-6-6 .arc--4 .l-r:nth-child(2n + 2) { margin-left: 50.84746%; margin-right: -100%; clear: none; }
+.fivecol-12--6-6-6-6 .arc--5 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-12--6-6-6-6 .arc--5 .l-r:first-child { width: 100%; float: left; margin-left: 0; margin-right: 0; }
+.fivecol-12--6-6-6-6 .arc--5 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+
+.fivecol-2-3-2-3-2 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--4 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--4 .l-r:first-child, .fivecol-2-3-2-3-2 .arc--4 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--5 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .arc--5 .l-r:nth-child(2n) { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fivecol-2-3-2-3-2 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fivecol-5x2 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-5x2 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-5x2 .arc--4 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fivecol-5x2 .arc--5 .l-r { width: 18.64407%; float: left; margin-right: 1.69492%; }
+.fivecol-5x2 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+.fivecol-6-6--4-4-4 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6--4-4-4 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.fivecol-6-6--4-4-4 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6--4-4-4 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+.fivecol-6-6--4-4-4 .arc--3 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6--4-4-4 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+.fivecol-6-6--4-4-4 .arc--5 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6--4-4-4 .arc--5 .l-r:first-child, .fivecol-6-6--4-4-4 .arc--5 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6--4-4-4 .arc--5 .l-r:last-child, .fivecol-6-6--4-4-4 .arc--5 .l-r:nth-child(2) { float: right; margin-right: 0; }
+
+.fivecol-6-6-6-6--12 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6-6-6--12 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.fivecol-6-6-6-6--12 .arc--3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6-6-6--12 .arc--3 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+.fivecol-6-6-6-6--12 .arc--3 .l-r:last-child { width: 100%; float: left; margin-left: 0; margin-right: 0; clear: both; }
+.fivecol-6-6-6-6--12 .arc--4 .l-r { width: 49.15254%; float: left; }
+.fivecol-6-6-6-6--12 .arc--4 .l-r:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+.fivecol-6-6-6-6--12 .arc--4 .l-r:nth-child(2n + 2) { margin-left: 50.84746%; margin-right: -100%; clear: none; }
+.fivecol-6-6-6-6--12 .arc--5 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-6-6-6-6--12 .arc--5 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+.fivecol-6-6-6-6--12 .arc--5 .l-r:last-child { width: 100%; float: left; margin-left: 0; margin-right: 0; clear: both; }
+
+.fivecol-source-ordered-2-2-4-2-2 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--3 .l-r:last-child { float: right; margin-right: 0; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--4 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--4 .l-r:first-child, .fivecol-source-ordered-2-2-4-2-2 .arc--4 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r:first-child { width: 32.20339%; float: left; margin-right: 1.69492%; margin-left: 33.89831%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r:nth-child(2) { margin-left: -67.79661%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r:nth-child(3) { margin-left: -50.84746%; }
+.fivecol-source-ordered-2-2-4-2-2 .arc--5 .l-r:last-child { float: right; margin-right: 0; }
+
+.sixcol-6-2x3 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.sixcol-6-2x3 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.sixcol-6-2x3 .arc--3 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.sixcol-6-2x3 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: right; margin-right: 0; }
+.sixcol-6-2x3 .arc--3 .l-r:last-child { clear: both; }
+.sixcol-6-2x3 .arc--5 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.sixcol-6-2x3 .arc--5 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+.sixcol-6-2x3 .arc--5 .l-r:last-child { width: 100%; float: left; margin-left: 0; margin-right: 0; clear: both; }
+.sixcol-6-2x3 .arc--4 .l-r, .sixcol-6-2x3 .arc--6 .l-r { width: 49.15254%; float: left; }
+.sixcol-6-2x3 .arc--4 .l-r:nth-child(2n + 1), .sixcol-6-2x3 .arc--6 .l-r:nth-child(2n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+.sixcol-6-2x3 .arc--4 .l-r:nth-child(2n + 2), .sixcol-6-2x3 .arc--6 .l-r:nth-child(2n + 2) { margin-left: 50.84746%; margin-right: -100%; clear: none; }
+
+.sixcol-6-3x2 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.sixcol-6-3x2 .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.sixcol-6-3x2 .arc--3 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.sixcol-6-3x2 .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: right; margin-right: 0; }
+.sixcol-6-3x2 .arc--3 .l-r:last-child { clear: both; }
+.sixcol-6-3x2 .arc--5 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.sixcol-6-3x2 .arc--5 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+.sixcol-6-3x2 .arc--5 .l-r:last-child { width: 100%; float: left; margin-left: 0; margin-right: 0; clear: both; }
+.sixcol-6-3x2 .arc--4 .l-r, .sixcol-6-3x2 .arc--6 .l-r { width: 32.20339%; float: left; }
+.sixcol-6-3x2 .arc--4 .l-r:nth-child(3n + 1), .sixcol-6-3x2 .arc--6 .l-r:nth-child(3n + 1) { margin-left: 0; margin-right: -100%; clear: both; margin-left: 0; }
+.sixcol-6-3x2 .arc--4 .l-r:nth-child(3n + 2), .sixcol-6-3x2 .arc--6 .l-r:nth-child(3n + 2) { margin-left: 33.89831%; margin-right: -100%; clear: none; }
+.sixcol-6-3x2 .arc--4 .l-r:nth-child(3n + 3), .sixcol-6-3x2 .arc--6 .l-r:nth-child(3n + 3) { margin-left: 67.79661%; margin-right: -100%; clear: none; }
+
+.sixcol-6x2 .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.sixcol-6x2 .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.sixcol-6x2 .arc--4 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.sixcol-6x2 .arc--5 .l-r { width: 18.64407%; float: left; margin-right: 1.69492%; }
+.sixcol-6x2 .arc--6 .l-r { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.sixcol-6x2 .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+
+#edit-layouts #edit-layout-select .fourcol-source-ordered-inset-left .arc--4 .l-r:last-child span { height: 3.55em; }

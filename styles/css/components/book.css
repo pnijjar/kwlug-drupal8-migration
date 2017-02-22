@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * Book
+ *  - Set styles for book navigation and the menu tree.
+ ============================================================================ */
+.book-pager {
+  padding: 0;
+  overflow: auto;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.has-tree .book-pager {
+  border-top: 0;
+}
+.book-pager__item {
+  list-style: none;
+  vertical-align: top;
+}
+.book-pager__link {
+  padding: 7px 0;
+  padding: 0.4375rem 0;
+  display: inline-block;
+}
+.book-pager__link:before, .book-pager__link:after {
+  font-family: FontAwesome, sans-serif;
+  display: none;
+}
+.fa-loaded .book-pager__link:before, .fa-loaded .book-pager__link:after {
+  display: inline-block;
+}
+[dir="rtl"] .book-pager__link:before, [dir="rtl"] .book-pager__link:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.book-pager__previous {
+  text-align: left;
+  float: left;
+  width: 46%;
+}
+.book-pager__previous a:before {
+  content: "";
+  width: 16px;
+  width: 1rem;
+}
+.book-pager__up {
+  text-align: center;
+  float: left;
+  width: 8%;
+}
+.book-pager__next {
+  text-align: right;
+  float: right;
+  width: 46%;
+}
+.book-pager__next a:after {
+  content: "";
+  width: 16px;
+  width: 1rem;
+}
+/*# sourceMappingURL=maps/book.css.map */

@@ -1,0 +1,9 @@
+.bp--wide .atl--threecol-6-3-3.l-arc--2 > .atl__lr > .atl__lc, .bp--tablet .atl--threecol-6-3-3.l-arc--2 > .atl__lr > .atl__lc { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.bp--wide .atl--threecol-6-3-3.l-arc--2 > .atl__lr > .atl__lc:last-child, .bp--tablet .atl--threecol-6-3-3.l-arc--2 > .atl__lr > .atl__lc:last-child { width: 23.72881%; float: right; margin-right: 0; }
+
+.bp--tablet .atl--threecol-6-3-3.l-arc--3 > .atl__lr > .atl__lc:nth-child(2), .bp--tablet .atl--threecol-6-3-3.l-arc--3 > .atl__lr > .atl__lc:last-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.bp--tablet .atl--threecol-6-3-3.l-arc--3 > .atl__lr > .atl__lc:first-child, .bp--tablet .atl--threecol-6-3-3.l-arc--3 > .atl__lr > .atl__lc:last-child { float: right; margin-right: 0; }
+
+.bp--wide .atl--threecol-6-3-3.l-arc--3 > .atl__lr > .atl__lc { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.bp--wide .atl--threecol-6-3-3.l-arc--3 > .atl__lr > .atl__lc:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.bp--wide .atl--threecol-6-3-3.l-arc--3 > .atl__lr > .atl__lc:last-child { float: right; margin-right: 0; }

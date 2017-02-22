@@ -1,0 +1,63 @@
+// Tiles
+//
+// Parameters
+// - $tile_count: whole number, must be a factor of the $context
+// - $context: whole number, a $susy container, can be 8, 10 or 12 (or whatever
+//   if you write a new container).
+// - $arrows: boolean
+
+@mixin tiles($context: 12, $tile_count: 2, $arrows: false) {
+
+  $span: $context/$tile_count;
+
+  .ms-tiles {
+
+    // By default block title and all sub-menus are hidden.
+    .rm-block {
+      .block-menu__title,
+      .menu-level-2 {
+        @include visually-hidden;
+      }
+    }
+
+    .rm-toggle {
+      display: none;
+    }
+
+    .rm-block__content {
+      @include cf;
+
+      .menu-level-1 {
+        > .menu__item {
+
+          @if $context == 12 {
+            @include with-layout($container-12) {
+              @include gallery($span of 12);
+            }
+          }
+          @else if $context == 10 {
+            @include with-layout($container-10) {
+              @include gallery($span of 10);
+            }
+          }
+          @else if $context == 8 {
+            @include with-layout($container-8) {
+              @include gallery($span of 8);
+            }
+          }
+          @else {
+            @warn "You must use a valid context, by defualt 8, 10 or 12 are supported and the title_count must be a factor of the context.";
+          }
+        }
+
+        a {
+          @include output-rhythm(padding, $xx-small $medium);
+        }
+      }
+
+      .menu__item--expanded > a:after {
+        content: none;
+      }
+    }
+  }
+}
