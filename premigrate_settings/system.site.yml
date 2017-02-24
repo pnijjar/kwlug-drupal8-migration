@@ -1,0 +1,14 @@
+uuid: 3112d604-7bb2-4dba-b418-f4f542f2682c
+name: 'KWLUG - Kitchener-Waterloo Linux User Group'
+mail: webhost@kwlug.org
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /upcoming-meetings
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
