@@ -13,8 +13,6 @@ permissions:
   - 'use text format basic_html'
   - 'use text format restricted_html'
   - 'access comments'
-  - 'post comments'
-  - 'skip comment approval'
   - 'access site-wide contact form'
   - 'access shortcuts'
   - 'search content'
