@@ -11,11 +11,19 @@ source:
   plugin: d6_user_role
 process:
   id:
-    -
+    - 
       plugin: machine_name
       source: name
     -
-      plugin: user_update_8002
+      plugin: static_map
+      source: name
+      bypass: false
+      map:
+        'administrator': 'administrator'
+        'authenticated_user': 'authenticated'
+        'anonymous_user': 'anonymous'
+
+      # plugin: user_update_8002
   label: name
   permissions:
     -
