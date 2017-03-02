@@ -1,0 +1,128 @@
+uuid: 50f8497b-1120-40a5-9c3b-b9a47b2d1715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_floss_fund_nominee_link
+    - field.field.node.agenda.field_meeting_date
+    - field.field.node.agenda.field_meeting_location
+    - field.field.node.agenda.field_podcast_link
+    - field.field.node.agenda.field_header_image
+    - field.field.node.agenda.field_presentation_title
+    - field.field.node.agenda.field_vidcast_link
+    - field.field.node.agenda.field_blogtags
+    - node.type.agenda
+  module:
+    - datetime
+    - path
+    - text
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 7
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_header_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_floss_fund_nominee_link:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_meeting_date:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_meeting_location:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_podcast_link:
+    type: options_select
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_presentation_title:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_vidcast_link:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_page_category:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_file_attachments:
+    weight: 35
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_blogtags:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+hidden: {  }

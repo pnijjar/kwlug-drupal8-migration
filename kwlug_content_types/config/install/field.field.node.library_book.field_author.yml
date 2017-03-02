@@ -1,0 +1,19 @@
+uuid: 1557fdb9-a182-4a2a-b21e-bfcbb3d8ec5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - node.type.library_book
+id: node.library_book.field_author
+field_name: field_author
+entity_type: node
+bundle: library_book
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

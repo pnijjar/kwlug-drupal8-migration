@@ -1,0 +1,21 @@
+uuid: e8ddb7c4-cf1e-11e6-a37f-b366b418b19c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_category
+    - node.type.agenda
+  module:
+    - options
+id: node.agenda.field_page_category
+field_name: field_page_category
+entity_type: node
+bundle: agenda
+label: 'Page Category'
+description: ''
+required: true
+translatable: false
+default_value: 'Meeting Agenda'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,65 @@
+uuid: 40a27ada-d27c-48da-a45f-bd32f59415d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_blogtags
+    - field.field.node.agenda.field_file_attachments
+    - field.field.node.agenda.field_floss_fund_nominee_link
+    - field.field.node.agenda.field_header_image
+    - field.field.node.agenda.field_meeting_date
+    - field.field.node.agenda.field_meeting_location
+    - field.field.node.agenda.field_page_category
+    - field.field.node.agenda.field_podcast_link
+    - field.field.node.agenda.field_presentation_title
+    - field.field.node.agenda.field_vidcast_link
+    - node.type.agenda
+  module:
+    - datetime
+    - text
+    - user
+id: node.agenda.teaser
+targetEntityType: node
+bundle: agenda
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_date:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: fallback
+    third_party_settings: {  }
+  field_meeting_date:
+    type: datetime_plain
+    weight: 1
+    label: inline
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+  field_presentation_title:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_blogtags: true
+  field_file_attachments: true
+  field_floss_fund_nominee_link: true
+  field_header_image: true
+  field_meeting_location: true
+  field_page_category: true
+  field_podcast_link: true
+  field_vidcast_link: true
+  links: true

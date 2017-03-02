@@ -1,0 +1,11 @@
+uuid: d92cd773-23ba-418c-88ba-11df40bceefc
+langcode: en
+status: true
+dependencies: {  }
+name: Nominee
+type: nominee
+description: 'Nominee projects for the FLOSS Fund.  Add a project of interest to our list of FLOSS Fund nominees.'
+help: "Use the project (nominee) name as the title.  Include a description of why we should support the project in the body of your nomination.  Include links to the project web site and their donation or other contribution links.  \r\n\r\nNote: You are nominating the project, you should determine how and if they want our support.  Moral support, hardware donations, money, magic beans..."
+new_revision: false
+preview_mode: 1
+display_submitted: true

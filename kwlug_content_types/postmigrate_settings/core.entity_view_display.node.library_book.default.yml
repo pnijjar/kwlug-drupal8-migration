@@ -1,0 +1,83 @@
+uuid: 8d43c214-7069-46b7-ab64-8e5263e56dc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.library_book.field_author
+    - field.field.node.library_book.field_contents
+    - field.field.node.library_book.field_copyright_date
+    - field.field.node.library_book.field_donator
+    - field.field.node.library_book.field_isbn
+    - field.field.node.library_book.field_page_category
+    - field.field.node.library_book.field_pages
+    - field.field.node.library_book.field_publisher
+    - field.field.node.library_book.field_synopsis
+    - node.type.library_book
+  module:
+    - text
+    - user
+id: node.library_book.default
+targetEntityType: node
+bundle: library_book
+mode: default
+content:
+  field_author:
+    type: string
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_contents:
+    type: text_default
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_copyright_date:
+    type: string
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_donator:
+    type: string
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_isbn:
+    type: string
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_pages:
+    type: string
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_publisher:
+    type: string
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_synopsis:
+    type: text_default
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_page_category: true

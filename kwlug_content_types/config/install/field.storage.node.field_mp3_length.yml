@@ -1,0 +1,19 @@
+uuid: 76eb1113-aacf-407a-88d3-092805b86a41
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mp3_length
+field_name: field_mp3_length
+entity_type: node
+type: string
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

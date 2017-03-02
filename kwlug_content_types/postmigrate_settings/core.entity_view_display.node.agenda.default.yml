@@ -1,0 +1,118 @@
+uuid: 9ac69860-aa71-4674-80c2-a375dc8e53b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_blogtags
+    - field.field.node.agenda.field_file_attachments
+    - field.field.node.agenda.field_floss_fund_nominee_link
+    - field.field.node.agenda.field_header_image
+    - field.field.node.agenda.field_meeting_date
+    - field.field.node.agenda.field_meeting_location
+    - field.field.node.agenda.field_page_category
+    - field.field.node.agenda.field_podcast_link
+    - field.field.node.agenda.field_presentation_title
+    - field.field.node.agenda.field_vidcast_link
+    - node.type.agenda
+  module:
+    - datetime
+    - file
+    - image
+    - text
+    - user
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  field_blogtags:
+    weight: 10
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_date:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: fallback
+    third_party_settings: {  }
+  field_file_attachments:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_table
+  field_floss_fund_nominee_link:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_floss_fund_string:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_header_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_meeting_date:
+    weight: 2
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+  field_meeting_location:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_podcast_link:
+    type: entity_reference_label
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_presentation_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_vidcast_link:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_page_category: true

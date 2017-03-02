@@ -1,0 +1,67 @@
+uuid: dbc9804a-a285-4419-a635-dca53f7e85b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nominee.body
+    - field.field.node.nominee.field_contribution
+    - field.field.node.nominee.field_contribution_date
+    - field.field.node.nominee.field_contribution_details
+    - field.field.node.nominee.field_image
+    - node.type.nominee
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.nominee.default
+targetEntityType: node
+bundle: nominee
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_contribution:
+    type: basic_string
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_contribution_date:
+    weight: 4
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+  field_contribution_details:
+    type: basic_string
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_file_attachments:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_table
+hidden:
+  field_page_category: true

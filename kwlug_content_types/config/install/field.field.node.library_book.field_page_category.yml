@@ -1,0 +1,21 @@
+uuid: e49dddee-d246-11e6-9318-3becee750805
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_category
+    - node.type.library_book
+  module:
+    - options
+id: node.library_book.field_page_category
+field_name: field_page_category
+entity_type: node
+bundle: library_book
+label: 'Page Category'
+description: ''
+required: true
+translatable: false
+default_value: 'Library Book'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

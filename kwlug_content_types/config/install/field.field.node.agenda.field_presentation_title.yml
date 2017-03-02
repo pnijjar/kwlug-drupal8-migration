@@ -1,0 +1,19 @@
+uuid: c8e98b81-e53d-4295-a248-f90fad345b4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presentation_title
+    - node.type.agenda
+id: node.agenda.field_presentation_title
+field_name: field_presentation_title
+entity_type: node
+bundle: agenda
+label: 'Presentation Title'
+description: 'The title(s) of the presentations held at this meeting.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

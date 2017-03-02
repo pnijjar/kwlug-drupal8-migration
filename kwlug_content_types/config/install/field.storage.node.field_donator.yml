@@ -1,0 +1,21 @@
+uuid: 82925a93-40cb-4912-b729-fb660fb7bc70
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_donator
+field_name: field_donator
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

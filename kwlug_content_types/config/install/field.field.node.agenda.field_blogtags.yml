@@ -1,0 +1,28 @@
+uuid: e2343d94-d5ea-11e6-b301-2bd0ca55fa5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blogtags
+    - node.type.agenda
+    - taxonomy.vocabulary.blogtags
+id: node.agenda.field_blogtags
+field_name: field_blogtags
+entity_type: node
+bundle: agenda
+label: Tags
+description: 'Optional. Tags will autocomplete. Separate multiple tags by commas.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      blogtags: blogtags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: 1e1abe18-4255-4170-9a42-504b02845c28
+langcode: en
+status: true
+dependencies: {  }
+name: 'Meeting Agenda'
+type: agenda
+description: 'Meeting agenda links the date and time with a location and presentation topics, and perhaps an emcee.  '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,22 @@
+uuid: 5a677f7b-46aa-4aee-bf8c-dc4be2864356
+langcode: en
+status: true
+dependencies: {  }
+id: organizer
+label: Organizer
+weight: 3
+is_admin: null
+permissions:
+  - 'view own unpublished content'
+  - 'create agenda content'
+  - 'delete own agenda content'
+  - 'edit any agenda content'
+  - 'edit own agenda content'
+  - 'create page content'
+  - 'delete own page content'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'create podcast content'
+  - 'delete own podcast content'
+  - 'edit own podcast content'
+  - 'access in-place editing'

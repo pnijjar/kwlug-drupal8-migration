@@ -1,0 +1,13 @@
+uuid: 1f6c0e44-01a7-4990-a4eb-b9b2b7549703
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
+name: Page
+type: page
+description: 'Use this for static pages, blogs, and vidcasts. Remember to set the Page Category to the appropriate classification!'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,27 @@
+uuid: 34c82fa4-d6d7-4573-a5ca-baa897386d15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_location
+    - node.type.agenda
+_core:
+  default_config_hash: qn-cmjdiJLlcf8hIrVYf5N8SifFQ50A_2VEzRYl3_kQ
+id: node.agenda.field_meeting_location
+field_name: field_meeting_location
+entity_type: node
+bundle: agenda
+label: 'Meeting Location'
+description: 'Where will the meeting be held? Leave empty if this is not in a usual location.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: content_by_page_category
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

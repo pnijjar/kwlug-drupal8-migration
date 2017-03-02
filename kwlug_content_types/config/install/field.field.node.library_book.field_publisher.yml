@@ -1,0 +1,19 @@
+uuid: 64a1b573-9ee1-48e4-852d-55352f908c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publisher
+    - node.type.library_book
+id: node.library_book.field_publisher
+field_name: field_publisher
+entity_type: node
+bundle: library_book
+label: Publisher
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 06ec42da-cf1f-11e6-8a70-7f428e0358ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_category
+    - node.type.nominee
+  module:
+    - options
+id: node.nominee.field_page_category
+field_name: field_page_category
+entity_type: node
+bundle: nominee
+label: 'Page Category'
+description: ''
+required: true
+translatable: false
+default_value: 'FLOSS Fund Nominee'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

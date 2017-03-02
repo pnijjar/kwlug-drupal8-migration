@@ -1,0 +1,21 @@
+uuid: 51f61e89-3492-4dfe-b373-ff9fa7828b15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contribution_date
+    - node.type.nominee
+  module:
+    - datetime
+id: node.nominee.field_contribution_date
+field_name: field_contribution_date
+entity_type: node
+bundle: nominee
+label: 'Contribution Date'
+description: 'When the contribution was made.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

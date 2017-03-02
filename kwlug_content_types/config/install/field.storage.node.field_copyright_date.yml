@@ -1,0 +1,21 @@
+uuid: 1b1c97a0-ca86-4932-9446-49f86c4dbd31
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_copyright_date
+field_name: field_copyright_date
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
