@@ -31,6 +31,13 @@ a.menu__link {
   font-weight: 900; 
 } 
 
+/* It is confusing that the top level links are 
+ * clickable. Maybe an underline will help?
+ */
+a.menu__link.is_active { 
+  text-decoration: underline;
+}
+
 /* phone hamburger menu background color */
 .rm-toggle__link, .rm-toggle__link:focus { 
   /* darker blue */
