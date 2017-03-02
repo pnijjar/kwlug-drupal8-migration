@@ -1,6 +1,6 @@
 name: kwlug_menu
 type: module
-description: TEMP set up Drupal menus 
+description: Set up Drupal menus 
 core: 8.x
 package: Custom
 dependencies: {  }
