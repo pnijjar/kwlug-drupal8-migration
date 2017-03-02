@@ -1,0 +1,80 @@
+uuid: c2015ee1-d8cd-45b6-9384-9de8450daca6
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_blog
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Nodes (blog)'
+source:
+  plugin: d6_blog_node
+  node_type: blog
+  constants:
+    bundle_type: 'page'
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: map_kwlug_format_filter
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_page_category: 
+    plugin: static_map
+    source: taxonomy_category
+    map:
+      'vidcast': 'Vidcast'
+    default_value: 'Blog Post'
+
+
+  field_file_attachments: 
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration
+        migration: upgrade_d6_file
+        source: fid
+      display:
+        plugin: default_value
+        default_value: 1
+      description: description
+  
+  type: constants/bundle_type
+
+#  field_file_attachments:
+#    plugin: migration
+#    migration: upgrade_d6_upload
+#    source: target_id
+
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: page
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+    - upgrade_d6_node_type
+    - upgrade_d6_node_settings
+    - upgrade_d6_file
+    # - upgrade_d6_filter_format
+  optional:
+    - upgrade_d6_field_instance_widget_settings
+    - upgrade_d6_field_formatter_settings
+    - upgrade_d6_upload_field_instance
+    # - upgrade_d6_filter_format

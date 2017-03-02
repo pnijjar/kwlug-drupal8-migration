@@ -1,0 +1,29 @@
+uuid: bdd20a0b-214a-47dd-b545-d9612f23de34
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_path_redirect
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Path Redirect'
+source:
+  plugin: d6_path_redirect
+process:
+  rid: rid
+  redirect_source: source
+  redirect_redirect:
+    plugin: d6_path_redirect
+    source:
+      - redirect
+      - query
+  language:
+    plugin: default_value
+    source: language
+    default_value: und
+  status_code: type
+destination:
+  plugin: 'entity:redirect'
+migration_dependencies:
+  required: {  }
+  optional: {  }

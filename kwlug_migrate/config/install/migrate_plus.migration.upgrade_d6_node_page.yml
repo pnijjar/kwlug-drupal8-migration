@@ -1,0 +1,67 @@
+uuid: 23ab3f0d-356d-48b6-8c5e-493e2f9d5b3e
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_page
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Nodes (page)'
+source:
+  plugin: d6_upload_node
+  node_type: page
+  constants:
+    category: 'Static Page'
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: map_kwlug_format_filter
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+
+  field_page_category: constants/category
+
+  field_file_attachments: 
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration
+        migration: upgrade_d6_file
+        source: fid
+      display:
+        plugin: default_value
+        default_value: 1
+      description: description
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: page
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+    - upgrade_d6_node_type
+    - upgrade_d6_node_settings
+    - upgrade_d6_file
+#     - upgrade_d6_filter_format
+  optional:
+    - upgrade_d6_field_instance_widget_settings
+    - upgrade_d6_field_formatter_settings
+    - upgrade_d6_upload_field_instance
+    # - upgrade_d6_filter_format

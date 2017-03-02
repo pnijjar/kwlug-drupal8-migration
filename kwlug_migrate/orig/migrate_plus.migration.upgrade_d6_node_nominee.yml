@@ -1,0 +1,96 @@
+uuid: ba5e0d30-8c00-4f95-b8d0-26b91becd573
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_nominee
+migration_tags:
+  - 'Drupal 6'
+migration_group: migrate_drupal_6
+label: 'Nodes (nominee)'
+source:
+  plugin: d6_node
+  node_type: nominee
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_image:
+    plugin: d6_cck_file
+    source: field_image
+  field_contribution:
+    plugin: iterator
+    source: field_contribution
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_contribution_details:
+    plugin: iterator
+    source: field_contribution_details
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_contribution_date: field_contribution_date
+destination:
+  plugin: 'entity:node'
+  default_bundle: nominee
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+    - upgrade_d6_node_type
+    - upgrade_d6_node_settings
+    - upgrade_d6_filter_format
+  optional:
+    - upgrade_d6_field_instance_widget_settings
+    - upgrade_d6_field_formatter_settings
+    - upgrade_d6_upload_field_instance
+    - upgrade_d6_filter_format
+    - upgrade_d7_filter_format

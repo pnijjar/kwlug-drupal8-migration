@@ -1,0 +1,58 @@
+uuid: efa4d799-2e64-427d-b098-123112c1b8e0
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_user
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'User accounts'
+source:
+  plugin: d6_contributing_user
+process:
+  uid: uid
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  status: 
+    plugin: default_value
+    default_value: 0
+  timezone:
+    plugin: user_update_7002
+    source: timezone
+  langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: false
+  preferred_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+  preferred_admin_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+  init: init
+  roles:
+    plugin: migration
+    migration: upgrade_d6_user_role
+    source: roles
+  user_picture:
+    plugin: migration
+    migration: upgrade_d6_user_picture_file
+    source: uid
+    no_stub: true
+destination:
+  plugin: 'entity:user'
+  md5_passwords: true
+migration_dependencies:
+  required:
+    - upgrade_d6_user_role
+  optional:
+    - upgrade_d6_user_picture_file
+    - upgrade_user_picture_entity_display
+    - upgrade_user_picture_entity_form_display
+    - upgrade_d6_user_role

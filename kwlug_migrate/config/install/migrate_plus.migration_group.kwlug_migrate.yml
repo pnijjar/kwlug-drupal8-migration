@@ -1,0 +1,7 @@
+id: kwlug_migrate
+label: D6 imports
+descriptions: Content to import to the new site
+source_type: Drupal 6
+shared_configuration:
+  source:
+    key: upgrade

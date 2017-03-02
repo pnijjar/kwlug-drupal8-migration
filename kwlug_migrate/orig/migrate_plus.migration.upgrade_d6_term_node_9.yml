@@ -1,0 +1,64 @@
+uuid: f49b44a5-b838-450e-9664-85816eee3759
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_term_node_9
+migration_tags:
+  - 'Drupal 6'
+migration_group: migrate_drupal_6
+label: 'Term/node relationships'
+source:
+  plugin: d6_term_node
+  vid: '9'
+process:
+  nid:
+    -
+      plugin: migration
+      migration:
+        - upgrade_d6_node_agenda
+        - upgrade_d6_node_blog
+        - upgrade_d6_node_book
+        - upgrade_d6_node_image
+        - upgrade_d6_node_location
+        - upgrade_d6_node_nominee
+        - upgrade_d6_node_page
+        - upgrade_d6_node_podcast
+        - upgrade_d6_node_presentation
+        - upgrade_d6_node_profile
+        - upgrade_d6_node_story
+      source: nid
+    -
+      plugin: skip_on_empty
+      method: row
+  type: type
+  blogtags: tid
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    0: upgrade_d6_vocabulary_entity_display
+    1: upgrade_d6_vocabulary_entity_form_display
+    73: upgrade_d6_node_agenda
+    74: upgrade_d6_node_blog
+    75: upgrade_d6_node_book
+    76: upgrade_d6_node_image
+    77: upgrade_d6_node_location
+    78: upgrade_d6_node_nominee
+    79: upgrade_d6_node_page
+    80: upgrade_d6_node_podcast
+    81: upgrade_d6_node_presentation
+    82: upgrade_d6_node_profile
+    83: upgrade_d6_node_story
+  optional:
+    - upgrade_d6_node_agenda
+    - upgrade_d6_node_blog
+    - upgrade_d6_node_book
+    - upgrade_d6_node_image
+    - upgrade_d6_node_location
+    - upgrade_d6_node_nominee
+    - upgrade_d6_node_page
+    - upgrade_d6_node_podcast
+    - upgrade_d6_node_presentation
+    - upgrade_d6_node_profile
+    - upgrade_d6_node_story
+    - upgrade_d6_node

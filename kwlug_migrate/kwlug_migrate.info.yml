@@ -1,0 +1,10 @@
+name: kwlug_migrate
+type: module
+description: Migrate content from Drupal 6 to Drupal 8
+core: 8.x
+package: Custom
+dependencies:
+  - migrate_plus
+  - migrate_drupal
+  - migrate_tools
+  - migrate_upgrade

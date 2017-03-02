@@ -1,0 +1,23 @@
+uuid: 60e9206c-d7ec-4f2d-8a68-fb92e330e970
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_comment_type
+migration_tags:
+  - 'Drupal 6'
+migration_group: migrate_drupal_6
+label: 'Comment type'
+source:
+  plugin: d6_comment_variable_per_comment_type
+  constants:
+    entity_type: node
+process:
+  target_entity_type_id: constants/entity_type
+  id: comment_type
+  label: label
+  description: description
+destination:
+  plugin: 'entity:comment_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }

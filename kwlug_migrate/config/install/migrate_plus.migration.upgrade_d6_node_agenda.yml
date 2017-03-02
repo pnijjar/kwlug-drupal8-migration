@@ -1,0 +1,82 @@
+uuid: 23c9a226-ec4d-4528-a6e9-8cd5e6a1fe2a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_agenda
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Nodes (agenda)'
+source:
+  plugin: d6_agenda_node
+  node_type: agenda
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: map_kwlug_format_filter
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_emcee: emcee_uid
+  field_meeting_date: meeting_date
+  field_meeting_location: meeting_location_nid
+
+  field_presentation_title: presentation_title
+  field_floss_fund_nominee_link/target_id: floss_fund_nominee
+
+  field_podcast_link:
+    plugin: iterator
+    source: podcast_nid
+    process: 
+      target_id: nid
+
+  field_vidcast_link:
+    plugin: iterator
+    source: vidcast_nid
+    process: 
+      target_id: nid
+
+  field_file_attachments: 
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration
+        migration: upgrade_d6_file
+        source: fid
+      display: 
+        plugin: default_value
+        default_value: 1
+      description: description
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: agenda
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+    - upgrade_d6_node_type
+    - upgrade_d6_node_settings
+    - upgrade_d6_file
+    # - upgrade_d6_filter_format
+    # - upgrade_d6_node_nominee
+  optional:
+    - upgrade_d6_field_instance_widget_settings
+    - upgrade_d6_field_formatter_settings
+    - upgrade_d6_upload_field_instance
+    - upgrade_d6_filter_format

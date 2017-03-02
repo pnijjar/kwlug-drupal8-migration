@@ -1,0 +1,28 @@
+uuid: 57fd4bb5-d39f-4e6f-a163-f2303b0516f0
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_comment_field
+migration_tags:
+  - 'Drupal 6'
+migration_group: migrate_drupal_6
+label: 'Comment field configuration'
+source:
+  plugin: d6_comment_variable_per_comment_type
+  constants:
+    entity_type: node
+    type: comment
+process:
+  entity_type: constants/entity_type
+  field_name: comment_type
+  type: constants/type
+  settings/comment_type: comment_type
+destination:
+  plugin: 'entity:field_storage_config'
+  dependencies:
+    module:
+      - comment
+migration_dependencies:
+  required:
+    - upgrade_d6_comment_type
+  optional: {  }

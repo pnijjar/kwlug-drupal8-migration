@@ -1,0 +1,55 @@
+uuid: 522586fa-cd8d-11e6-aced-0340b1e465b5
+langcode: en
+status: true
+dependencies: {  }
+id: kwlug_migrate_agenda_redirect
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Path Redirect (Merged Presentations)'
+source:
+  plugin: d6_merged_presentation_node
+  node_type: presentation
+  constants:
+    nodelist: node/
+    internal: internal:/
+process:
+  # If you omit this will it auto-generate?
+  # rid: rid
+  
+  # Test whether there is a presentation NID. If not, don't create 
+  # a redirect.
+  #dummy_test:
+  #  plugin: skip_on_empty
+  #  source: presentation_nid
+  #  method: row
+
+  redirect_source: 
+    plugin: concat
+    source:
+      - constants/nodelist
+      - nid
+
+  # This is broken broken broken for multiple presentations.
+  # There is no easy way to fix this without an iterator, though.
+  redirect_redirect:
+    plugin: concat
+    source:
+      - constants/internal
+      - constants/nodelist
+      - agenda_nid 
+
+  status_code: 
+    plugin: default_value
+    default_value: 301
+
+  language:
+    plugin: default_value
+    source: language
+    default_value: und
+  status_code: type
+destination:
+  plugin: 'entity:redirect'
+migration_dependencies:
+  required: {  } 
+  optional: {  }
