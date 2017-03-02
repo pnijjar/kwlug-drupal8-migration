@@ -1,0 +1,30 @@
+uuid: 7baac7b9-a73b-4199-8f40-aea2106105a1
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_system_logging
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+migration_group: migrate_drupal_6
+label: 'System logging'
+source:
+  plugin: variable
+  variables:
+    - error_level
+process:
+  error_level:
+    plugin: static_map
+    source: error_level
+    default_value: all
+    map:
+      - hide
+      - some
+      - all
+      - verbose
+destination:
+  plugin: config
+  config_name: system.logging
+migration_dependencies:
+  required: {  }
+  optional: {  }

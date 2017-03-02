@@ -1,0 +1,27 @@
+uuid: 42e026ef-a52c-4c28-8f71-5bcf50f656ce
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_block_content_type
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+migration_group: migrate_drupal_6
+label: 'Block content type'
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      id: basic
+      label: Basic
+  ids:
+    id:
+      type: string
+process:
+  id: id
+  label: label
+destination:
+  plugin: 'entity:block_content_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }

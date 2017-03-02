@@ -1,0 +1,28 @@
+uuid: 6755d364-dcf0-464b-9ba7-2df16bdea5e9
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_setting_status
+migration_tags:
+  - 'Drupal 6'
+migration_group: migrate_drupal_6
+label: 'Node type ''status'' setting'
+source:
+  plugin: d6_node_type
+  constants:
+    entity_type: node
+    field_name: status
+process:
+  entity_type: constants/entity_type
+  bundle: type
+  field_name: constants/field_name
+  label:
+    plugin: default_value
+    default_value: 'Publishing status'
+  default_value/0/value: options/status
+destination:
+  plugin: 'entity:base_field_override'
+migration_dependencies:
+  required:
+    - upgrade_d6_node_type
+  optional: {  }

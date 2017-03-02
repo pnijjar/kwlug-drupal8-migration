@@ -1,0 +1,73 @@
+uuid: f2009250-4972-45d6-852e-25d807bc243f
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_term_node_revision_5
+migration_tags:
+  - 'Drupal 6'
+migration_group: migrate_drupal_6
+label: 'Term/node relationship revisions'
+source:
+  plugin: d6_term_node_revision
+  vid: '5'
+process:
+  vid:
+    -
+      plugin: migration
+      migration:
+        - upgrade_d6_node_agenda
+        - upgrade_d6_node_blog
+        - upgrade_d6_node_book
+        - upgrade_d6_node_image
+        - upgrade_d6_node_location
+        - upgrade_d6_node_nominee
+        - upgrade_d6_node_page
+        - upgrade_d6_node_podcast
+        - upgrade_d6_node_presentation
+        - upgrade_d6_node_profile
+        - upgrade_d6_node_story
+      source: vid
+    -
+      plugin: skip_on_empty
+      method: row
+  type: type
+  resources: tid
+destination:
+  plugin: 'entity_revision:node'
+migration_dependencies:
+  required:
+    130: upgrade_d6_term_node_1
+    131: upgrade_d6_term_node_2
+    132: upgrade_d6_term_node_3
+    133: upgrade_d6_term_node_4
+    134: upgrade_d6_term_node_5
+    135: upgrade_d6_term_node_6
+    136: upgrade_d6_term_node_7
+    137: upgrade_d6_term_node_8
+    138: upgrade_d6_term_node_9
+    139: upgrade_d6_term_node_10
+    140: upgrade_d6_term_node_12
+    85: upgrade_d6_node_revision_agenda
+    86: upgrade_d6_node_revision_blog
+    87: upgrade_d6_node_revision_book
+    88: upgrade_d6_node_revision_image
+    89: upgrade_d6_node_revision_location
+    90: upgrade_d6_node_revision_nominee
+    91: upgrade_d6_node_revision_page
+    92: upgrade_d6_node_revision_podcast
+    93: upgrade_d6_node_revision_presentation
+    94: upgrade_d6_node_revision_profile
+    95: upgrade_d6_node_revision_story
+  optional:
+    - upgrade_d6_node_agenda
+    - upgrade_d6_node_blog
+    - upgrade_d6_node_book
+    - upgrade_d6_node_image
+    - upgrade_d6_node_location
+    - upgrade_d6_node_nominee
+    - upgrade_d6_node_page
+    - upgrade_d6_node_podcast
+    - upgrade_d6_node_presentation
+    - upgrade_d6_node_profile
+    - upgrade_d6_node_story
+    - upgrade_d6_node
