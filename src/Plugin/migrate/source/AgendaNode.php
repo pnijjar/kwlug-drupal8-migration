@@ -26,7 +26,7 @@ use \DateTimeZone;
 class AgendaNode extends D6Node { 
 
   // Set start bigger than end to turn off debugging
-  private $DEBUG_NID_START = 1010; // was 484
+  private $DEBUG_NID_START = 1026; // was 484
   private $DEBUG_NID_END = 1025;
   private $TARGET_TERM = 'vidcast';
 
