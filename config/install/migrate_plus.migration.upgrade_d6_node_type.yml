@@ -1,0 +1,42 @@
+uuid: 6fee0ab9-c621-4ecd-a02a-6f334734ad0c
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_type
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Node type configuration'
+source:
+  plugin: d6_node_type
+  constants:
+    preview: 1
+    create_body: false
+process:
+
+  # This is the wrong way to do this. Oh wells.
+  type: 
+    plugin: static_map 
+    bypass: false
+    source: type
+    map: 
+      page: page
+      podcast: podcast
+      nominee: nominee
+      agenda: agenda
+  name: name
+  module: module
+  description: description
+  help: help
+  title_label: title_label
+  preview_mode: constants/preview
+  display_submitted: display_submitted
+  new_revision: options/revision
+  settings/node/options: options
+  create_body: has_body
+  create_body_label: body_label
+destination:
+  plugin: 'entity:node_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }
