@@ -1,0 +1,114 @@
+# Menu for KWLUG site
+
+kwlug_menu.meetings:
+  title: Meetings
+  description: "What's the buzz? Tell me what's happening."
+  url: internal:/upcoming-meetings
+  menu_name: main 
+  weight: -50
+  expanded: 1
+
+kwlug_menu.upcoming-meetings:
+  title: About Meetings
+  parent: kwlug_menu.meetings
+  url: internal:/about-meetings
+  menu_name: main 
+  weight: -49
+  expanded: 1
+
+kwlug_menu.past-meetings:
+  title: Past Meetings
+  description: "Meeting info, recordings and slides"
+  parent: kwlug_menu.meetings
+  url: internal:/past-meetings
+  menu_name: main 
+  weight: -48
+  expanded: 1
+
+kwlug_menu.location:
+  title: Meeting Location 
+  parent: kwlug_menu.meetings
+  description: "Directions! Maps! Pictures!"
+  url: internal:/sjk
+  menu_name: main 
+  weight: -47
+  expanded: 1
+
+kwlug_menu.presenter-tips:
+  title: Tips for Presenters
+  parent: kwlug_menu.meetings
+  url: internal:/presenter-tips
+  menu_name: main 
+  weight: -47
+  expanded: 1
+
+kwlug_menu.community:
+  title: Community
+  url: internal:/community
+  menu_name: main
+  weight: -49
+  expanded: 1
+
+kwlug_menu.mailing-lists:
+  title: Mailing Lists
+  url: internal:/mailing-lists
+  parent: kwlug_menu.community
+  menu_name: main
+  weight: -50
+  expanded: 1
+
+kwlug_menu.podcasts:
+  title: Podcasts
+  url: internal:/podcasts
+  parent: kwlug_menu.community
+  menu_name: main
+  weight: -49
+  expanded: 1
+
+kwlug_menu.vidcasts:
+  title: Vidcast 
+  url: internal:/vidcasts
+  parent: kwlug_menu.community
+  menu_name: main
+  weight: -48
+  expanded: 1
+
+kwlug_menu.events:
+  title: Community Events
+  url: internal:/community-events
+  parent: kwlug_menu.community
+  menu_name: main
+  weight: -47
+  expanded: 1
+
+kwlug_menu.resources:
+  title: Resources
+  url: internal:/resources
+  menu_name: main
+  weight: -48
+  expanded: 1
+
+kwlug_menu.blogs:
+  title: Blog Archives
+  parent: kwlug_menu.resources
+  url: internal:/blogs
+  menu_name: main
+  weight: -50
+  expanded: 1
+
+
+kwlug_menu.history:
+  title: History
+  url: internal:/history
+  parent: kwlug_menu.resources
+  menu_name: main
+  weight: -50
+  expanded: 1
+
+
+kwlug_menu.contact:
+  title: Contact
+  url: internal:/contact
+  menu_name: main
+  weight: -47
+  expanded: 1
