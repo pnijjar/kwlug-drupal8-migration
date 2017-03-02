@@ -1,6 +1,6 @@
 default_challenge: riddler/Riddler
 description: 'Answer this skill-testing question!'
-administration_mode: true
+administration_mode: false
 allow_on_admin_pages: false
 add_captcha_description: true
 default_validation: 1
