@@ -98,7 +98,7 @@ content:
     third_party_settings: {  }
   field_presentation_title:
     weight: 1
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

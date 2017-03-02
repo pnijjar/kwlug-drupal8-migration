@@ -49,7 +49,7 @@ content:
   field_presentation_title:
     type: string
     weight: 0
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
