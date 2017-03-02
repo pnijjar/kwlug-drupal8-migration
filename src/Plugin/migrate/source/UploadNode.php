@@ -16,7 +16,7 @@ use Drupal\node\Plugin\migrate\source\d6\Node as D6Node;
  * @MigrateSource(
  *   id = "d6_upload_node"
  * )
- * Associate blogtags with blogs.
+ * Find uploaded files.
  */
 class UploadNode extends D6Node { 
 
