@@ -4,9 +4,11 @@ description: Specify dependencies to get D8 install up quickly, because I have n
 core: 8.x
 package: Custom
 dependencies:
-  - kwlug_migrate
   - kwlug_enclosure_rss
   - kwlug_content_types
   - admin_toolbar
   - redirect
   - riddler
+
+# kwlug_migrate is NOT here any more, because we want to uninstall it
+# after the migration is complete!
