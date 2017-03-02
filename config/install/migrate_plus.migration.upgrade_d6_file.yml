@@ -10,7 +10,7 @@ label: Files
 source:
   plugin: d6_file
   constants:
-    source_base_path: /var/www/html/d6/public_html/sites/kwlug.org/files
+    source_base_path: /home/linuxuser/drupal/files
 process:
   fid: fid
   filename: filename
