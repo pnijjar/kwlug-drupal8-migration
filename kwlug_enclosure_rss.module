@@ -26,4 +26,23 @@ function template_preprocess_views_view_row_enclosure_rss(&$variables) {
   $variables['enclosure'] = $item->enclosure;
 
 } // end template_preprocess_views_view_row_enclosure_rss
+
+/* 
+function kwlug_enclosure_rss_preprocess_views_view_rss(&$variables) {
+  template_preprocess_views_view_rss($variables);
+  dsm("Whee! in kwlug_enclosure_rss_preprocess_views_view_rss");
+  $variables['channel_elements'] = "
+     <image>
+     <url>http://kwlug.org/sites/kwlug.org/files/kwlug4-podcast.png</url>
+     <title>KWLUG Audio Podcast -- MP3 feed</title>
+     <link>http://kwlug.org/</link>
+     <description>Serving Waterloo region and beyond</description>
+     <width>144</width>
+     <height>132</height>
+     </image>
+     <copyright>http://creativecommons.org/licenses/by-sa/4.0/</copyright>
+     ";
+
+} // end template_preprocess_views_view_kwlug_rss
+*/
  
