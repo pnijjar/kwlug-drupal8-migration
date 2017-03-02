@@ -1,0 +1,156 @@
+<?php 
+
+/***
+ * Validate archive.org URLs and download the file sizes.
+ */
+function kwlug_content_types_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if (($form_id == 'node_podcast_form') || 
+      ($form_id == 'node_podcast_edit_form')) { 
+    // \Drupal::logger('fix_rss')->notice('In podcast edit form');
+
+
+    
+    $form['#validate'][] = 'kwlug_content_types_podcast_node_validate';
+    $form['#submit'][] = 'kwlug_content_types_podcast_node_submit';
+
+    // Insert before the ::save
+
+    $actions = array(
+        'submit' => 'submit', 
+        'publish' => 'publish',
+        );
+    foreach ($actions as $a) { 
+        array_unshift($form['actions'][$a]['#submit'], 
+            'kwlug_content_types_podcast_node_submit');
+
+    } 
+
+    // $form['actions']['submit']['#submit'][] = 'kwlug_content_types_podcast_node_submit';
+
+    //dpm($form);
+    // dpm($form_state);
+
+  } // end if 
+
+} // end hook_form_alter
+
+
+
+/** 
+ * Make sure that the podcast entries are from archive.org
+ */
+
+function kwlug_content_types_podcast_node_validate ($form, 
+    \Drupal\Core\Form\FormStateInterface &$form_state) {
+
+  // $form_state['values'][$podcast_field][0]['value']
+
+  $filetypes = array ( 
+    'mp3' => 'podcast_mp3',
+    'ogg' => 'podcast_ogg',
+    'flac' => 'podcast_flac',
+  );
+
+  $archive_org_id = $form_state->getValue(array('field_archive_org_id', 0, 'value'));
+
+  $archive_regexp = '@^https://archive.org/download/' 
+    . $archive_org_id
+    . '@';
+
+
+  foreach ($filetypes as $f => $ffield ) {
+
+    $podcast_field = 'field_podcast_' . $f;
+    $podcast_field_value = $form_state->getValue(array($podcast_field, 0, 'value'));
+
+
+    if (!preg_match($archive_regexp, $podcast_field_value)) { 
+
+      $form_state->setErrorByName($podcast_field, 'This does not look like the correct'
+        . ' archive.org URL! Is this wrong or is the ArchiveID wrong?' );
+
+    } 
+
+    $type_regexp = '@\.' . $f . '$@';
+    if (!preg_match($type_regexp, $podcast_field_value)) { 
+      $form_state->setErrorByName($podcast_field, 'Incorrect filetype: expected ' .$f);
+    }
+
+  } // end foreach
+
+  // \Drupal::logger('fix_rss')->notice('END of podcast VALIDATE method');
+
+} // end kwlug_content_types_podcast_node_validate
+
+/**  
+ * Populate podcast length fields on submission
+ */
+function kwlug_content_types_podcast_node_submit ($form, 
+    \Drupal\Core\Form\FormStateInterface &$form_state) { 
+
+  \Drupal::logger('fix_rss')->notice('In podcast SUBMIT method');
+
+  // The values are dummy ones here
+  $filetypes = array (
+    'mp3' => 'podcast_mp3',
+    'ogg' => 'podcast_ogg',
+    'flac' => 'podcast_flac',
+  );
+
+  // Initialize the stream to pick up headers
+  // From: http://php.net/manual/en/function.get-headers.php
+
+  stream_context_set_default(
+    array(
+      'http' => array(
+        'method' => 'HEAD'
+      )
+    )
+  );
+
+  // Loop through each file type
+  foreach ($filetypes as $f => $ffield ) {
+
+    $podcast_field = 'field_podcast_' . $f;
+
+    $podcast_url = $form_state->getValue(array($podcast_field, 0, 'value'));
+    // We should also check that this is an archive.org URL
+    if (!empty($podcast_url)) {
+
+       $headers = get_headers($podcast_url, $format = 1);
+
+       // Now parse the headers
+       // from: http://cgit.drupalcode.org/views_rss/commit/?id=69321d0284f8417a51e463ed4bd0fcd5a3e514e7
+
+
+      $enc_length = $headers['Content-Length'];
+      if (is_array($enc_length)) {
+         $podcast_length = end($enc_length);
+      } else {
+         $podcast_length = $enc_length;
+      }
+
+      $length_field = 'field_' . $f . '_length';
+
+      // $form_state['values'][$length_field][0]['value'] = $podcast_length;
+     
+      // dpm($podcast_length);
+      // dpm($form_state->getValue($length_field));
+      $form_state->setValue($length_field, array(array('value'=>$podcast_length)));
+
+
+    } // end if podcast field not empty
+
+    dpm($form_state);
+
+  } // end of each type
+
+
+  /*  
+    print '<pre>';
+    print_r($form_state);
+    print '</pre>';
+  */
+      
+}  // end kwlug_content_types_podcast_node_submit
