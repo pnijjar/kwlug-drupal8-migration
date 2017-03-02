@@ -1,0 +1,19 @@
+uuid: e62a0d44-3cf8-4e3a-a000-fd13685fe90f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_flac_length
+field_name: field_flac_length
+entity_type: node
+type: string
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
