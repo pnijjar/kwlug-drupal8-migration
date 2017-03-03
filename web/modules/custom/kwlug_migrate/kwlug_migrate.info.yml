@@ -8,3 +8,4 @@ dependencies:
   - migrate_drupal
   - migrate_tools
   - migrate_upgrade
+  - migrate_source_csv
