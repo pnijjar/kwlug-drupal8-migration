@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: 6ajHebpIQwcrAb6bc0u4GkN69HomedeT1IX4KWhozNI
+  default_config_hash: AbyhtBfbAWA6AQkblEvZfnwdMUARfW3j4sU52O_O0VE
 id: content_by_page_category
 label: 'Content by Page Category'
 module: views
@@ -618,6 +618,49 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  feed_3:
+    display_plugin: feed
+    id: feed_3
+    display_title: 'Site Content Feed'
+    position: 12
+    display_options:
+      display_extenders: {  }
+      row:
+        type: node_rss
+        options: {  }
+      title: 'KWLUG - Site Content Feed'
+      defaults:
+        title: false
+        sitename_title: false
+        filters: false
+        filter_groups: false
+      sitename_title: false
+      display_description: ''
+      path: sitecontent.xml
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
