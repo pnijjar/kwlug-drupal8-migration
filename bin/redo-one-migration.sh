@@ -7,7 +7,7 @@
 
 element=$1
 srcdir=/home/linuxuser/kwlug-drupal-v05/web
-testdir=$srcdir/test
+testdir=$srcdir/modules/custom/kwlug_migrate/config/install
 
 pushd .
 cd $srcdir
