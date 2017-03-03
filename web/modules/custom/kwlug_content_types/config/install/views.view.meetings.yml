@@ -3,14 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
     - node.type.agenda
   module:
     - datetime
     - node
     - user
 _core:
-  default_config_hash: V5gXYrAsxvG5ZIwrTkGg-nZHgE08ALzswvyhkMfe5bQ
+  default_config_hash: 6vWjWTHYe_7iv0kiN0Zv8Pnhzb4t1Me1NwDGGbgaJCw
 id: meetings
 label: Meetings
 module: views
@@ -74,7 +73,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: full
+          relationship: none
+          view_mode: default
       fields:
         title:
           id: title
