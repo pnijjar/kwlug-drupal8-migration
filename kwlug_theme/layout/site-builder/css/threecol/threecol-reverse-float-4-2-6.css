@@ -1,0 +1,6 @@
+.threecol-reverse-float-4-2-6 .hr--1-2 .l-r, .threecol-reverse-float-4-2-6 .hr--1-3 .l-r, .threecol-reverse-float-4-2-6 .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-4-2-6 .hr--1-2 .l-r:first-child, .threecol-reverse-float-4-2-6 .hr--1-3 .l-r:first-child { float: right; margin-right: 0; }
+.threecol-reverse-float-4-2-6 .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:first-child { width: 49.15254%; float: right; margin-right: 0; }
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:nth-child(2) { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.threecol-reverse-float-4-2-6 .arc--3 .l-r:nth-child(3) { width: 15.25424%; float: left; margin-right: 1.69492%; }

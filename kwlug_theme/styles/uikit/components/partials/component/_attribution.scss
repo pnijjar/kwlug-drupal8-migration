@@ -1,0 +1,18 @@
+/**
+ * AT attribution message
+ *  - a toggle setting in the theme settings, you can turn it on/off using
+ *    the Markup overrides extension.
+ ============================================================================ */
+
+.attribution {
+  text-align: $flow-to;
+
+  &__link {
+    text-decoration: none;
+    @include adjust-font-size-to($small);
+    display: inline-block;
+    @include output-rhythm(padding-bottom, $xxx-small);
+  }
+}
+
+

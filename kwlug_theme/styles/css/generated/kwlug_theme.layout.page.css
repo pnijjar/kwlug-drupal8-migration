@@ -1,0 +1,40 @@
+/* Layout CSS for: page.html.twig, generated: Tue, 26 Jan 16 21:55:55 +1300 */
+.l-rw { max-width: 75em; margin-left: auto; margin-right: auto; }
+.l-rw:after { content: " "; display: block; clear: both; }
+@media all and (min-width: 60.063em) {
+.pr-header .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.pr-header .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.pr-features .hr--1-2 .l-r:first-child { width: 83.05085%; float: right; margin-right: 0; }
+.pr-features .hr--1-2 .l-r:last-child { width: 15.25424%; float: left; margin-right: 1.69492%; }
+.pr-features .hr--1-3 .l-r:first-child { width: 83.05085%; float: left; margin-right: 1.69492%; }
+.pr-features .hr--1-3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.pr-features .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.pr-features .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.pr-features .arc--3 .l-r:first-child { width: 66.10169%; float: left; margin-right: 1.69492%; margin-left: 16.94915%; }
+.pr-features .arc--3 .l-r:nth-child(2) { width: 15.25424%; float: left; margin-right: 1.69492%; margin-left: -84.74576%; }
+.pr-features .arc--3 .l-r:last-child { width: 15.25424%; float: right; margin-right: 0; }
+.pr-main .hr--1-2 .l-r:first-child { width: 74.57627%; float: right; margin-right: 0; }
+.pr-main .hr--1-2 .l-r:last-child { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.pr-main .hr--1-3 .l-r:first-child { width: 74.57627%; float: left; margin-right: 1.69492%; }
+.pr-main .hr--1-3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.pr-main .hr--2-3 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.pr-main .hr--2-3 .l-r:last-child { float: right; margin-right: 0; }
+.pr-main .arc--3 .l-r:first-child { width: 49.15254%; float: left; margin-right: 1.69492%; margin-left: 25.42373%; }
+.pr-main .arc--3 .l-r:nth-child(2) { width: 23.72881%; float: left; margin-right: 1.69492%; margin-left: -76.27119%; }
+.pr-main .arc--3 .l-r:last-child { width: 23.72881%; float: right; margin-right: 0; }
+.pr-subfeatures .arc--2 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.pr-subfeatures .arc--3 .l-r { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.pr-subfeatures .arc--4 .l-r { width: 23.72881%; float: left; margin-right: 1.69492%; }
+.pr-subfeatures .l-rw:not(.arc--1) .l-r:last-child { float: right; margin-right: 0; }
+}
+@media all and (min-width: 45.063em) and (max-width: 60em) {
+.pr-features .hr--2-3 .l-r, .pr-features .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.pr-features .hr--2-3 .l-r:last-child, .pr-features .arc--3 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.pr-main .hr--2-3 .l-r, .pr-main .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.pr-main .hr--2-3 .l-r:last-child, .pr-main .arc--3 .l-r:last-child { width: 49.15254%; float: right; margin-right: 0; }
+.pr-subfeatures .arc--2 .l-r, .pr-subfeatures .arc--3 .l-r:first-child, .pr-subfeatures .arc--4 .l-r { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.pr-subfeatures .arc--2 .l-r:last-child { float: right; margin-right: 0; }
+.pr-subfeatures .arc--3 .l-r:nth-child(2) { width: 49.15254%; float: right; margin-right: 0; }
+.pr-subfeatures .arc--3 .l-r:last-child { clear: both; }
+.pr-subfeatures .arc--4 .l-r:nth-child(2n) { float: right; margin-right: 0; }
+}

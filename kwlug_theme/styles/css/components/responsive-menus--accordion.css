@@ -1,0 +1,58 @@
+/**
+ * Accordion styles are set automatically for offcanvas & slidedown.
+ ============================================================================ */
+.rm-accordion-trigger {
+  display: none;
+}
+
+.ms-accordion a:hover, .ms-accordion a:focus {
+  outline: 0;
+}
+.ms-accordion .is-parent a {
+  margin-left: 40px;
+  margin-left: 2.5rem;
+}
+.ms-accordion .menu__link--wrapper {
+  display: block;
+  position: relative;
+}
+.ms-accordion .rm-accordion-trigger {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  height: 100%;
+  max-width: 36px;
+  max-width: 2.25rem;
+}
+.ms-accordion .rm-accordion-trigger:hover, .ms-accordion .rm-accordion-trigger:focus {
+  outline: 0;
+}
+.ms-accordion .is-open--parent .rm-accordion-trigger__icon {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  transition: all, 225ms, ease-in-out;
+}
+.ms-accordion .rm-accordion-trigger__icon {
+  border-radius: 0;
+  border: 0;
+  box-sizing: content-box;
+  width: 16px;
+  width: 1rem;
+  padding: 10px;
+  padding: 0.625rem;
+  margin: 0;
+  vertical-align: middle;
+}
+.ms-accordion .is-child {
+  padding: 0;
+}
+.ms-accordion .is-child .is-parent {
+  margin-left: 40px;
+  margin-left: 2.5rem;
+}
+/*# sourceMappingURL=maps/responsive-menus--accordion.css.map */

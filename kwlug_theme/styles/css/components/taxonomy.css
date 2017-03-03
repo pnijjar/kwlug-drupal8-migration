@@ -1,0 +1,22 @@
+/**
+ * Field Taxonomy Reference (Entity Reference as tags).
+ ============================================================================ */
+.field-entity-reference-type-taxonomy-term .field__item {
+  margin: 0 11px 0 0;
+  margin: 0 0.6875rem 0 0;
+}
+[dir="rtl"] .field-entity-reference-type-taxonomy-term li {
+  margin: 0 0 0 11px;
+  margin: 0 0 0 0.6875rem;
+}
+.field-entity-reference-type-taxonomy-term .field__items {
+  padding: 0;
+}
+.field-entity-reference-type-taxonomy-term .field__item {
+  margin: 0;
+  padding: 0;
+}
+.field-entity-reference-type-taxonomy-term.field-formatter-entity-reference-entity-id.field-label-inline .field__item, .field-entity-reference-type-taxonomy-term.field-formatter-entity-reference-entity-id.field-label-hidden .field__item, .field-entity-reference-type-taxonomy-term.field-formatter-entity-reference-entity-id.field-label-visually_hidden .field__item, .field-entity-reference-type-taxonomy-term.field-formatter-entity-reference-label.field-label-inline .field__item, .field-entity-reference-type-taxonomy-term.field-formatter-entity-reference-label.field-label-hidden .field__item, .field-entity-reference-type-taxonomy-term.field-formatter-entity-reference-label.field-label-visually_hidden .field__item {
+  display: inline-block;
+}
+/*# sourceMappingURL=maps/taxonomy.css.map */

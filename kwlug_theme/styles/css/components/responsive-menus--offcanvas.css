@@ -1,0 +1,62 @@
+/**
+ * Off Canvas
+ * Toggle left or right menus that slide in.
+ ============================================================================ */
+.ms-offcanvas > .page {
+  transition: all, 225ms, ease-in-out;
+}
+.ms-offcanvas .rm-toggle {
+  float: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+.ms-offcanvas .rm-toggle__link {
+  display: inline-block;
+}
+.ms-offcanvas .rm-block__content {
+  opacity: .001;
+  display: none;
+  left: 0;
+  -webkit-transform: translate3d(-15em, 0, 0);
+          transform: translate3d(-15em, 0, 0);
+  transition: all, 225ms, ease-in-out;
+}
+.ms-offcanvas .rm-block__content a {
+  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
+  padding: 7px 18px;
+  padding: 0.4375rem 1.125rem;
+  display: block;
+}
+.ms-offcanvas .rm-block__content a:after {
+  content: none;
+  display: none;
+}
+.ms-offcanvas .rm-block__content .is-child {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all, 225ms, ease-in-out;
+}
+.ms-offcanvas .rm-block__content .is-child.is-open--child {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+.ms-offcanvas.rm-is-open > .page {
+  position: relative;
+  -webkit-transform: translate3d(15em, 0, 0);
+          transform: translate3d(15em, 0, 0);
+}
+.ms-offcanvas.rm-is-open .l-pr {
+  margin: 0;
+  padding: 0;
+}
+.ms-offcanvas.rm-is-open .rm-block__content {
+  opacity: 1;
+  display: block;
+  width: 15em;
+  position: absolute;
+  top: 0;
+}
+/*# sourceMappingURL=maps/responsive-menus--offcanvas.css.map */

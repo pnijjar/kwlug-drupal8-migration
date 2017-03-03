@@ -1,0 +1,1 @@
+{"version":3,"sources":["../quickedit.css"],"names":[],"mappings":"AAAA;;gFAEgF;AAChF;EACE,gBAAgB;EAChB,oBAAoB;CACrB","file":"../quickedit.css","sourcesContent":["/**\n * Quick Edit tweaks.\n ============================================================================ */\n.quickedit-button {\n  padding: 0 10px;\n  padding: 0 0.625rem;\n}\n"]}

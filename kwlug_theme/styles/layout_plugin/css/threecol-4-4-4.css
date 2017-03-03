@@ -1,0 +1,3 @@
+.bp--wide .atl--threecol-4-4-4.l-arc--2 > .atl__lr > .atl__lc, .bp--tablet .atl--threecol-4-4-4.l-arc--2 > .atl__lr > .atl__lc { width: 49.15254%; float: left; margin-right: 1.69492%; }
+.bp--wide .atl--threecol-4-4-4.l-arc--3 > .atl__lr > .atl__lc, .bp--tablet .atl--threecol-4-4-4.l-arc--3 > .atl__lr > .atl__lc { width: 32.20339%; float: left; margin-right: 1.69492%; }
+.bp--wide .atl--threecol-4-4-4.l-arc--2 > .atl__lr > .atl__lc:last-child, .bp--wide .atl--threecol-4-4-4.l-arc--3 > .atl__lr > .atl__lc:last-child, .bp--tablet .atl--threecol-4-4-4.l-arc--2 > .atl__lr > .atl__lc:last-child, .bp--tablet .atl--threecol-4-4-4.l-arc--3 > .atl__lr > .atl__lc:last-child { float: right; margin-right: 0; }

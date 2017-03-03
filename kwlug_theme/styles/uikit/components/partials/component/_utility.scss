@@ -1,0 +1,42 @@
+/**
+ * Utility
+ * - useful classes to be used anywhere.
+ ============================================================================ */
+
+// Center Vertically - requires a height on the parent container and position
+// relative.
+.is-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: blur(0.1px); // hack to mitigate blurring in Chrome/Webkit.
+}
+
+.is-vertical-top {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+}
+
+.is-vertical-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+}
+
+.is-horizontal-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+  display: table;
+}
+
+.is-horizontal-left {
+  left: 0;
+  right: auto;
+}
+
+.is-horizontal-right {
+  left: auto;
+  right: 0;
+}

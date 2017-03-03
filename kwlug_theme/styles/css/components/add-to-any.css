@@ -1,0 +1,14 @@
+/**
+ * Add to Any
+ *  - styles for the Add to Any module.
+ *  - https://www.drupal.org/project/addtoany
+ ============================================================================ */
+.addtoany_list > a {
+  padding: 0 2px;
+  padding: 0 0.125rem;
+}
+.addtoany_list .addtoany_share_save {
+  padding: 0 4px;
+  padding: 0 0.25rem;
+}
+/*# sourceMappingURL=maps/add-to-any.css.map */

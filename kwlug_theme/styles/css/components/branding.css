@@ -1,0 +1,36 @@
+/**
+ * Branding styles
+ *  - Drupal core branding block.
+ ============================================================================ */
+.site-branding:before, .site-branding:after {
+  content: " ";
+  display: table;
+}
+.site-branding:after {
+  clear: both;
+}
+.site-branding__text, .site-branding__name, .site-branding__slogan {
+  display: block;
+}
+.site-branding__logo-link {
+  display: inline-block;
+  padding: 6px 0;
+  padding: 0.375rem 0;
+}
+.site-branding__text {
+  margin: 0;
+}
+.site-branding__name {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: 400;
+}
+.site-branding__name-link:hover, .site-branding__name-link:focus {
+  text-decoration: none;
+}
+.site-branding__slogan {
+  font-style: normal;
+}
+/*# sourceMappingURL=maps/branding.css.map */

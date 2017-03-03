@@ -1,0 +1,395 @@
+# Base loads common styles for most Drupal sites.
+base:
+  version: 8.x-1.0
+  css:
+    base:
+      styles/css/components/font-awesome.css: {}
+      styles/css/components/webfonts.css: {}
+      styles/css/components/base.css: {}
+      styles/css/components/tables.css: {}
+      styles/css/components/form.css: {}
+      styles/css/components/field.css: {}
+      styles/css/components/image.css: {}
+      styles/css/components/page.css: {}
+      styles/css/components/block.css: {}
+      styles/css/components/node.css: {}
+      styles/css/components/user.css: {}
+      styles/css/components/views.css: {}
+      styles/css/components/menu.css: {}
+      styles/css/components/branding.css: {}
+      styles/css/components/pagers.css: {}
+      styles/css/components/breadcrumb.css: {}
+      styles/css/components/labels.css: {}
+      styles/css/components/markers.css: {}
+      styles/css/components/messages.css: {}
+      styles/css/components/print.css: {}
+
+# Aggregator
+aggregator:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/aggregator.css: {}
+
+# Book
+book:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/book.css: {}
+
+# Block user login
+login_block:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/block--user-login.css: {}
+
+# Comment
+comment:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/comments.css: {}
+
+# Contact forms
+contact:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/contact-forms.css: {}
+
+# Forum
+forum:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/forum.css: {}
+
+# Language
+language:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/language.css: {}
+
+# Responsive Menus
+responsive_menus:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus.css: {}
+
+# Responsive Menu Accordion
+responsive_menus_accordion:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--accordion.css: {}
+
+# Responsive Menu Tiles
+responsive_menus_tiles:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--tiles.css: {}
+
+# Responsive Menu Overlay
+responsive_menus_overlay:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--overlay.css: {}
+
+# Responsive Menu Dropmenu
+responsive_menus_dropmenu:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--dropmenu.css: {}
+
+# Responsive Menu Offcanvas
+responsive_menus_offcanvas:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--offcanvas.css: {}
+
+# Responsive Menu Meganav
+responsive_menus_meganav:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--meganav.css: {}
+
+# Responsive Menu Slidedown
+responsive_menus_slidedown:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--slidedown.css: {}
+
+# Responsive Menu Horizontal
+responsive_menus_horizontal:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--horizontal.css: {}
+
+# Responsive Menu Vertical
+responsive_menus_vertical:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-menus--vertical.css: {}
+
+# Responsive Tables
+responsive_tables:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/responsive-tables.css: {}
+  dependencies:
+    - at_core/at.responsivetables
+
+# Search
+search:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/search.css: {}
+
+# Taxonomy
+taxonomy:
+  version: 8.x-1.0
+  css:
+    component:
+      styles/css/components/taxonomy.css: {}
+
+# Color
+color:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/color.css: {}
+      styles/css/components/tabs.css: {}
+
+# Shortcodes Text Align
+shortcodes_textalign:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--textalign.css: {}
+
+# Shortcodes Float Region Blocks
+shortcodes_float_region_blocks:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--float-region-blocks.css: {}
+
+# Shortcodes Grid Blocks
+shortcodes_grid_blocks:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--grid-blocks.css: {}
+
+# Shortcodes Image Styles
+shortcodes_image_styles:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--image-styles.css: {}
+
+# Shortcodes Layout Columns
+shortcodes_layout_columns:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--layout-columns.css: {}
+
+# Shortcodes Menu Bullets
+shortcodes_menu_bullets:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--menu-bullets.css: {}
+
+# Shortcodes Patterns (may not be used)
+shortcodes_patterns:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--patterns.css: {}
+
+# Shortcodes Position
+shortcodes_position:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--position.css: {}
+
+# Shortcodes Rounded Corners
+shortcodes_rounded_corners:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--rounded-corners.css: {}
+
+# Shortcodes Whitespace
+shortcodes_whitespace:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/shortcodes--whitespace.css: {}
+
+# Slideshow
+slideshow_styles:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/slideshows.css: {}
+
+# Maintenance page
+maintenance_page:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/maintenance-page.css: {}
+
+# Quick Edit
+quickedit:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/quickedit.css: {}
+
+# CKEditor
+ckeditor:
+  version: 8.x-1.0
+  css:
+    state:
+      styles/css/components/ckeditor.css: {}
+
+# Toolbar
+toolbar:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/toolbar.css: {}
+
+# Form Layout Widget CSS, do not use this in the front end, its only
+# for the layout theme settings.
+layout_settings:
+  version: 8.x-1.0
+  css:
+    theme:
+      layout/site-builder/css/site-builder-form.css: {} # You probably need to change this if your theme uses a different layout plugin, i.e. you built your own.
+
+#
+# Vendor Libraries - CSS plugins from github etc.
+#
+
+# Animate - https://daneden.github.io/animate.css/
+animate:
+  remote: https://github.com/daneden/animate.css/
+  version: "3.5.1"
+  license:
+    name: MIT
+    url: https://github.com/daneden/animate.css/blob/master/README.md
+    gpl-compatible: true
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css: { type: external }
+
+# Fontfaceobserver - https://github.com/bramstein/fontfaceobserver
+fontfaceobserver:
+  version: 8.x-1.0
+  js:
+    scripts/fontfaceobserver-check.js: {}
+  dependencies:
+    - at_core/at.fontfaceobserver
+
+#
+# Generated File Libraries, do not delete these if you are using extensions!
+#
+
+# File to show the grid for debugging.
+show_grid:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/show-grid.css: {}
+
+# Theme settings generated libraries.
+fonts:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/generated/fonts.css: {}
+
+title_styles:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/generated/title-styles.css: {}
+
+custom_css:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/generated/custom-css.css: { weight: 1000 }
+
+breadcrumb:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/generated/breadcrumb.css: {}
+
+mobile_blocks:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/generated/mobile-blocks.css: {}
+
+# 3rd party module libraries.
+addtoany:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/add-to-any.css: {}
+
+ds:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/display-suite-fields.css: {}
+
+superfish:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/superfish.css: {}
+
+social_media_links:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/components/social-media-links.css: {}
+
+# Custom CSS library for novice users.
+custom_css_file:
+  version: 8.x-1.0
+  css:
+    theme:
+      styles/css/custom.css: {  weight: 1000 }
+
+global-scripts:
+  version: 8.x-1.0
+  js:
+    scripts/addjsclass.js: {} 
+  dependencies:
+    - core/jquery
+    - core/drupal
+           

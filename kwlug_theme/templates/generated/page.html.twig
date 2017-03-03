@@ -1,0 +1,88 @@
+{#
+/**
+ * site-builder page template.
+ * Generated on: Mon, 14 Dec 15 10:18:17 +1300
+ */
+#}
+{{ attach_library('kwlug_theme/kwlug_theme.layout.page') }}
+<div{{ attributes }}>
+  {% if leaderboard.has_regions == true %}
+    <div{{ leaderboard.wrapper_attributes }}>
+      <div{{ leaderboard.container_attributes }}>
+        {{ page.leaderboard }}
+      </div>
+    </div>
+  {% endif %}
+  {% if header.has_regions == true %}
+    <header{{ header.wrapper_attributes }}>
+      <div{{ header.container_attributes }}>
+        {{ page.header_first }}
+        {{ page.header_second }}
+      </div>
+    </header>
+  {% endif %}
+  {% if navbar.has_regions == true %}
+    <div{{ navbar.wrapper_attributes }}>
+      <div{{ navbar.container_attributes }}>
+        {{ page.navbar }}
+      </div>
+    </div>
+  {% endif %}
+  {% if highlighted.has_regions == true %}
+    <div{{ highlighted.wrapper_attributes }}>
+      <div{{ highlighted.container_attributes }}>
+        {{ page.highlighted }}
+      </div>
+    </div>
+  {% endif %}
+  {% if features.has_regions == true %}
+    <div{{ features.wrapper_attributes }}>
+      <div{{ features.container_attributes }}>
+        {{ page.features_first }}
+        {{ page.features_second }}
+        {{ page.features_third }}
+      </div>
+    </div>
+  {% endif %}
+  {% if content_prefix.has_regions == true %}
+    <div{{ content_prefix.wrapper_attributes }}>
+      <div{{ content_prefix.container_attributes }}>
+        {{ page.content_prefix }}
+      </div>
+    </div>
+  {% endif %}
+  {% if main.has_regions == true %}
+    <div{{ main.wrapper_attributes }}>
+      <div{{ main.container_attributes }}>
+        {{ page.content }}
+        {{ page.sidebar_first }}
+        {{ page.sidebar_second }}
+      </div>
+    </div>
+  {% endif %}
+  {% if content_suffix.has_regions == true %}
+    <div{{ content_suffix.wrapper_attributes }}>
+      <div{{ content_suffix.container_attributes }}>
+        {{ page.content_suffix }}
+      </div>
+    </div>
+  {% endif %}
+  {% if subfeatures.has_regions == true %}
+    <div{{ subfeatures.wrapper_attributes }}>
+      <div{{ subfeatures.container_attributes }}>
+        {{ page.subfeatures_first }}
+        {{ page.subfeatures_second }}
+        {{ page.subfeatures_third }}
+        {{ page.subfeatures_fourth }}
+      </div>
+    </div>
+  {% endif %}
+  {% if footer.has_regions == true %}
+    <footer{{ footer.wrapper_attributes }}>
+      <div{{ footer.container_attributes }}>
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+  {{ attribution }}
+</div>

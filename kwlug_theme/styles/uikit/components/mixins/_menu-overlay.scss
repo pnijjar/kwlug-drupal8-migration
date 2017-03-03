@@ -1,0 +1,146 @@
+// Overlay menu positions the toggle in a corner (any), with the menu
+// hidden. When toggled the menu opens in an overlay above the content
+// and fills the whole screen.
+
+@mixin overlay($toggle_position: (vert: top, horz: right)) {
+
+  $vert: map-get($toggle_position, vert);
+  $horz: map-get($toggle_position, horz);
+
+  .ms-overlay {
+
+    .rm-toggle {
+      display: block;
+      position: fixed;
+      padding: 0;
+      z-index: 1000;
+      opacity: 0.5;
+      background-color: rgba(0, 0, 0, 0.875);
+      border-radius: $border-radius;
+      @include output-rhythm(#{$vert}, $medium);
+      @include output-rhythm(#{$horz}, $x-large);
+
+      &:hover,
+      &:focus {
+        background-color: rgba(0, 0, 0, 0.95);
+      }
+
+      span {
+        @include visually-hidden;
+      }
+
+      &__link {
+        border: 0;
+        box-sizing: content-box;
+        @include output-rhythm(padding, $xx-small $medium);
+
+        &:hover,
+        &:focus {
+          outline: none;
+          @include output-rhythm(padding, $xx-small $medium);
+        }
+      }
+
+      &__icon {
+        @include output-rhythm(margin-top, 3px);
+      }
+
+      &__link,
+      &__icon {
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .rm-block__content {
+      display: none;
+      opacity: .001;
+
+      .is-child {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: $global-transition;
+
+        &.is-open--child {
+          position: relative;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &.rm-is-open {
+      .rm-toggle {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 1);
+
+        &__icon {
+          fill: rgba(0, 0, 0, 1);
+        }
+      }
+
+      .rm-block__content {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.80);
+        z-index: 990;
+        @include output-rhythm(top, $small);
+        @include output-rhythm(bottom, $small);
+        @include output-rhythm(right, $small);
+        @include output-rhythm(left, $small);
+        @include output-rhythm(padding, 4px);
+
+        .menu {
+          background-color: transparent;
+
+          a {
+            @include output-rhythm(padding, $xx-small $large);
+            @include output-rhythm(margin-bottom, 4px);
+            background-color: rgba(0, 0, 0, 0.95);
+            display: block;
+
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: rgba(0, 0, 0, 0.85);
+            }
+
+            &.active {
+              &[href="/"] {
+                background-color: rgba(0, 0, 0, 0.85);
+
+                &:hover,
+                &:focus {
+                  background-color: rgba(0, 0, 0, 0.85);
+                }
+              }
+            }
+
+            &:after {
+              content: none;
+              display: none;
+            }
+          }
+
+          .rm-accordion-trigger {
+            background-color: rgba(0, 0, 0, 0.95);
+
+            &:hover,
+            &:focus {
+              background-color: rgba(0, 0, 0, 0.85);
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+

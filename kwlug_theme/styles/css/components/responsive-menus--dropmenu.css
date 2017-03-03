@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/**
+ * Drop menus
+ * Standard CSS drop menus that will expand any nesting level.
+ ============================================================================ */
+.ms-dropmenu .rm-toggle {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  word-wrap: normal;
+  font: 0/0 a;
+}
+.ms-dropmenu .rm-block__content .menu {
+  transition: 0.15s 0.5s;
+}
+.ms-dropmenu .rm-block__content .menu:hover .menu {
+  transition-delay: 0s;
+}
+.ms-dropmenu .rm-block__content .menu__item {
+  text-align: center;
+  position: relative;
+}
+.ms-dropmenu .rm-block__content a {
+  position: relative;
+  display: block;
+  padding: 7px 18px;
+  padding: 0.4375rem 1.125rem;
+}
+.ms-dropmenu .rm-block__content a:after {
+  font-family: FontAwesome, sans-serif;
+  padding: 0 1px;
+  text-align: right;
+  position: absolute;
+  right: 16px;
+  right: 1rem;
+}
+.ms-dropmenu .rm-block__content .menu-level-1 {
+  position: relative;
+}
+.ms-dropmenu .rm-block__content .menu-level-1 .menu__item {
+  float: left;
+  width: auto;
+}
+.ms-dropmenu .rm-block__content .menu-level-1 .menu__item:hover > .is-child, .ms-dropmenu .rm-block__content .menu-level-1 .menu__item:focus > .is-child {
+  visibility: visible;
+  opacity: 1;
+}
+.ms-dropmenu .rm-block__content .menu-level-1 a:after {
+  content: '';
+  display: none;
+}
+.fa-loaded .ms-dropmenu .rm-block__content .menu-level-1 .menu__item--collapsed > span > a,
+.fa-loaded .ms-dropmenu .rm-block__content .menu-level-1 .menu__item--expanded > span > a {
+  padding-right: 40px;
+  padding-right: 2.5rem;
+}
+.fa-loaded .ms-dropmenu .rm-block__content .menu-level-1 .menu__item--collapsed > span > a:after,
+.fa-loaded .ms-dropmenu .rm-block__content .menu-level-1 .menu__item--expanded > span > a:after {
+  display: inline-block;
+}
+.fa-loaded .ms-dropmenu .rm-block__content .menu-level-1 .menu__item--expanded > span > a:after {
+  content: "";
+}
+.fa-loaded .ms-dropmenu .rm-block__content .menu-level-1 .menu__item--collapsed > span > a:after {
+  content: '';
+}
+.ms-dropmenu .rm-block__content .is-child {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  max-height: 1000px;
+  width: 100%;
+}
+.ms-dropmenu .rm-block__content .is-child:hover, .ms-dropmenu .rm-block__content .is-child:focus {
+  visibility: visible;
+  opacity: 1;
+}
+.ms-dropmenu .rm-block__content .is-child .menu__item {
+  min-width: 12em;
+  text-align: left;
+  width: 100%;
+}
+.ms-dropmenu .rm-block__content .menu-level-2 {
+  left: 0;
+  top: auto;
+}
+.fa-loaded .ms-dropmenu .rm-block__content .menu-level-2 .menu__item--expanded > span > a:after {
+  content: "";
+}
+[dir="rtl"] .fa-loaded .ms-dropmenu .rm-block__content .menu-level-2 .menu__item--expanded > span > a:after {
+  content: "";
+}
+.ms-dropmenu .rm-block__content .menu-level-2 .is-child {
+  left: 100%;
+  top: 0;
+}
+/*# sourceMappingURL=maps/responsive-menus--dropmenu.css.map */

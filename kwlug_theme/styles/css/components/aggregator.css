@@ -1,0 +1,33 @@
+/**
+ * Aggregator
+ ============================================================================ */
+.aggregator-feed {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+.aggregator-item {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  padding: 16px;
+  padding: 1rem;
+  border-radius: 2px;
+}
+.aggregator-item:before, .aggregator-item:after {
+  content: " ";
+  display: table;
+}
+.aggregator-item:after {
+  clear: both;
+}
+
+.feed-item-title {
+  margin: 0 0 16px;
+  margin: 0 0 1rem;
+}
+
+.item-description {
+  margin: 16px 0;
+  margin: 1rem 0;
+}
+/*# sourceMappingURL=maps/aggregator.css.map */

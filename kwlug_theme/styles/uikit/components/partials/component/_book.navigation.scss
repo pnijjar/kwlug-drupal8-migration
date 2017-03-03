@@ -1,0 +1,87 @@
+/**
+ * Book
+ *  - Set styles for book navigation and the menu tree.
+ ============================================================================ */
+
+// Menu tree in book navigation links.
+.menu--book-tree {
+  .menu__item {
+    a {}
+  }
+}
+
+
+.book-pager {
+  padding: 0;
+  overflow: auto;
+  border-top: $border-width $border-style $border-color;
+  border-bottom: $border-width $border-style $border-color;
+
+  // Book navigation menu tree is showing.
+  .has-tree & {
+    border-top: 0;
+  }
+
+  // Items.
+  &__item {
+    list-style: none;
+    vertical-align: top;
+  }
+
+  // Link.
+  &__link {
+    @include output-rhythm(padding, $xx-small 0);
+    display: inline-block;
+
+    &:before,
+    &:after {
+      font-family: $icon-font;
+      
+      // Wait for FontAwesome to load.
+      display: none;
+      .fa-loaded & {
+        display: inline-block;
+      }
+
+      [dir="rtl"] & {
+        @include fa-icon-flip(-1, 1, 0);
+      }
+    }
+  }
+
+  // Use the maximum width by incorporating a more complex layout
+  // of floats and box-sizing.
+  &__previous {
+    text-align: $flow-from;
+    float: $flow-from;
+    width: 46%;
+
+    a {
+      &:before {
+        content: $menu-arrow-left;
+        @include output-rhythm(width, $medium);
+      }
+    }
+  }
+
+  // Up.
+  &__up {
+    text-align: center;
+    float: $flow-from;
+    width: 8%;
+  }
+
+  // Next
+  &__next {
+    text-align: $flow-to;
+    float: $flow-to;
+    width: 46%;
+
+    a {
+      &:after {
+        content: $menu-arrow-right;
+        @include output-rhythm(width, $medium);
+      }
+    }
+  }
+}

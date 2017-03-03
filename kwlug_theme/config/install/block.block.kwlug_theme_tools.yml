@@ -1,0 +1,26 @@
+uuid: 7d80031f-e919-4c96-bd78-eb1acbf64781
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - kwlug_theme
+_core:
+  default_config_hash: '-h-Yg5Hu8JRQIB_E-T_1iOhRIaoXPIW4i8YyKgMZIGo'
+id: kwlug_theme_tools
+theme: kwlug_theme
+region: '-1'
+weight: -4
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

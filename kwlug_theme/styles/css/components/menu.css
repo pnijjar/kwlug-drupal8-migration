@@ -1,0 +1,97 @@
+/**
+ * Menus
+ *  - style Drupal core block menus.
+ *  - for the drop menu and other responsive menus see the mixins and the
+ *    respective responsive menu partials.
+ ============================================================================ */
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu a {
+  display: block;
+  padding: 4px 0;
+  padding: 0.25rem 0;
+}
+.menu a:hover, .menu a:focus {
+  text-decoration: none;
+}
+.menu a:before, .menu a:after {
+  display: none;
+}
+.fa-loaded .menu a:before, .fa-loaded .menu a:after {
+  display: inline-block;
+}
+.menu a.button {
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+.menu a.button:after {
+  content: '';
+  display: none;
+}
+.menu .menu {
+  padding-left: 16px;
+  padding-left: 1rem;
+}
+
+.menu__item {
+  text-align: left;
+}
+
+/**
+ * Menus in the Leaderboard region.
+ ============================================================================ */
+.pr-leaderboard .block-menu {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0;
+}
+.pr-leaderboard .menu__item {
+  float: left;
+  margin: 10px 16px 10px 0;
+  margin: 0.625rem 1rem 0.625rem 0;
+  list-style: none;
+}
+.pr-leaderboard .menu__item ul,
+.pr-leaderboard .menu__item ol {
+  display: none;
+}
+[dir="rtl"] .pr-leaderboard .menu__item {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.pr-leaderboard .menu a:after {
+  content: none;
+  display: none;
+}
+
+/**
+ * Menus in the Footer region.
+ ============================================================================ */
+.pr-footer__footer .block-menu {
+  overflow: hidden;
+  *zoom: 1;
+}
+.pr-footer__footer .menu__item {
+  float: left;
+  margin: 10px 16px 10px 0;
+  margin: 0.625rem 1rem 0.625rem 0;
+  list-style: none;
+}
+.pr-footer__footer .menu__item ul,
+.pr-footer__footer .menu__item ol {
+  display: none;
+}
+[dir="rtl"] .pr-footer__footer .menu__item {
+  margin-right: 0;
+  margin-left: 16px;
+}
+.pr-footer__footer .menu a:after {
+  content: none;
+  display: none;
+}
+/*# sourceMappingURL=maps/menu.css.map */

@@ -1,0 +1,143 @@
+/**
+ * Custom CSS
+ * Use this file to override styles if you feel uncomfortable editing
+ * component stylesheets.
+ ============================================================================ */
+
+
+/* The default logo is too big!! */
+.site-branding__logo-img { 
+  max-height: 10ex;
+  max-width: 12em; /* Oh IE. Never change. */
+}
+
+/* The title text should be inline with the logo */
+.site-branding__text, .site-branding__name { 
+  display: inline;
+} 
+
+/* Menu bar */
+.pr-navbar { 
+  color: white;
+  font-weight: bolder;
+  /* bright drupally blue */
+  background-color: #6da6e2;
+  /* darker blue */
+  border-bottom: solid #2763A5 0.75ex;
+  border-top: solid #2763A5 0.75ex;
+} 
+
+a.menu__link { 
+  font-weight: 900; 
+} 
+
+/* It is confusing that the top level links are 
+ * clickable. Maybe an underline will help?
+ */
+a.menu__link:hover,
+a.menu__link:focus { 
+  text-decoration: underline;
+}
+
+/* phone hamburger menu background color */
+.rm-toggle__link, .rm-toggle__link:focus { 
+  /* darker blue */
+  background-color: #2763A5; 
+}
+
+/* phone hamburger menu background color */
+.rm-toggle__link:active, .rm-toggle__link:hover { 
+  /* darker blue, lightened a touch */
+  background-color: #3D6EA4;
+}
+
+/* Make button toggle visibility of below menu (for when javascript 
+ * is not enabled.
+ */
+.rm-block__inner:not(.has-js)  #rm-content { 
+  display: none;
+}
+
+.rm-block__inner:not(.has-js):hover  #rm-content { 
+  display: block;
+}
+
+
+.pr-footer { 
+  color: white;
+  background-color: #2763A5;
+} 
+
+.regions { 
+  /* pale pale blue */
+  /* background-color: #efefff; */
+  background-color: #cce0fe;
+}
+
+/* presentation titles should be biggish */
+.field-node--field-presentation-title { 
+  font-size: 1.75rem;
+  line-height: 2rem;
+
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center titles */
+h1.node__title { 
+  text-align: center;
+} 
+
+.field-node-title { 
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+} 
+
+
+/* Shrink main body on big screens to make it readable */
+.field-node--body, .field { 
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* prevent title fom breaking awkwardly */
+.site-branding__text {
+  display: inline-block;
+}
+
+/* Make unordered list have bullet points in library books. */
+li.library-book-list { 
+  list-style: circle;
+} 
+
+/* Style embedded archive.org responsively
+ * From: http://embedresponsively.com/ 
+ */
+.embed-container { 
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+  max-width: 100%;
+  padding-bottom: 0;
+} 
+
+.embed-container iframe { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 30px;
+  */
+} 
+
+/* The HTML player has an embed element that for some reason is set to
+ * 360px. 
+ */
+ /*
+.embed-container #wrap { 
+  max-height: 30px;
+} 
+*/

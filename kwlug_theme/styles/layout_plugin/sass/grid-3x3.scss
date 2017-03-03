@@ -1,0 +1,26 @@
+@import "at-layout-plugin-base";
+//
+// Grid 3x3
+// -----------------------------------------------------------------------------
+
+.atl--grid-3x3 {
+  > .atl__lc {
+    margin-bottom: gutter(12);
+  }
+}
+
+.bp--tablet {
+  .atl--grid-3x3 {
+    > .atl__lc {
+      @include gallery(6 of 12);
+    }
+  }
+}
+
+.bp--wide {
+  .atl--grid-3x3 {
+    > .atl__lc {
+      @include gallery(4 of 12);
+    }
+  }
+}

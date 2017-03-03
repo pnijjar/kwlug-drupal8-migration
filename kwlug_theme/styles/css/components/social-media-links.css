@@ -1,0 +1,130 @@
+/**
+ * Social media
+ *  - styles for the Social Media Links module.
+ *  - https://www.drupal.org/project/social_media_links
+ ============================================================================ */
+.block-social-media-links .platforms,
+.pane-social-media-link-widget .platforms {
+  padding-left: 0;
+  overflow: hidden;
+}
+.block-social-media-links .platform__link,
+.pane-social-media-link-widget .platform__link {
+  padding: 4px 6px;
+  padding: 0.25rem 0.375rem;
+}
+.block-social-media-links .platform__link:hover, .block-social-media-links .platform__link:focus,
+.pane-social-media-link-widget .platform__link:hover,
+.pane-social-media-link-widget .platform__link:focus {
+  text-decoration: none;
+}
+.block-social-media-links .is-horizontal .platform,
+.pane-social-media-link-widget .is-horizontal .platform {
+  float: left;
+  margin: 4px 0 4px 0;
+  margin: 0.25rem 0 0.25rem 0;
+  list-style: none;
+}
+.block-social-media-links .is-horizontal .platform ul,
+.block-social-media-links .is-horizontal .platform ol,
+.pane-social-media-link-widget .is-horizontal .platform ul,
+.pane-social-media-link-widget .is-horizontal .platform ol {
+  display: none;
+}
+[dir="rtl"] .block-social-media-links .is-horizontal .platform, [dir="rtl"]
+.pane-social-media-link-widget .is-horizontal .platform {
+  margin-right: 0;
+  margin-left: 0;
+}
+.block-social-media-links .is-horizontal .platform,
+.pane-social-media-link-widget .is-horizontal .platform {
+  text-align: center;
+}
+.block-social-media-links .is-horizontal .platform__link,
+.pane-social-media-link-widget .is-horizontal .platform__link {
+  vertical-align: sub;
+}
+.block-social-media-links .is-vertical .platform,
+.pane-social-media-link-widget .is-vertical .platform {
+  list-style: none;
+  margin: 0 0 7px 0;
+  margin: 0 0 0.4375rem 0;
+}
+.block-social-media-links .is-vertical .platform__name,
+.pane-social-media-link-widget .is-vertical .platform__name {
+  vertical-align: middle;
+}
+.block-social-media-links .is-vertical .platform .fa,
+.pane-social-media-link-widget .is-vertical .platform .fa {
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 7px;
+  margin-right: 0.4375rem;
+}
+.block-social-media-links .is-vertical .platform .fa-lg,
+.pane-social-media-link-widget .is-vertical .platform .fa-lg {
+  width: 18px;
+  width: 1.125rem;
+}
+.block-social-media-links .is-vertical .platform .fa-2x,
+.pane-social-media-link-widget .is-vertical .platform .fa-2x {
+  width: 32px;
+  width: 2rem;
+}
+.block-social-media-links .is-vertical .platform .fa-3x,
+.pane-social-media-link-widget .is-vertical .platform .fa-3x {
+  width: 48px;
+  width: 3rem;
+}
+.block-social-media-links .is-vertical .platform .fa-4x,
+.pane-social-media-link-widget .is-vertical .platform .fa-4x {
+  width: 64px;
+  width: 4rem;
+}
+.block-social-media-links .is-vertical .platform .fa-5x,
+.pane-social-media-link-widget .is-vertical .platform .fa-5x {
+  width: 80px;
+  width: 5rem;
+}
+.block-social-media-links .is-vertical .platform img,
+.pane-social-media-link-widget .is-vertical .platform img {
+  vertical-align: middle;
+  margin-right: 7px;
+  margin-right: 0.4375rem;
+}
+.block-social-media-links .fa-lg + .platform__name,
+.pane-social-media-link-widget .fa-lg + .platform__name {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 21px;
+  line-height: 1.3125rem;
+}
+.block-social-media-links .fa-2x + .platform__name,
+.pane-social-media-link-widget .fa-2x + .platform__name {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 21px;
+  line-height: 1.3125rem;
+}
+.block-social-media-links .fa-3x + .platform__name,
+.pane-social-media-link-widget .fa-3x + .platform__name {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+}
+.block-social-media-links .fa-4x + .platform__name,
+.pane-social-media-link-widget .fa-4x + .platform__name {
+  font-size: 29px;
+  font-size: 1.8125rem;
+  line-height: 33px;
+  line-height: 2.0625rem;
+}
+.block-social-media-links .fa-5x + .platform__name,
+.pane-social-media-link-widget .fa-5x + .platform__name {
+  font-size: 42px;
+  font-size: 2.625rem;
+  line-height: 45px;
+  line-height: 2.8125rem;
+}
+/*# sourceMappingURL=maps/social-media-links.css.map */

@@ -1,0 +1,28 @@
+/**
+ * Image upload widget.
+ ============================================================================ */
+
+.image-widget {
+  .form-file {
+    padding: 0;
+  }
+}
+
+
+.image-widget-data {
+  float: $flow-from;
+
+ .text-field {
+    width: auto;
+  }
+}
+
+
+.image-preview {
+  float: $flow-from;
+  @include output-rhythm(padding, 0 $medium $medium 0);
+
+  [dir="rtl"] & {
+    @include output-rhythm(padding, 0 0 $medium $medium);
+  }
+}

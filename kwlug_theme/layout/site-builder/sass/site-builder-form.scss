@@ -1,0 +1,14 @@
+// Import all Site builder layouts, we use these in the form
+// to recreate the layouts to build the layout settings widgets.
+
+@import "onecol/**/*";
+@import "twocol/**/*";
+@import "threecol/**/*";
+@import "fourcol/**/*";
+@import "fivecol/**/*";
+@import "sixcol/**/*";
+
+// Special case some form elements for display only
+#edit-layouts #edit-layout-select .fourcol-source-ordered-inset-left .arc--4 .l-r:last-child span {
+  height: 3.55em;
+}
