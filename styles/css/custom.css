@@ -34,7 +34,8 @@ a.menu__link {
 /* It is confusing that the top level links are 
  * clickable. Maybe an underline will help?
  */
-a.menu__link.is_active { 
+a.menu__link:hover,
+a.menu__link:focus { 
   text-decoration: underline;
 }
 
