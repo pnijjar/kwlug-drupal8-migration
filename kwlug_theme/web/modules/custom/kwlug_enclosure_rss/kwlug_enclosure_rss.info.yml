@@ -1,0 +1,6 @@
+name: kwlug_enclosure_rss 
+type: module
+description: Set up a view for KWLUG podcasts that have enclosures
+core: 8.x
+package: Custom
+dependencies: { } 
