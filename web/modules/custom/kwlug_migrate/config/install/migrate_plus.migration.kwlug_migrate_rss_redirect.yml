@@ -1,0 +1,51 @@
+uuid: 04404bec-ffc8-11e6-b9f6-bffc2da31d0e
+langcode: en
+status: true
+dependencies: {  }
+id: kwlug_migrate_rss_redirect
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: 'Path Redirect (RSS Feeds)'
+source:
+  plugin: csv
+  path: /home/linuxuser/drupal/rss_redirect.csv
+  header_row_count: 1
+  keys:
+    - sourcepath
+  column_names:
+    0:
+      sourcepath: Source 
+    1:
+      destpath: Destination
+    2:
+      statuscode: Status Code
+
+  
+  constants:
+    nodelist: node/
+    internal: internal:/
+process:
+  redirect_source: sourcepath
+
+  redirect_redirect:
+    plugin: concat
+    source:
+      - constants/internal
+      - destpath 
+
+  status_code: 
+    plugin: default_value
+    source: statuscode
+    default_value: 301
+
+  language:
+    plugin: default_value
+    source: language
+    default_value: und
+  status_code: type
+destination:
+  plugin: 'entity:redirect'
+migration_dependencies:
+  required: {  } 
+  optional: {  }
