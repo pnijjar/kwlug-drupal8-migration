@@ -1,0 +1,24 @@
+uuid: 0c2d55a8-91b7-41d0-b515-aef5813df864
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.static_blocks
+  module:
+    - views
+  theme:
+    - kwlug_theme
+id: views_block__static_blocks_block_1
+theme: kwlug_theme
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'views_block:static_blocks-block_1'
+settings:
+  id: 'views_block:static_blocks-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
