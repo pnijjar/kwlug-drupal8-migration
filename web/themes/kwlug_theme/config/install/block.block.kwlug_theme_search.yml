@@ -7,11 +7,11 @@ dependencies:
   theme:
     - kwlug_theme
 _core:
-  default_config_hash: S1P8FINvnvS_ihzByz3OUsoM4Dz7y7M4JKJTZdMSl4I
+  default_config_hash: rb3wMUxUc4dg4yFYRC06ZkRyJoUoGLtpzr2jUMVHLUk
 id: kwlug_theme_search
 theme: kwlug_theme
 region: sidebar_second
-weight: -6
+weight: -7
 provider: null
 plugin: search_form_block
 settings:
