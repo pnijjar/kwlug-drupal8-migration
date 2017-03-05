@@ -113,6 +113,12 @@ li.library-book-list {
   list-style: circle;
 } 
 
+/* Sidebar blocks should have bullet points. */
+#block-views-block-content-by-page-category-block-2 li, 
+#block-views-block-static-blocks-block-1 li { 
+  list-style: circle;
+} 
+
 /* Style embedded archive.org responsively
  * From: http://embedresponsively.com/ 
  */
