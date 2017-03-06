@@ -7,7 +7,7 @@ dependencies:
   theme:
     - kwlug_theme
 _core:
-  default_config_hash: rb3wMUxUc4dg4yFYRC06ZkRyJoUoGLtpzr2jUMVHLUk
+  default_config_hash: vjiqtS6qso-5Tk_EyDONUJFOi1BBGlrIS2h19EqTCG4
 id: kwlug_theme_search
 theme: kwlug_theme
 region: sidebar_second
@@ -18,5 +18,5 @@ settings:
   id: search_form_block
   label: Search
   provider: search
-  label_display: '0'
+  label_display: visible
 visibility: {  }

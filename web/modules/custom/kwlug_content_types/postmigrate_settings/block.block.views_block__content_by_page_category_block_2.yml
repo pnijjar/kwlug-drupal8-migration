@@ -11,7 +11,7 @@ dependencies:
 id: views_block__content_by_page_category_block_2
 theme: kwlug_theme
 region: sidebar_second
-weight: -6
+weight: -5
 provider: null
 plugin: 'views_block:content_by_page_category-block_2'
 settings:
