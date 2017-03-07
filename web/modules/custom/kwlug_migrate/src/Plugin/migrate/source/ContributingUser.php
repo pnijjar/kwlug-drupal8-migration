@@ -35,11 +35,18 @@ class ContributingUser extends D6User {
     // Make a subquery of all the UIDs who have authored nodes.
     $node_authors = $this->select('node','n')
       ->fields('n', array('uid'));
+      
+
+    $comment_authors = $this->select('comments','c')
+      ->fields('c', array('uid'));
+
+    $node_authors->union($comment_authors);
 
     return $this->select('users','u')
       ->fields('u', array_keys($this->baseFields()))
       ->condition('u.uid', 0, '>')
       ->condition('u.uid', $node_authors, 'IN');
+
 
   } // end query
 
