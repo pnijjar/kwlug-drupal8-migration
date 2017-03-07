@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: NikVEAEak8-V7mvbYIv3RfgEzvcstXZFtXK1UlQBdXY
 id: node.field_vidcast_link
 field_name: field_vidcast_link
 entity_type: node

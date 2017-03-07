@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: EdtRNXEwl0n7JBwo6eT-casKKqwaS0Dkvzfyx9Y9WEg
+  default_config_hash: 7WT3fphe3WxOJPVpGRi3GYODNiCxiBfa4p105mu59U4
 id: content_by_page_category
 label: 'Content by Page Category'
 module: views
@@ -492,6 +492,127 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  entity_reference_2:
+    display_plugin: entity_reference
+    id: entity_reference_2
+    display_title: 'Vidcast Entity Reference'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: 'Used when creating agendas'
+      title: Locations
+      defaults:
+        title: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        pager: false
+        sorts: false
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            title: title
+      row:
+        type: entity_reference
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+          separator: '-'
+          hide_empty: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_page_category_value:
+          id: field_page_category_value
+          table: node__field_page_category
+          field: field_page_category_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            Vidcast: Vidcast
+          group: 1
+          exposed: false
+          expose:
+            operator_id: field_page_category_value_op
+            label: 'Page Category (field_page_category)'
+            description: ''
+            use_operator: false
+            operator: field_page_category_value_op
+            identifier: field_page_category_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              host: '0'
+              speaker: '0'
+              librarian: '0'
+              member: '0'
+              cabal: '0'
+              notifier: '0'
+              bypass_moderation: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      pager:
+        type: none
+        options:
+          offset: 0
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
