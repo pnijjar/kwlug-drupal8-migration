@@ -3,14 +3,18 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_no_subject.default
     - field.field.node.page.body
-    - field.field.node.page.field_page_category
+    - field.field.node.page.comment_no_subject
+    - field.field.node.page.field_blogtags
     - field.field.node.page.field_file_attachments
     - field.field.node.page.field_header_image
-    - field.field.node.page.field_blogtags
+    - field.field.node.page.field_page_category
     - node.type.page
   module:
+    - comment
     - file
+    - image
     - text
     - user
 _core:
@@ -20,19 +24,19 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  field_header_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
   body:
     label: hidden
     type: text_default
     weight: 1
     settings: {  }
+    third_party_settings: {  }
+  comment_no_subject:
+    type: comment_default
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
   field_blogtags:
     weight: 2
@@ -47,8 +51,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: file_table
+  field_header_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
   links:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
 hidden:
