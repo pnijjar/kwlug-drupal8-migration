@@ -1,0 +1,88 @@
+uuid: 16184325-2f80-4eac-80a8-7545d11d4971
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_comment
+migration_tags:
+  - 'Drupal 6'
+migration_group: kwlug_migrate
+label: Comments
+source:
+  plugin: d6_comment
+  constants:
+    entity_type: node
+process:
+  cid: cid
+  pid:
+    plugin: migration
+    migration: upgrade_d6_comment
+    source: pid
+
+  # If this is a merged presentation node then 
+  # use the agenda, not the presentation node
+  entity_id: 
+    plugin: migration
+    migration: 
+      - kwlug_migrate_dummy_merged_presentations
+      - upgrade_d6_node_agenda
+      - upgrade_d6_node_blog
+      - upgrade_d6_node_book
+      - upgrade_d6_node_location
+      - upgrade_d6_node_nominee
+      - upgrade_d6_node_page
+      - upgrade_d6_node_podcast
+      - upgrade_d6_node_presentation
+      - kwlug_migrate_forum
+      - kwlug_migrate_library
+    source: nid
+    no_stub: true
+
+
+  entity_type: constants/entity_type
+  field_name: field_name
+  comment_type: comment_type
+  subject: subject
+  uid: uid
+  name: name
+  mail: mail
+  homepage: homepage
+  hostname: hostname
+  created: timestamp
+  changed: timestamp
+  
+  # Filter out any comment with status 0 (not approved)
+  status: 
+     plugin: skip_on_empty
+     source: status
+     method: row
+
+
+  thread: thread
+  comment_body/value: comment
+  comment_body/format:
+    plugin: migration
+    migration: upgrade_d6_filter_format
+    source: format
+destination:
+  plugin: 'entity:comment'
+migration_dependencies:
+  required:
+    73: upgrade_d6_node_agenda
+    74: upgrade_d6_node_blog
+    75: upgrade_d6_node_book
+    77: upgrade_d6_node_location
+    78: upgrade_d6_node_nominee
+    79: upgrade_d6_node_page
+    80: upgrade_d6_node_podcast
+    81: upgrade_d6_node_presentation
+    82: kwlug_migrate_dummy_merged_presentations
+    83: kwlug_migrate_forum
+    83: kwlug_migrate_library
+    84: upgrade_d6_comment_type
+    85: upgrade_d6_comment_entity_display
+    86: upgrade_d6_comment_entity_form_display
+    87: upgrade_d6_user
+    88: upgrade_d6_filter_format
+  optional:
+    - upgrade_d6_comment
+    - upgrade_d6_filter_format
