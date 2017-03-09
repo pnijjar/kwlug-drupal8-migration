@@ -9,6 +9,7 @@ dependencies:
   - admin_toolbar
   - redirect
   - riddler
+  - at_tools
 
 # kwlug_migrate is NOT here any more, because we want to uninstall it
 # after the migration is complete!
