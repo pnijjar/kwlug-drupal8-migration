@@ -11,9 +11,14 @@ source:
   plugin: d6_comment_variable_per_comment_type
   constants:
     entity_type: node
+    # comment_type: comment_no_subject
 process:
   target_entity_type_id: constants/entity_type
-  id: comment_type
+  # id: comment_type
+  # Make all comment types the same 
+  id: 
+    plugin: default_value
+    default_value: comment_no_subject
   label: label
   description: description
 destination:
