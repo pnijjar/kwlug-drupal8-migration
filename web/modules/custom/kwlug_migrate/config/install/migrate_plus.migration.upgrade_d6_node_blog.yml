@@ -57,6 +57,15 @@ process:
   
   type: constants/bundle_type
 
+
+  comment/status:
+    plugin: default_value
+    default_value: 1
+
+  comment_no_subject/status:
+    plugin: default_value
+    default_value: 1
+
 #  field_file_attachments:
 #    plugin: migration
 #    migration: upgrade_d6_upload

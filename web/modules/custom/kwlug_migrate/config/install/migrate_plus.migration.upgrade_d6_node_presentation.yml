@@ -59,6 +59,16 @@ process:
             - upgrade_d6_filter_format
             - upgrade_d7_filter_format
           source: format
+
+  comment/status:
+    plugin: default_value
+    default_value: 1
+
+  comment_no_subject/status:
+    plugin: default_value
+    default_value: 1
+
+
 destination:
   plugin: 'entity:node'
   default_bundle: page 

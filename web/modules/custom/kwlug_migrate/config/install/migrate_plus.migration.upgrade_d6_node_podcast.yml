@@ -158,6 +158,16 @@ process:
         -
           plugin: map_kwlug_format_filter
           source: format
+
+  comment/status:
+    plugin: default_value
+    default_value: 1
+
+  comment_no_subject/status:
+    plugin: default_value
+    default_value: 1
+
+
 destination:
   plugin: 'entity:node'
   default_bundle: podcast

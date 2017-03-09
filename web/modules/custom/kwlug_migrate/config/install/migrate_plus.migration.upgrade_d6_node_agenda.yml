@@ -64,6 +64,15 @@ process:
         default_value: 1
       description: description
 
+  comment/status:
+    plugin: default_value
+    default_value: 1
+
+  comment_no_subject/status:
+    plugin: default_value
+    default_value: 1
+
+
 destination:
   plugin: 'entity:node'
   default_bundle: agenda
