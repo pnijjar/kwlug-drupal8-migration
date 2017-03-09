@@ -19,7 +19,9 @@ process:
     default_value: und
   title: booktitle
   uid: node_uid
-  status: true
+  status:
+    plugin: default_value
+    default_value: true
   created: created
   changed: changed
   promote: promote
