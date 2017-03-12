@@ -11,7 +11,7 @@ source:
   plugin: d6_upload_node
   node_type: forum
   constants:
-    category: 'Blog Post'
+    category: 'Forum Post'
     bundle_type: 'page'
 process:
   nid: tnid

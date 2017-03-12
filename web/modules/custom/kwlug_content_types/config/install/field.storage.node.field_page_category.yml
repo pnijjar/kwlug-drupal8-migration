@@ -33,6 +33,9 @@ settings:
       value: 'FLOSS Fund Nominee'
       label: 'Auto-filled: nominee content-type'
     -
+      value: 'Forum Post'
+      label: 'Do not use: old forum posts'
+    -
       value: 'Book Page'
       label: 'Do not use: book pages from Drupal 6 site'
     -
