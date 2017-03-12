@@ -13,8 +13,8 @@ pushd .
 cd $srcdir
 
 time drush migrate-reset-status $element  --yes 
-time drush migrate-rollback $element  --yes 
 time drush config-import --partial --source=$testdir --yes
+time drush migrate-rollback $element  --yes 
 time drush migrate-import --execute-dependencies $element --yes --notify 
 
 popd
