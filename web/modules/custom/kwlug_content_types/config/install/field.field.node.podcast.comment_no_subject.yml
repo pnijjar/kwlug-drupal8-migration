@@ -1,16 +1,16 @@
-uuid: aad4d717-2ab5-4844-a2f4-04818c58cf31
+uuid: d238aca8-06dd-11e7-9f6b-8746bf5801ca
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.comment_no_subject
-    - node.type.agenda
+    - node.type.podcast
   module:
     - comment
-id: node.agenda.comment_no_subject
+id: node.podcast.comment_no_subject
 field_name: comment_no_subject
 entity_type: node
-bundle: agenda
+bundle: podcast
 label: Comments
 description: ''
 required: true

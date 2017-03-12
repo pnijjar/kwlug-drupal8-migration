@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_display.comment.comment.default
     - field.field.node.podcast.body
-    - field.field.node.podcast.comment
+    - field.field.node.podcast.comment_no_subject
     - field.field.node.podcast.field_archive_org_id
     - field.field.node.podcast.field_blogtags
     - field.field.node.podcast.field_flac_length

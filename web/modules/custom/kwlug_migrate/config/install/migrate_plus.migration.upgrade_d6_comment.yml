@@ -39,7 +39,10 @@ process:
 
 
   entity_type: constants/entity_type
-  field_name: field_name
+  field_name: 
+    plugin: migration
+    migration: upgrade_d6_comment_type
+    source: comment_type
   comment_type:
     plugin: migration
     migration: upgrade_d6_comment_type
@@ -82,10 +85,11 @@ migration_dependencies:
     83: kwlug_migrate_forum
     83: kwlug_migrate_library
     84: upgrade_d6_comment_type
-    85: upgrade_d6_comment_entity_display
-    86: upgrade_d6_comment_entity_form_display
+    # 85: upgrade_d6_comment_entity_display
+    # 86: upgrade_d6_comment_entity_form_display
     87: upgrade_d6_user
     88: upgrade_d6_filter_format
+    # 86: upgrade_d6_comment_entity_form_display_subject
   optional:
     - upgrade_d6_comment
     - upgrade_d6_filter_format
