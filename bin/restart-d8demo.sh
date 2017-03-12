@@ -19,6 +19,10 @@ time drush config-import --partial \
     --source=modules/custom/kwlug_content_types/premigrate_settings --yes
 time drush en kwlug_migrate --yes
 time drush en kwlug_dependencies --yes
+
+# This messes up rollbacks of the comment module
+time drush pm-uninstall rdf --yes
+
 # time drush dl adaptivetheme --yes
 
 time drush en kwlug_theme --yes
