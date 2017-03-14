@@ -21,4 +21,4 @@ web/sites/simpletest
 /.idea/
 
 #Ignore error logs
-**/error.log
+**/error_log
