@@ -5,6 +5,11 @@
 
 INSTALLPATH=/home/linuxuser/kwlug-drupal-v05/web
 
+# TEMP for drush alias
+shopt -s expand_aliases
+source ~/.bash_profile
+
+
 pushd .
 cd $INSTALLPATH
 
