@@ -65,9 +65,12 @@ AddEncoding gzip svgz
   FallbackResource /index.php
 </IfModule>
 
+
+
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
+
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
@@ -79,6 +82,9 @@ RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
 RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
   RewriteRule ^ - [E=protossl:s]
+
+
+
 
   # Make sure Authorization HTTP header is available to PHP
   # even when running as CGI or FastCGI.
@@ -103,6 +109,8 @@ RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
 RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
   RewriteRule "(^|/)\.(?!well-known)" - [F]
 
+
+
   # If your site can be accessed both with and without the 'www.' prefix, you
   # can use one of the following settings to redirect users to your preferred
   # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
@@ -120,7 +128,21 @@ RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
 RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-  RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+#  RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+
+  # Force everything to https -- pnijjar
+  # This turns http://www.kwlug.org/sjk to https://kwlug.org/sjk, but 
+  # leaves http://kwlug.org/sjk alone. Sad!
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+
+  # Rewrite http as https
+  # Added by pnijjar
+  RewriteCond %{HTTPS} off 
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L]
+
 
   # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
   # VirtualDocumentRoot and the rewrite rules are not working properly.
@@ -136,8 +158,7 @@ RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
   RewriteCond %{REQUEST_URI} ^(.*)?/(install.php) [OR]
   RewriteCond %{REQUEST_URI} ^(.*)?/(rebuild.php)
   RewriteCond %{REQUEST_URI} !core
-RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
-RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+
   RewriteRule ^ %1/core/%2 [L,QSA,R=301]
 
   # Rewrite install.php during installation to see if mod_rewrite is working
@@ -171,6 +192,7 @@ RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
 RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
   RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
+
 
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
@@ -214,11 +236,3 @@ RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
   RequestHeader unset Proxy
 </IfModule>
 
-# Rewrite http as https
-<IfModule mod_rewrite.c> 
-RewriteEngine On 
-RewriteCond %{HTTPS} off 
-RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
-RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} 
-</ifModule> 
