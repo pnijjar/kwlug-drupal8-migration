@@ -1,0 +1,18 @@
+HOWTO update Drupal on this system
+==================================
+
+Make sure you are in the "kwlug-composer" folder
+
+    composer update --with-dependencies
+    cd web
+    drush updb
+
+You then need to revert the .htaccess file
+
+    git checkout .htaccess
+
+Finally I guess you check stuff into git?
+
+    git status
+    git commit 
+    
