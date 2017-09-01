@@ -2,7 +2,7 @@ HOWTO update Drupal on this system
 ==================================
 
 Make sure you are in the "kwlug-composer" folder
-
+    composer update-self
     composer update --with-dependencies
     cd web
     drush updb
@@ -16,3 +16,32 @@ Finally I guess you check stuff into git?
     git status
     git commit 
     
+
+HOWTO Update Drupal offline
+---------------------------
+
+Sometimes (always?) composer update --with-dependencies
+crashes (is killed for some reason I don't understand).
+
+Then you can do the following:
+
+Install composer on your machine (with an appropriate
+version of php-cli, which currently is 5.6)
+
+SFTP composer.json and composer.lock to your machine
+
+Then
+    composer update --with-dependencies
+
+Then SFTP composer.json and composer.lock back to kwlug.org
+
+Then  
+    composer install
+
+Then do the steps starting from 
+    cd web
+as above.
+    
+
+
+
